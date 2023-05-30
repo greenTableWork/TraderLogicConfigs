@@ -1,7 +1,7 @@
 {
-    "baseline" : 30000,
-    "stepDelta": 100,
+    "baseline" : 28418,
+    "stepDelta": 10,
     "executionLimitOffset": 2000,
-    "stateTransitionThreshold": 5,
-    "orderQuantityInUSD": 1000
+    "stateTransitionThreshold": 8,
+    "orderQuantityInUSD": 100
 }
