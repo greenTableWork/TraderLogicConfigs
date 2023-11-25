@@ -1,7 +1,9 @@
 {
-    "baseline" : 28418,
+    "baseline" : 37410,
     "stepDelta": 10,
     "executionLimitOffset": 2000,
-    "stateTransitionThreshold": 8,
-    "orderQuantityInUSD": 100
+    "stateTransitionThreshold": 5,
+    "orderQuantityInUSD": 10000,
+    "ledgerPath": "~/ledger",
+    "ledgerContextCollection": "ledgerContext"
 }
