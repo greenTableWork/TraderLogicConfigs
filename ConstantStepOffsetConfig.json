@@ -1,15 +1,14 @@
 {
-    "baseline" : 27888,
-    "stepDelta": 10,
+    "baseline" : 95800,
+    "stepDelta": 20,
     "executionLimitOffset": 2000,
     "stateTransitionThreshold": 5,
     "orderQuantityInUSD": 100,
     "contract": {
-        "symbol": "BTCUSD",
+        "symbol": "BTCUSDC",
         "secType": "CRYPTO",
         "currency": "USD",
-        "exchange": "SMART",
-        "primaryExchange": "GEMINI"
+        "exchange": "BACKTESTER"
     },
     "ledgerPath": "~/constant_step_offset_ledger_btc",
     "ledgerContextCollection": "ledgerContext"
