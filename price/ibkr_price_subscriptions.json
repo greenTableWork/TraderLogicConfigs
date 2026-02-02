@@ -1,0 +1,12 @@
+{
+  "contracts": [
+    {
+      "contract": {
+        "symbol": "LTC",
+        "secType": "CRYPTO",
+        "currency": "USD",
+        "exchange": "IBKR"
+      }
+    }
+  ]
+}

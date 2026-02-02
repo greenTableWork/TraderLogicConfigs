@@ -1,0 +1,12 @@
+{
+  "contracts": [
+    {
+      "contract": {
+        "symbol": "BTCUSD",
+        "secType": "CRYPTO",
+        "currency": "USD",
+        "exchange": "GEMINI"
+      }
+    }
+  ]
+}

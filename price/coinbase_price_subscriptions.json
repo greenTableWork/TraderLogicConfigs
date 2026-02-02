@@ -1,0 +1,12 @@
+{
+  "contracts": [
+    {
+      "contract": {
+        "symbol": "LTC-USD",
+        "secType": "CRYPTO",
+        "currency": "USD",
+        "exchange": "COINBASE"
+      }
+    }
+  ]
+}
