@@ -1,0 +1,22 @@
+{
+    "baseline" : 50,
+    "stepDelta": 2,
+    "executionLimitOffset": 50,
+    "stateTransitionThreshold": 1,
+    "orderQuantityInUSD": 20,
+    "strategy_type": "ConstantStepOffset",
+    "contract": {
+        "symbol": "LTC-USDC",
+        "secType": "CRYPTO",
+        "currency": "USD",
+        "exchange": "COINBASE"
+    },
+    "price_contrace": {
+        "symbol": "LTC-USD",
+        "secType": "CRYPTO",
+        "currency": "USD",
+        "exchange": "COINBASE"
+    },
+    "ledgerPath": "~/constant_step_offset_ledger_ltc",
+    "ledgerContextCollection": "ledgerContext"
+}
