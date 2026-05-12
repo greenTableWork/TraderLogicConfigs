@@ -1,0 +1,22 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 386.7,
+  "stepDelta": 0.19,
+  "executionLimitOffset": 95,
+  "stateTransitionThreshold": 0.05,
+  "orderQuantityInUSD": 2000.0,
+  "contract": {
+    "symbol": "GOOG",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "GOOG",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_GOOG_TWS.csv",
+  "ledgerContextCollection": "CSO_GOOG_TWS_context"
+}

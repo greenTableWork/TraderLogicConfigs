@@ -1,0 +1,22 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 999.39,
+  "stepDelta": 0.5,
+  "executionLimitOffset": 250,
+  "stateTransitionThreshold": 0.13,
+  "orderQuantityInUSD": 2000.0,
+  "contract": {
+    "symbol": "COST",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "COST",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_COST_TWS.csv",
+  "ledgerContextCollection": "CSO_COST_TWS_context"
+}

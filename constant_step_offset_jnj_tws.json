@@ -1,0 +1,22 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 221.44,
+  "stepDelta": 0.11,
+  "executionLimitOffset": 55,
+  "stateTransitionThreshold": 0.03,
+  "orderQuantityInUSD": 2000.0,
+  "contract": {
+    "symbol": "JNJ",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "JNJ",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_JNJ_TWS.csv",
+  "ledgerContextCollection": "CSO_JNJ_TWS_context"
+}

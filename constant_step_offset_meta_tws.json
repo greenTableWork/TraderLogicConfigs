@@ -1,0 +1,22 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 598.85,
+  "stepDelta": 0.3,
+  "executionLimitOffset": 150,
+  "stateTransitionThreshold": 0.08,
+  "orderQuantityInUSD": 2000.0,
+  "contract": {
+    "symbol": "META",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "META",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_META_TWS.csv",
+  "ledgerContextCollection": "CSO_META_TWS_context"
+}

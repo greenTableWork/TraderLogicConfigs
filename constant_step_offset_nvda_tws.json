@@ -1,0 +1,22 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 219.48,
+  "stepDelta": 0.11,
+  "executionLimitOffset": 55,
+  "stateTransitionThreshold": 0.03,
+  "orderQuantityInUSD": 2000.0,
+  "contract": {
+    "symbol": "NVDA",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "NVDA",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_NVDA_TWS.csv",
+  "ledgerContextCollection": "CSO_NVDA_TWS_context"
+}
