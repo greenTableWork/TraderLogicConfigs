@@ -1,0 +1,22 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 129.41,
+  "stepDelta": 0.06,
+  "executionLimitOffset": 30,
+  "stateTransitionThreshold": 0.02,
+  "orderQuantityInUSD": 2000.0,
+  "contract": {
+    "symbol": "INTC",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "INTC",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_INTC_TWS.csv",
+  "ledgerContextCollection": "CSO_INTC_TWS_context"
+}

@@ -1,0 +1,22 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 428.47,
+  "stepDelta": 0.21,
+  "executionLimitOffset": 105,
+  "stateTransitionThreshold": 0.05,
+  "orderQuantityInUSD": 2000.0,
+  "contract": {
+    "symbol": "AVGO",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "AVGO",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_AVGO_TWS.csv",
+  "ledgerContextCollection": "CSO_AVGO_TWS_context"
+}

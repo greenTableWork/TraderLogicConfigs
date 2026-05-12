@@ -1,0 +1,22 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 299.94,
+  "stepDelta": 0.15,
+  "executionLimitOffset": 75,
+  "stateTransitionThreshold": 0.04,
+  "orderQuantityInUSD": 2000.0,
+  "contract": {
+    "symbol": "JPM",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "JPM",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_JPM_TWS.csv",
+  "ledgerContextCollection": "CSO_JPM_TWS_context"
+}

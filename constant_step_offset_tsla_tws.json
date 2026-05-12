@@ -1,0 +1,22 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 445.04,
+  "stepDelta": 0.22,
+  "executionLimitOffset": 110,
+  "stateTransitionThreshold": 0.06,
+  "orderQuantityInUSD": 2000.0,
+  "contract": {
+    "symbol": "TSLA",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "TSLA",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_TSLA_TWS.csv",
+  "ledgerContextCollection": "CSO_TSLA_TWS_context"
+}

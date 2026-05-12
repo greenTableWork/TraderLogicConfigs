@@ -1,0 +1,22 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 967.14,
+  "stepDelta": 0.48,
+  "executionLimitOffset": 240,
+  "stateTransitionThreshold": 0.12,
+  "orderQuantityInUSD": 2000.0,
+  "contract": {
+    "symbol": "LLY",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "LLY",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_LLY_TWS.csv",
+  "ledgerContextCollection": "CSO_LLY_TWS_context"
+}

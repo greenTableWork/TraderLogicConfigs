@@ -1,0 +1,22 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 127.59,
+  "stepDelta": 0.06,
+  "executionLimitOffset": 30,
+  "stateTransitionThreshold": 0.02,
+  "orderQuantityInUSD": 2000.0,
+  "contract": {
+    "symbol": "WMT",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "WMT",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_WMT_TWS.csv",
+  "ledgerContextCollection": "CSO_WMT_TWS_context"
+}
