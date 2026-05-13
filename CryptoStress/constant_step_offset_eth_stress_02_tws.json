@@ -1,0 +1,22 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 2269.12,
+  "stepDelta": 1.5,
+  "executionLimitOffset": 30,
+  "stateTransitionThreshold": 0.25,
+  "orderQuantityInUSD": 1000.0,
+  "contract": {
+    "symbol": "ETH",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "ETH",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_ETH_CRYPTO_STRESS_02_TWS.csv",
+  "ledgerContextCollection": "CSO_ETH_CRYPTO_STRESS_02_TWS_context"
+}
