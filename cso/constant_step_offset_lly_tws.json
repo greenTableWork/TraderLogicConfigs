@@ -1,6 +1,6 @@
 {
   "strategy_type": "ConstantStepOffset",
-  "baseline": 967.14,
+  "baseline": 1015.27,
   "stepDelta": 0.48,
   "executionLimitOffset": 240,
   "stateTransitionThreshold": 0.12,

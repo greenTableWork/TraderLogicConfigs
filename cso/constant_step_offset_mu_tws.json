@@ -1,6 +1,6 @@
 {
   "strategy_type": "ConstantStepOffset",
-  "baseline": 795.51,
+  "baseline": 802.86,
   "stepDelta": 0.4,
   "executionLimitOffset": 200,
   "stateTransitionThreshold": 0.1,
