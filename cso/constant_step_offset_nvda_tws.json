@@ -17,6 +17,6 @@
     "currency": "USD",
     "exchange": "IBKR"
   },
-  "ledgerPath": "data/TraderLedger/CSO_NVDA_TWS.csv",
+  "ledgerPath": "data/TraderLedger/CSO_NVDA_TWS.sqlite",
   "ledgerContextCollection": "CSO_NVDA_TWS_context"
 }

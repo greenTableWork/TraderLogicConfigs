@@ -10,6 +10,6 @@
         "currency": "USD",
         "exchange": "BACKTESTER"
     },
-    "ledgerPath": "~/constant_step_offset_ledger_btc",
+    "ledgerPath": "~/constant_step_offset_ledger_btc.sqlite",
     "ledgerContextCollection": "ledgerContext"
 }
