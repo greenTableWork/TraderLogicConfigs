@@ -17,6 +17,6 @@
     "currency": "USD",
     "exchange": "IBKR"
   },
-  "ledgerPath": "data/TraderLedger/CSO_MU_TWS.csv",
+  "ledgerPath": "data/TraderLedger/CSO_MU_TWS.sqlite",
   "ledgerContextCollection": "CSO_MU_TWS_context"
 }

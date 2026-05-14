@@ -17,6 +17,6 @@
     "currency": "USD",
     "exchange": "IBKR"
   },
-  "ledgerPath": "data/TraderLedger/CSO_AMD_TWS.csv",
+  "ledgerPath": "data/TraderLedger/CSO_AMD_TWS.sqlite",
   "ledgerContextCollection": "CSO_AMD_TWS_context"
 }
