@@ -5,6 +5,7 @@
   "executionLimitOffset": 95,
   "stateTransitionThreshold": 0.05,
   "orderQuantityInUSD": 2000.0,
+  "orderQuantity": 4,
   "contract": {
     "symbol": "GOOGL",
     "secType": "STOCK",

@@ -5,6 +5,7 @@
   "executionLimitOffset": 250,
   "stateTransitionThreshold": 0.13,
   "orderQuantityInUSD": 2000.0,
+  "orderQuantity": 1,
   "contract": {
     "symbol": "COST",
     "secType": "STOCK",

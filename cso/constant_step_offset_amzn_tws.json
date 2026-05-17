@@ -5,6 +5,7 @@
   "executionLimitOffset": 65,
   "stateTransitionThreshold": 0.03,
   "orderQuantityInUSD": 2000.0,
+  "orderQuantity": 7,
   "contract": {
     "symbol": "AMZN",
     "secType": "STOCK",
