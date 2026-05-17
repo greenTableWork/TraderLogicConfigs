@@ -5,6 +5,7 @@
   "executionLimitOffset": 35,
   "stateTransitionThreshold": 0.02,
   "orderQuantityInUSD": 2000.0,
+  "orderQuantity": 13,
   "contract": {
     "symbol": "XOM",
     "secType": "STOCK",

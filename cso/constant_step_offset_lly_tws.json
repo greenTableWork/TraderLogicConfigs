@@ -5,6 +5,7 @@
   "executionLimitOffset": 240,
   "stateTransitionThreshold": 0.12,
   "orderQuantityInUSD": 2000.0,
+  "orderQuantity": 1,
   "contract": {
     "symbol": "LLY",
     "secType": "STOCK",
