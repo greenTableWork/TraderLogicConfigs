@@ -5,6 +5,7 @@
   "executionLimitOffset": 1.2,
   "stateTransitionThreshold": 0.02,
   "orderQuantityInUSD": 1000.0,
+  "orderQuantity": 17.52234,
   "contract": {
     "symbol": "LTC",
     "secType": "CRYPTO",
