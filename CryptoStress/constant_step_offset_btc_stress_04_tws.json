@@ -5,6 +5,7 @@
   "executionLimitOffset": 1400,
   "stateTransitionThreshold": 5,
   "orderQuantityInUSD": 1000.0,
+  "orderQuantity": 0.01226,
   "contract": {
     "symbol": "BTC",
     "secType": "CRYPTO",

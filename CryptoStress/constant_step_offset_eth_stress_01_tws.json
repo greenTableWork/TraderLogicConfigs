@@ -5,6 +5,7 @@
   "executionLimitOffset": 24,
   "stateTransitionThreshold": 0.25,
   "orderQuantityInUSD": 1000.0,
+  "orderQuantity": 0.4452,
   "contract": {
     "symbol": "ETH",
     "secType": "CRYPTO",
