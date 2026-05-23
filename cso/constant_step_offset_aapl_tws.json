@@ -18,6 +18,6 @@
     "currency": "USD",
     "exchange": "IBKR"
   },
-  "ledgerPath": "data/TraderLedger/CSO_AAPL_TWS.sqlite",
+  "ledgerPath": "data/TraderLedger/CSO_AAPL_TWS",
   "ledgerContextCollection": "CSO_AAPL_TWS_context"
 }
