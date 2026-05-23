@@ -18,6 +18,6 @@
     "currency": "USD",
     "exchange": "IBKR"
   },
-  "ledgerPath": "data/TraderLedger/CSO_JNJ_TWS.sqlite",
+  "ledgerPath": "data/TraderLedger/CSO_JNJ_TWS",
   "ledgerContextCollection": "CSO_JNJ_TWS_context"
 }

@@ -18,6 +18,6 @@
     "currency": "USD",
     "exchange": "IBKR"
   },
-  "ledgerPath": "data/TraderLedger/CSO_BTC_CRYPTO_STRESS_03_TWS.sqlite",
+  "ledgerPath": "data/TraderLedger/CSO_BTC_CRYPTO_STRESS_03_TWS",
   "ledgerContextCollection": "CSO_BTC_CRYPTO_STRESS_03_TWS_context"
 }
