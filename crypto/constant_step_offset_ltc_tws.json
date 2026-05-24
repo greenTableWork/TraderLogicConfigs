@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 52.1,
+  "stepDelta": 0.06,
+  "executionLimitOffset": 1.2,
+  "stateTransitionThreshold": 0.02,
+  "orderQuantityInUSD": 1000.0,
+  "orderQuantity": 19.19386,
+  "contract": {
+    "symbol": "LTC",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "LTC",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_LTC_TWS",
+  "ledgerContextCollection": "CSO_LTC_TWS_context"
+}
