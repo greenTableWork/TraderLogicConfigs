@@ -1,0 +1,22 @@
+{
+  "baseline": 133.06,
+  "stepDelta": 0.06,
+  "executionLimitOffset": 30,
+  "stateTransitionThreshold": 0.02,
+  "orderQuantityInUSD": 2000.0,
+  "orderQuantity": 15,
+  "contract": {
+    "symbol": "WMT",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "WMT",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_WMT_TWS_backtest",
+  "ledgerContextCollection": "CSO_WMT_TWS_backtest_context"
+}

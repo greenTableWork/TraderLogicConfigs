@@ -1,0 +1,22 @@
+{
+  "baseline": 301.48,
+  "stepDelta": 0.15,
+  "executionLimitOffset": 75,
+  "stateTransitionThreshold": 0.04,
+  "orderQuantityInUSD": 2000.0,
+  "orderQuantity": 6,
+  "contract": {
+    "symbol": "AAPL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "AAPL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_AAPL_TWS_backtest",
+  "ledgerContextCollection": "CSO_AAPL_TWS_backtest_context"
+}

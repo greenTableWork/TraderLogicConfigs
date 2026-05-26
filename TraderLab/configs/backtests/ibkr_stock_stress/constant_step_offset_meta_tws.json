@@ -1,0 +1,22 @@
+{
+  "baseline": 627.82,
+  "stepDelta": 0.3,
+  "executionLimitOffset": 150,
+  "stateTransitionThreshold": 0.08,
+  "orderQuantityInUSD": 2000.0,
+  "orderQuantity": 3,
+  "contract": {
+    "symbol": "META",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "META",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_META_TWS_backtest",
+  "ledgerContextCollection": "CSO_META_TWS_backtest_context"
+}

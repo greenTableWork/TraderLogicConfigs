@@ -1,0 +1,23 @@
+{
+  "baseline": 57.85,
+  "stepDelta": 0.08,
+  "executionLimitOffset": 1.6,
+  "stateTransitionThreshold": 0.02,
+  "orderQuantityInUSD": 1000,
+  "orderQuantity": 17.28608,
+  "stressObjective": "High-frequency LTC stress run: 5-minute all-hours AGGTRADES bars, tight 0.08 USD steps, and 1000 USD order notional. Step-1 gross round-trip target is about 2.76 USD before fees at a 58 USD LTC price, close to the modeled 3.60 USD IBKR round-trip fee.",
+  "contract": {
+    "symbol": "LTC",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "LTC",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_LTC_TWS_PostgreSQL",
+  "ledgerContextCollection": "ledgerContext"
+}

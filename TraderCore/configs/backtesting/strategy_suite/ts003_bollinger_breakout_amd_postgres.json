@@ -1,0 +1,22 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-003",
+  "middleWindow": 20,
+  "trendWindow": 50,
+  "bandStddev": 2,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "AMD",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "AMD",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/TECH_TS003_AMD",
+  "ledgerContextCollection": "TECH_TS003_AMD_context"
+}

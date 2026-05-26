@@ -1,0 +1,22 @@
+{
+  "baseline": 152.94,
+  "stepDelta": 0.07,
+  "executionLimitOffset": 35,
+  "stateTransitionThreshold": 0.02,
+  "orderQuantityInUSD": 2000.0,
+  "orderQuantity": 13,
+  "contract": {
+    "symbol": "XOM",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "XOM",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_XOM_TWS_backtest",
+  "ledgerContextCollection": "CSO_XOM_TWS_backtest_context"
+}

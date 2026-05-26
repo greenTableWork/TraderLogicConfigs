@@ -1,0 +1,22 @@
+{
+  "baseline": 270.49,
+  "stepDelta": 0.13,
+  "executionLimitOffset": 65,
+  "stateTransitionThreshold": 0.03,
+  "orderQuantityInUSD": 2000.0,
+  "orderQuantity": 7,
+  "contract": {
+    "symbol": "AMZN",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "AMZN",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_AMZN_TWS_backtest",
+  "ledgerContextCollection": "CSO_AMZN_TWS_backtest_context"
+}

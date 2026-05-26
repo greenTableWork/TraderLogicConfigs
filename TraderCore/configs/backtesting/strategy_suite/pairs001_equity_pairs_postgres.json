@@ -1,0 +1,63 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "PAIRS-001",
+  "portfolioNotional": 10000,
+  "maxGrossExposure": 1,
+  "pairWindow": 12,
+  "pairEntryZ": 1,
+  "pairExitZ": 0.25,
+  "contracts": [
+    {
+      "symbol": "GOOGL",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    },
+    {
+      "symbol": "GOOG",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    },
+    {
+      "symbol": "AMD",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    },
+    {
+      "symbol": "NVDA",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    },
+    {
+      "symbol": "AAPL",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    },
+    {
+      "symbol": "MSFT",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    }
+  ],
+  "pairs": [
+    {
+      "left": "GOOGL",
+      "right": "GOOG"
+    },
+    {
+      "left": "AMD",
+      "right": "NVDA"
+    },
+    {
+      "left": "AAPL",
+      "right": "MSFT"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/PAIRS001_EQUITY_PAIRS",
+  "ledgerContextCollection": "PAIRS001_EQUITY_PAIRS_context"
+}

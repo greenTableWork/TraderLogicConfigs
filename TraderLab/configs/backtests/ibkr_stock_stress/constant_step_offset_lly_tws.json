@@ -1,0 +1,22 @@
+{
+  "baseline": 1015.27,
+  "stepDelta": 0.48,
+  "executionLimitOffset": 240,
+  "stateTransitionThreshold": 0.12,
+  "orderQuantityInUSD": 2000.0,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "LLY",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "LLY",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_LLY_TWS_backtest",
+  "ledgerContextCollection": "CSO_LLY_TWS_backtest_context"
+}

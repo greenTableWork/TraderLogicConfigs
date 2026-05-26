@@ -1,0 +1,92 @@
+{
+  "postgresTable": "historical_bars",
+  "barSize": "1 min",
+  "whatToShow": "TRADES",
+  "useRth": 1,
+  "exchange": "BACKTESTER",
+  "secType": "STOCK",
+  "currency": "USD",
+  "feeStructure": "data/fee_structures/ibkr_tws_stock_fees.json",
+  "strategies": [
+    {
+      "symbol": "NVDA",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_nvda_tws.json"
+    },
+    {
+      "symbol": "AAPL",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_aapl_tws.json"
+    },
+    {
+      "symbol": "MSFT",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_msft_tws.json"
+    },
+    {
+      "symbol": "AMZN",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_amzn_tws.json"
+    },
+    {
+      "symbol": "GOOGL",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_googl_tws.json"
+    },
+    {
+      "symbol": "AVGO",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_avgo_tws.json"
+    },
+    {
+      "symbol": "GOOG",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_goog_tws.json"
+    },
+    {
+      "symbol": "META",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_meta_tws.json"
+    },
+    {
+      "symbol": "TSLA",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_tsla_tws.json"
+    },
+    {
+      "symbol": "BRK.B",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_brk_b_tws.json"
+    },
+    {
+      "symbol": "JPM",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_jpm_tws.json"
+    },
+    {
+      "symbol": "LLY",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_lly_tws.json"
+    },
+    {
+      "symbol": "MU",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_mu_tws.json"
+    },
+    {
+      "symbol": "AMD",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_amd_tws.json"
+    },
+    {
+      "symbol": "XOM",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_xom_tws.json"
+    },
+    {
+      "symbol": "WMT",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_wmt_tws.json"
+    },
+    {
+      "symbol": "V",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_v_tws.json"
+    },
+    {
+      "symbol": "JNJ",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_jnj_tws.json"
+    },
+    {
+      "symbol": "INTC",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_intc_tws.json"
+    },
+    {
+      "symbol": "COST",
+      "strategyConfig": "TraderLogicConfigs/TraderLab/configs/backtests/ibkr_stock_stress/constant_step_offset_cost_tws.json"
+    }
+  ]
+}

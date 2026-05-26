@@ -1,0 +1,21 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-004",
+  "openingRangeBars": 15,
+  "useAtrStop": false,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "AAPL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "AAPL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/TECH_TS004_AAPL",
+  "ledgerContextCollection": "TECH_TS004_AAPL_context"
+}

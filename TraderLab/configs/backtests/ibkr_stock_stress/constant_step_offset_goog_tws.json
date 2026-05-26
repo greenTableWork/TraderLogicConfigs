@@ -1,0 +1,22 @@
+{
+  "baseline": 398.38,
+  "stepDelta": 0.19,
+  "executionLimitOffset": 95,
+  "stateTransitionThreshold": 0.05,
+  "orderQuantityInUSD": 2000.0,
+  "orderQuantity": 5,
+  "contract": {
+    "symbol": "GOOG",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "GOOG",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_GOOG_TWS_backtest",
+  "ledgerContextCollection": "CSO_GOOG_TWS_backtest_context"
+}

@@ -1,0 +1,72 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "QS-001",
+  "portfolioNotional": 10000,
+  "targetVolatility": 0.1,
+  "maxGrossExposure": 1,
+  "volatilityWindow": 8,
+  "contracts": [
+    {
+      "symbol": "AAPL",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    },
+    {
+      "symbol": "AMD",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    },
+    {
+      "symbol": "AMZN",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    },
+    {
+      "symbol": "AVGO",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    },
+    {
+      "symbol": "GOOG",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    },
+    {
+      "symbol": "GOOGL",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    },
+    {
+      "symbol": "META",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    },
+    {
+      "symbol": "MSFT",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    },
+    {
+      "symbol": "NVDA",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    },
+    {
+      "symbol": "TSLA",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/QS001_VOL_TARGET",
+  "ledgerContextCollection": "QS001_VOL_TARGET_context"
+}

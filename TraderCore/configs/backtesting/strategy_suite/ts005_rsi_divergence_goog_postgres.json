@@ -1,0 +1,21 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-005",
+  "rsiPeriod": 14,
+  "divergenceLookback": 8,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "GOOG",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "GOOG",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/TECH_TS005_GOOG",
+  "ledgerContextCollection": "TECH_TS005_GOOG_context"
+}

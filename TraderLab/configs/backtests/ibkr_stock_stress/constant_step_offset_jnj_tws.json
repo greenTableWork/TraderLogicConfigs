@@ -1,0 +1,22 @@
+{
+  "baseline": 232.57,
+  "stepDelta": 0.11,
+  "executionLimitOffset": 55,
+  "stateTransitionThreshold": 0.03,
+  "orderQuantityInUSD": 2000.0,
+  "orderQuantity": 8,
+  "contract": {
+    "symbol": "JNJ",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "JNJ",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_JNJ_TWS_backtest",
+  "ledgerContextCollection": "CSO_JNJ_TWS_backtest_context"
+}

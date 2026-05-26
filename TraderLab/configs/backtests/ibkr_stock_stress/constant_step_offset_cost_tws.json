@@ -1,0 +1,22 @@
+{
+  "baseline": 1038.21,
+  "stepDelta": 0.5,
+  "executionLimitOffset": 250,
+  "stateTransitionThreshold": 0.13,
+  "orderQuantityInUSD": 2000.0,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "COST",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "COST",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_COST_TWS_backtest",
+  "ledgerContextCollection": "CSO_COST_TWS_backtest_context"
+}

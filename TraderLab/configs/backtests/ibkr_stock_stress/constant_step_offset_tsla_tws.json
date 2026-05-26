@@ -1,0 +1,22 @@
+{
+  "baseline": 450.06,
+  "stepDelta": 0.22,
+  "executionLimitOffset": 110,
+  "stateTransitionThreshold": 0.06,
+  "orderQuantityInUSD": 2000.0,
+  "orderQuantity": 4,
+  "contract": {
+    "symbol": "TSLA",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "TSLA",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_TSLA_TWS_backtest",
+  "ledgerContextCollection": "CSO_TSLA_TWS_backtest_context"
+}

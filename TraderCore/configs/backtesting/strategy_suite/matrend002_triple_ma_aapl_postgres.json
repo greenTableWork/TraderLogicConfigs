@@ -1,0 +1,23 @@
+{
+  "strategy_type": "MovingAverageCross",
+  "trendMode": "MATREND-002",
+  "fastWindow": 3,
+  "middleWindow": 8,
+  "slowWindow": 20,
+  "orderQuantityInUSD": 100.0,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "AAPL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "AAPL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/MATREND002_TRIPLE_AAPL",
+  "ledgerContextCollection": "MATREND002_TRIPLE_AAPL_context"
+}

@@ -1,0 +1,22 @@
+{
+  "baseline": 341.49,
+  "stepDelta": 2,
+  "executionLimitOffset": 100,
+  "stateTransitionThreshold": 0.5,
+  "orderQuantityInUSD": 100,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "AMD",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "AMD",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_AMD_TWS_PostgreSQL",
+  "ledgerContextCollection": "ledgerContext"
+}

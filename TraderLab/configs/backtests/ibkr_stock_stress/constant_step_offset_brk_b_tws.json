@@ -1,0 +1,22 @@
+{
+  "baseline": 487.07,
+  "stepDelta": 0.24,
+  "executionLimitOffset": 120,
+  "stateTransitionThreshold": 0.06,
+  "orderQuantityInUSD": 2000.0,
+  "orderQuantity": 4,
+  "contract": {
+    "symbol": "BRK.B",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "BRK.B",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_BRK_B_TWS_backtest",
+  "ledgerContextCollection": "CSO_BRK_B_TWS_backtest_context"
+}
