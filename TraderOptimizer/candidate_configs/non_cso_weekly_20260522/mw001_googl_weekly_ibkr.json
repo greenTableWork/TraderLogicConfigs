@@ -1,0 +1,22 @@
+{
+  "strategy_type": "MovingAverageCross",
+  "trendMode": "MW-001",
+  "fastWindow": 2,
+  "slowWindow": 6,
+  "orderQuantityInUSD": 50000.0,
+  "orderQuantity": 131,
+  "contract": {
+    "symbol": "GOOGL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "GOOGL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/MW001_GOOGL_WEEKLY_IBKR",
+  "ledgerContextCollection": "MW001_GOOGL_WEEKLY_IBKR_context"
+}

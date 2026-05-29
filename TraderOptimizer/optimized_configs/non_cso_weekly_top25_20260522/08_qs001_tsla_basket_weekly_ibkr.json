@@ -1,0 +1,49 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "QS-001",
+  "portfolioNotional": 100000.0,
+  "targetVolatility": 0.25,
+  "maxGrossExposure": 1.25,
+  "volatilityWindow": 6,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {
+      "symbol": "TSLA",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "BRK.B",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "JPM",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "LLY",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "MU",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "AMD",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/QS001_TSLA_BASKET_WEEKLY_IBKR",
+  "ledgerContextCollection": "QS001_TSLA_BASKET_WEEKLY_IBKR_context"
+}

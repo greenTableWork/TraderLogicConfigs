@@ -1,0 +1,22 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-003",
+  "middleWindow": 10,
+  "trendWindow": 20,
+  "bandStddev": 1.0,
+  "orderQuantity": 232,
+  "contract": {
+    "symbol": "NVDA",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "NVDA",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/TS003_NVDA_WEEKLY_IBKR",
+  "ledgerContextCollection": "TS003_NVDA_WEEKLY_IBKR_context"
+}

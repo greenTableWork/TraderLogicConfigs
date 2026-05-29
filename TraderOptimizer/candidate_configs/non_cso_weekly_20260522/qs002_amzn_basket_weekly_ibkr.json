@@ -1,0 +1,49 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "QS-002",
+  "portfolioNotional": 100000.0,
+  "maxGrossExposure": 1.25,
+  "momentumLookback": 3,
+  "momentumLegSize": 2,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {
+      "symbol": "AMZN",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "GOOGL",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "AVGO",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "GOOG",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "META",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "TSLA",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/QS002_AMZN_BASKET_WEEKLY_IBKR",
+  "ledgerContextCollection": "QS002_AMZN_BASKET_WEEKLY_IBKR_context"
+}

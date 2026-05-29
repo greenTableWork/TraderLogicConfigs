@@ -1,0 +1,64 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "PAIRS-001",
+  "portfolioNotional": 100000.0,
+  "maxGrossExposure": 1.25,
+  "pairWindow": 8,
+  "pairEntryZ": 0.8,
+  "pairExitZ": 0.2,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {
+      "symbol": "COST",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "NVDA",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "AAPL",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "MSFT",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "AMZN",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "GOOGL",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "pairs": [
+    {
+      "left": "COST",
+      "right": "NVDA"
+    },
+    {
+      "left": "AAPL",
+      "right": "MSFT"
+    },
+    {
+      "left": "AMZN",
+      "right": "GOOGL"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/PAIRS001_COST_BASKET_WEEKLY_IBKR",
+  "ledgerContextCollection": "PAIRS001_COST_BASKET_WEEKLY_IBKR_context"
+}

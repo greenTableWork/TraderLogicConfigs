@@ -1,0 +1,64 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "PAIRS-001",
+  "portfolioNotional": 100000.0,
+  "maxGrossExposure": 1.25,
+  "pairWindow": 8,
+  "pairEntryZ": 0.8,
+  "pairExitZ": 0.2,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {
+      "symbol": "AMD",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "XOM",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "WMT",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "V",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "JNJ",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "INTC",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "pairs": [
+    {
+      "left": "AMD",
+      "right": "XOM"
+    },
+    {
+      "left": "WMT",
+      "right": "V"
+    },
+    {
+      "left": "JNJ",
+      "right": "INTC"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/PAIRS001_AMD_BASKET_WEEKLY_IBKR",
+  "ledgerContextCollection": "PAIRS001_AMD_BASKET_WEEKLY_IBKR_context"
+}

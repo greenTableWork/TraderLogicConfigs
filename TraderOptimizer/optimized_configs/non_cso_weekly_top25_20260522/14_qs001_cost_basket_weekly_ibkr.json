@@ -1,0 +1,49 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "QS-001",
+  "portfolioNotional": 100000.0,
+  "targetVolatility": 0.25,
+  "maxGrossExposure": 1.25,
+  "volatilityWindow": 6,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {
+      "symbol": "COST",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "NVDA",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "AAPL",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "MSFT",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "AMZN",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "GOOGL",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/QS001_COST_BASKET_WEEKLY_IBKR",
+  "ledgerContextCollection": "QS001_COST_BASKET_WEEKLY_IBKR_context"
+}

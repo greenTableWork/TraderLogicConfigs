@@ -1,0 +1,64 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "PAIRS-001",
+  "portfolioNotional": 100000.0,
+  "maxGrossExposure": 1.25,
+  "pairWindow": 8,
+  "pairEntryZ": 0.8,
+  "pairExitZ": 0.2,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {
+      "symbol": "GOOG",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "META",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "TSLA",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "BRK.B",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "JPM",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "LLY",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "pairs": [
+    {
+      "left": "GOOG",
+      "right": "META"
+    },
+    {
+      "left": "TSLA",
+      "right": "BRK.B"
+    },
+    {
+      "left": "JPM",
+      "right": "LLY"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/PAIRS001_GOOG_BASKET_WEEKLY_IBKR",
+  "ledgerContextCollection": "PAIRS001_GOOG_BASKET_WEEKLY_IBKR_context"
+}

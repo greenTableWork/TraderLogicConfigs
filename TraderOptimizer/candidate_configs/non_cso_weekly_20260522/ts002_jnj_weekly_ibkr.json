@@ -1,0 +1,21 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-002",
+  "fastWindow": 3,
+  "slowWindow": 9,
+  "orderQuantity": 213,
+  "contract": {
+    "symbol": "JNJ",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "JNJ",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/TS002_JNJ_WEEKLY_IBKR",
+  "ledgerContextCollection": "TS002_JNJ_WEEKLY_IBKR_context"
+}

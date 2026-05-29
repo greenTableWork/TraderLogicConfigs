@@ -1,0 +1,49 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "QS-001",
+  "portfolioNotional": 100000.0,
+  "targetVolatility": 0.25,
+  "maxGrossExposure": 1.25,
+  "volatilityWindow": 6,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {
+      "symbol": "MU",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "AMD",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "XOM",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "WMT",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "V",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "JNJ",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/QS001_MU_BASKET_WEEKLY_IBKR",
+  "ledgerContextCollection": "QS001_MU_BASKET_WEEKLY_IBKR_context"
+}

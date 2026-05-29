@@ -1,0 +1,22 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-003",
+  "middleWindow": 10,
+  "trendWindow": 20,
+  "bandStddev": 1.0,
+  "orderQuantity": 162,
+  "contract": {
+    "symbol": "AAPL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "AAPL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/TS003_AAPL_WEEKLY_IBKR",
+  "ledgerContextCollection": "TS003_AAPL_WEEKLY_IBKR_context"
+}

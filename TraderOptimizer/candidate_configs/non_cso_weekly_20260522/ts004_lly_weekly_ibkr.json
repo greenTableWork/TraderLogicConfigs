@@ -1,0 +1,22 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-004",
+  "openingRangeBars": 5,
+  "useAtrStop": false,
+  "atrWindow": 14,
+  "orderQuantity": 47,
+  "contract": {
+    "symbol": "LLY",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "LLY",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/TS004_LLY_WEEKLY_IBKR",
+  "ledgerContextCollection": "TS004_LLY_WEEKLY_IBKR_context"
+}

@@ -1,0 +1,23 @@
+{
+  "strategy_type": "MovingAverageCross",
+  "trendMode": "MATREND-002",
+  "fastWindow": 2,
+  "middleWindow": 5,
+  "slowWindow": 13,
+  "orderQuantityInUSD": 50000.0,
+  "orderQuantity": 152,
+  "contract": {
+    "symbol": "V",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "V",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/MATREND002_V_WEEKLY_IBKR",
+  "ledgerContextCollection": "MATREND002_V_WEEKLY_IBKR_context"
+}

@@ -1,0 +1,22 @@
+{
+  "strategy_type": "MovingAverageCross",
+  "trendMode": "MATREND-001",
+  "fastWindow": 1,
+  "slowWindow": 8,
+  "orderQuantityInUSD": 50000.0,
+  "orderQuantity": 232,
+  "contract": {
+    "symbol": "NVDA",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "NVDA",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/MATREND001_NVDA_WEEKLY_IBKR",
+  "ledgerContextCollection": "MATREND001_NVDA_WEEKLY_IBKR_context"
+}

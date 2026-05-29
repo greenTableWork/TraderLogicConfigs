@@ -1,0 +1,23 @@
+{
+  "strategy_type": "MovingAverageCross",
+  "trendMode": "MATREND-002",
+  "fastWindow": 2,
+  "middleWindow": 5,
+  "slowWindow": 13,
+  "orderQuantityInUSD": 50000.0,
+  "orderQuantity": 162,
+  "contract": {
+    "symbol": "AAPL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "AAPL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/MATREND002_AAPL_WEEKLY_IBKR",
+  "ledgerContextCollection": "MATREND002_AAPL_WEEKLY_IBKR_context"
+}

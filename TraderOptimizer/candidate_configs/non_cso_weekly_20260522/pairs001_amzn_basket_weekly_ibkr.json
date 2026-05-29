@@ -1,0 +1,64 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "PAIRS-001",
+  "portfolioNotional": 100000.0,
+  "maxGrossExposure": 1.25,
+  "pairWindow": 8,
+  "pairEntryZ": 0.8,
+  "pairExitZ": 0.2,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {
+      "symbol": "AMZN",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "GOOGL",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "AVGO",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "GOOG",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "META",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "TSLA",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "pairs": [
+    {
+      "left": "AMZN",
+      "right": "GOOGL"
+    },
+    {
+      "left": "AVGO",
+      "right": "GOOG"
+    },
+    {
+      "left": "META",
+      "right": "TSLA"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/PAIRS001_AMZN_BASKET_WEEKLY_IBKR",
+  "ledgerContextCollection": "PAIRS001_AMZN_BASKET_WEEKLY_IBKR_context"
+}

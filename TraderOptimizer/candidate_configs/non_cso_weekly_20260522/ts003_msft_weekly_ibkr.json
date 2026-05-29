@@ -1,0 +1,22 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-003",
+  "middleWindow": 10,
+  "trendWindow": 20,
+  "bandStddev": 1.0,
+  "orderQuantity": 119,
+  "contract": {
+    "symbol": "MSFT",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "MSFT",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/TS003_MSFT_WEEKLY_IBKR",
+  "ledgerContextCollection": "TS003_MSFT_WEEKLY_IBKR_context"
+}
