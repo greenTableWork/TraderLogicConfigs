@@ -1,0 +1,21 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "DONCHIAN-001",
+  "donchianWindow": 20,
+  "entryMode": "breakout",
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "MSFT",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "MSFT",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/TECH_DONCHIAN001_MSFT",
+  "ledgerContextCollection": "TECH_DONCHIAN001_MSFT_context"
+}

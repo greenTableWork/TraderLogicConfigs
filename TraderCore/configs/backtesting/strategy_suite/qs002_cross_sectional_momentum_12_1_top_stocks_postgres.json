@@ -1,0 +1,27 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "QS-002",
+  "portfolioNotional": 10000.0,
+  "maxGrossExposure": 1.0,
+  "positioning": "long_short",
+  "shortLegPolicy": "short_bottom_ranked_symbols",
+  "momentumLookback": 12,
+  "momentumSkipPeriods": 1,
+  "momentumLegQuantile": 0.3,
+  "momentumWeighting": "equal",
+  "momentumRebalanceInterval": 1,
+  "contracts": [
+    {"symbol": "AAPL", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "AMD", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "AMZN", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "AVGO", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "GOOG", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "GOOGL", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "META", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "MSFT", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "NVDA", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "TSLA", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"}
+  ],
+  "ledgerPath": "data/TraderLedger/QS002_XSMOM_12_1_TOP_STOCKS",
+  "ledgerContextCollection": "QS002_XSMOM_12_1_TOP_STOCKS_context"
+}

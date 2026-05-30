@@ -1,0 +1,28 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "REGIME-001",
+  "portfolioNotional": 50000.0,
+  "maxGrossExposure": 1.0,
+  "contracts": [
+    {"symbol": "AAPL", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"}
+  ],
+  "targetWeights": [
+    {"symbol": "AAPL", "weight": 1.0}
+  ],
+  "defaultRegimeExposure": 0.50,
+  "regimeExposures": [
+    {"regimeLabel": 1, "exposure": 0.35},
+    {"regimeLabel": 2, "exposure": 0.80}
+  ],
+  "regimeSchedule": [
+    {"validFromUtc": "2026-02-20T00:00:00+00:00", "validToUtc": "2026-04-17T00:00:00+00:00", "regimeLabel": 2},
+    {"validFromUtc": "2026-02-27T00:00:00+00:00", "validToUtc": "2026-04-24T00:00:00+00:00", "regimeLabel": 1},
+    {"validFromUtc": "2026-03-06T00:00:00+00:00", "validToUtc": "2026-05-01T00:00:00+00:00", "regimeLabel": 2},
+    {"validFromUtc": "2026-03-13T00:00:00+00:00", "validToUtc": "2026-05-08T00:00:00+00:00", "regimeLabel": 2},
+    {"validFromUtc": "2026-03-20T00:00:00+00:00", "validToUtc": "2026-05-15T00:00:00+00:00", "regimeLabel": 2}
+  ],
+  "researchArtifact": "TraderLab codex/strategy-wasserstein-regime research/regime_allocation/exports/spy_proxy_aapl_daily/tradercore_regime_schedule.json",
+  "researchStatus": "aapl_proxy_until_spy_daily_history_available",
+  "ledgerPath": "data/TraderLedger/REGIME001_AAPL_PROXY",
+  "ledgerContextCollection": "REGIME001_AAPL_PROXY_context"
+}

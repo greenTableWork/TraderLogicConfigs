@@ -1,0 +1,20 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "DISP-001",
+  "portfolioNotional": 50000.0,
+  "maxGrossExposure": 0.50,
+  "dispersionLookback": 20,
+  "volatilityPeriodsPerYear": 3276.0,
+  "dispersionThreshold": 0.0,
+  "dispersionTargetGross": 0.50,
+  "dispersionDirection": 1.0,
+  "contracts": [
+    {"symbol": "AAPL", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "MSFT", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "NVDA", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"}
+  ],
+  "researchArtifact": "TraderLab codex/strategy-dispersion-vol research/dispersion_trading/fixtures/synthetic_spx_dispersion.json",
+  "researchStatus": "realized_dispersion_proxy_until_option_history_available",
+  "ledgerPath": "data/TraderLedger/DISP001_REALIZED_PROXY",
+  "ledgerContextCollection": "DISP001_REALIZED_PROXY_context"
+}

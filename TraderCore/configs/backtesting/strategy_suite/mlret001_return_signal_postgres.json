@@ -1,0 +1,19 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "MLRET-001",
+  "portfolioNotional": 50000.0,
+  "maxGrossExposure": 1.0,
+  "contracts": [
+    {"symbol": "AAPL", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "MSFT", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "NVDA", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"}
+  ],
+  "targetWeights": [
+    {"symbol": "AAPL", "weight": 0.062197447353539256},
+    {"symbol": "MSFT", "weight": -0.17188603068342992},
+    {"symbol": "NVDA", "weight": 0.7659165219630308}
+  ],
+  "researchArtifact": "TraderLab codex/strategy-ml-return-signals research/generated/ml_return_signal/mlret001_smoke/target_weights.csv",
+  "ledgerPath": "data/TraderLedger/MLRET001_RETURN_SIGNAL",
+  "ledgerContextCollection": "MLRET001_RETURN_SIGNAL_context"
+}

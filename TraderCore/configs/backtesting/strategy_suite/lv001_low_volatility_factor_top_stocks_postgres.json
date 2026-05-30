@@ -1,0 +1,23 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "LV-001",
+  "portfolioNotional": 10000.0,
+  "maxGrossExposure": 1.0,
+  "volatilityPeriodsPerYear": 3276.0,
+  "lowVolatilityLookback": 8,
+  "lowVolatilityLegSize": 3,
+  "contracts": [
+    {"symbol": "AAPL", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "AMD", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "AMZN", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "AVGO", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "GOOG", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "GOOGL", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "META", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "MSFT", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "NVDA", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "TSLA", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"}
+  ],
+  "ledgerPath": "data/TraderLedger/LV001_LOW_VOL_FACTOR",
+  "ledgerContextCollection": "LV001_LOW_VOL_FACTOR_context"
+}

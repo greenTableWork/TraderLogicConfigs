@@ -1,0 +1,29 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "TSMOM-001",
+  "portfolioNotional": 10000.0,
+  "maxGrossExposure": 1.0,
+  "tsmomLookback": 12,
+  "tsmomSkip": 1,
+  "tsmomHoldingPeriod": 5,
+  "tsmomRebalanceInterval": 5,
+  "tsmomVolatilityWindow": 12,
+  "tsmomVolatilityTarget": 0.10,
+  "tsmomSizingPolicy": "vol_target",
+  "tsmomPositionPolicy": "long_flat",
+  "contracts": [
+    {"symbol": "AAPL", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "AMD", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "AMZN", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "AVGO", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "GOOG", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "GOOGL", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "META", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "MSFT", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "NVDA", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "TSLA", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"}
+  ],
+  "researchNotes": "Equity proxy config for TSMOM-001. Local stock bars are not futures excess returns, so this should be read as implementation plumbing and proxy behavior only.",
+  "ledgerPath": "data/TraderLedger/TSMOM001_TIME_SERIES_MOMENTUM_PROXY",
+  "ledgerContextCollection": "TSMOM001_TIME_SERIES_MOMENTUM_PROXY_context"
+}

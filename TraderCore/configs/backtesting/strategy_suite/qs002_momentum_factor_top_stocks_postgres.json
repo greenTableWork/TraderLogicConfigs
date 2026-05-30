@@ -4,7 +4,10 @@
   "portfolioNotional": 10000,
   "maxGrossExposure": 1,
   "momentumLookback": 2,
+  "momentumSkipPeriods": 0,
   "momentumLegSize": 3,
+  "momentumWeighting": "equal",
+  "momentumRebalanceInterval": 1,
   "contracts": [
     {
       "symbol": "AAPL",

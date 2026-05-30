@@ -4,7 +4,11 @@
   "portfolioNotional": 10000,
   "targetVolatility": 0.1,
   "maxGrossExposure": 1,
-  "volatilityWindow": 8,
+  "realizedVolatilityWindow": 8,
+  "volatilityPeriodsPerYear": 3276.0,
+  "minVolatilityExposure": 0.25,
+  "maxVolatilityExposure": 1.0,
+  "fallbackVolatilityExposure": 0.50,
   "contracts": [
     {
       "symbol": "AAPL",

@@ -1,0 +1,22 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "MULTIBAG-001",
+  "portfolioNotional": 50000.0,
+  "maxGrossExposure": 1.0,
+  "contracts": [
+    {"symbol": "ACME", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "BETA", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "GAP", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "MEGA", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"}
+  ],
+  "targetWeights": [
+    {"symbol": "ACME", "weight": 0.641811},
+    {"symbol": "BETA", "weight": 0.175568},
+    {"symbol": "GAP", "weight": 0.127671},
+    {"symbol": "MEGA", "weight": 0.054949}
+  ],
+  "researchArtifact": "TraderLab codex/strategy-multibagger-screen research/multibagger/generated/target_weights.csv",
+  "researchStatus": "synthetic_fundamentals_fixture",
+  "ledgerPath": "data/TraderLedger/MULTIBAG001_SCREEN",
+  "ledgerContextCollection": "MULTIBAG001_SCREEN_context"
+}

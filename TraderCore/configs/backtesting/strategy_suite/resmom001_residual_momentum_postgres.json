@@ -1,0 +1,33 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "RESMOM-001",
+  "portfolioNotional": 50000.0,
+  "maxGrossExposure": 1.0,
+  "contracts": [
+    {"symbol": "MU", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "JNJ", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "AMD", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "GOOGL", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "XOM", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "META", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "COST", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "TSLA", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "V", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "BRK.B", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"}
+  ],
+  "targetWeights": [
+    {"symbol": "MU", "weight": 0.10},
+    {"symbol": "JNJ", "weight": 0.10},
+    {"symbol": "AMD", "weight": 0.10},
+    {"symbol": "GOOGL", "weight": 0.10},
+    {"symbol": "XOM", "weight": 0.10},
+    {"symbol": "META", "weight": -0.10},
+    {"symbol": "COST", "weight": -0.10},
+    {"symbol": "TSLA", "weight": -0.10},
+    {"symbol": "V", "weight": -0.10},
+    {"symbol": "BRK.B", "weight": -0.10}
+  ],
+  "researchArtifact": "TraderLab codex/strategy-residual-momentum research/residual_momentum/outputs/residual_momentum_targets.json",
+  "ledgerPath": "data/TraderLedger/RESMOM001_RESIDUAL_MOMENTUM",
+  "ledgerContextCollection": "RESMOM001_RESIDUAL_MOMENTUM_context"
+}

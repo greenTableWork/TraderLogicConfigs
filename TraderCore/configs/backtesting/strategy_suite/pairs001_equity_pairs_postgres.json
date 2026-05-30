@@ -3,6 +3,8 @@
   "allocation_type": "PAIRS-001",
   "portfolioNotional": 10000,
   "maxGrossExposure": 1,
+  "pairSelection": "precomputed",
+  "pairDiagnosticsPath": "data/TraderLedger/PAIRS001_EQUITY_PAIRS_diagnostics.csv",
   "pairWindow": 12,
   "pairEntryZ": 1,
   "pairExitZ": 0.25,
@@ -47,15 +49,18 @@
   "pairs": [
     {
       "left": "GOOGL",
-      "right": "GOOG"
+      "right": "GOOG",
+      "label": "Alphabet share classes"
     },
     {
       "left": "AMD",
-      "right": "NVDA"
+      "right": "NVDA",
+      "label": "Semiconductor GPU peers"
     },
     {
       "left": "AAPL",
-      "right": "MSFT"
+      "right": "MSFT",
+      "label": "Mega-cap software hardware"
     }
   ],
   "ledgerPath": "data/TraderLedger/PAIRS001_EQUITY_PAIRS",

@@ -1,0 +1,20 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "IVRV-001",
+  "portfolioNotional": 50000.0,
+  "maxGrossExposure": 0.25,
+  "realizedVolatilityWindow": 20,
+  "volatilityPeriodsPerYear": 252.0,
+  "impliedVolatility": 0.262,
+  "buyVolRatio": 0.90,
+  "sellVolRatio": 1.15,
+  "buyVolWeight": 0.25,
+  "sellVolWeight": -0.25,
+  "contracts": [
+    {"symbol": "AAPL", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"}
+  ],
+  "researchArtifact": "TraderLab codex/strategy-iv-realized-vol research/iv_realized_vol/fixtures/aapl_option_chain_2026-05-15.json",
+  "researchStatus": "underlying_proxy_until_option_history_available",
+  "ledgerPath": "data/TraderLedger/IVRV001_AAPL_PROXY",
+  "ledgerContextCollection": "IVRV001_AAPL_PROXY_context"
+}
