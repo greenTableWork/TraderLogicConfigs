@@ -1,0 +1,23 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-003",
+  "middleWindow": 45,
+  "trendWindow": 174,
+  "bandStddev": 0.5017924291116006,
+  "orderQuantity": 62.0,
+  "contract": {
+    "symbol": "AVGO",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "AVGO",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/ts003_avgo_weekly_30k_ibkr_OPTIMIZED",
+  "ledgerContextCollection": "ts003_avgo_weekly_30k_ibkr_OPTIMIZED_context",
+  "orderQuantityInUSD": 30000.0
+}

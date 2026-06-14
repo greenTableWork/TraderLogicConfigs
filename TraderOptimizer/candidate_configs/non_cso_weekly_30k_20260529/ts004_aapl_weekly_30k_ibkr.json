@@ -1,0 +1,23 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-004",
+  "openingRangeBars": 5,
+  "useAtrStop": false,
+  "atrWindow": 14,
+  "orderQuantity": 96,
+  "contract": {
+    "symbol": "AAPL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "AAPL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/TS004_AAPL_WEEKLY_30K_IBKR",
+  "ledgerContextCollection": "TS004_AAPL_WEEKLY_30K_IBKR_context",
+  "orderQuantityInUSD": 30000.0
+}

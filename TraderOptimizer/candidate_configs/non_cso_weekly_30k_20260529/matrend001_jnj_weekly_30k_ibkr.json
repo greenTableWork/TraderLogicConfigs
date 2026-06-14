@@ -1,0 +1,22 @@
+{
+  "strategy_type": "MovingAverageCross",
+  "trendMode": "MATREND-001",
+  "fastWindow": 1,
+  "slowWindow": 8,
+  "orderQuantityInUSD": 30000.0,
+  "orderQuantity": 128,
+  "contract": {
+    "symbol": "JNJ",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "JNJ",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/MATREND001_JNJ_WEEKLY_30K_IBKR",
+  "ledgerContextCollection": "MATREND001_JNJ_WEEKLY_30K_IBKR_context"
+}

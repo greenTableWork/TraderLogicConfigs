@@ -1,0 +1,202 @@
+{
+  "generated_at": "2026-05-30T00:00:00-07:00",
+  "candidate_count": 20,
+  "budget_usd": 30000.0,
+  "data_profile": "1 min AGGTRADES rth=0",
+  "optimization_window": {
+    "start_utc": "2026-05-26T13:30:00+00:00",
+    "end_utc": "2026-05-29T19:59:50+00:00"
+  },
+  "symbols": [
+    "BTC",
+    "LTC"
+  ],
+  "configs": [
+    {
+      "name": "mw001_btc_weekly_30k_crypto",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "BTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/mw001_btc_weekly_30k_crypto.json"
+    },
+    {
+      "name": "matrend001_btc_weekly_30k_crypto",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "BTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/matrend001_btc_weekly_30k_crypto.json"
+    },
+    {
+      "name": "matrend002_btc_weekly_30k_crypto",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "BTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/matrend002_btc_weekly_30k_crypto.json"
+    },
+    {
+      "name": "ts002_btc_weekly_30k_crypto",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "BTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/ts002_btc_weekly_30k_crypto.json"
+    },
+    {
+      "name": "ts003_btc_weekly_30k_crypto",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "BTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/ts003_btc_weekly_30k_crypto.json"
+    },
+    {
+      "name": "ts004_btc_weekly_30k_crypto",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "BTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/ts004_btc_weekly_30k_crypto.json"
+    },
+    {
+      "name": "ts005_btc_weekly_30k_crypto",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "BTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/ts005_btc_weekly_30k_crypto.json"
+    },
+    {
+      "name": "mw001_ltc_weekly_30k_crypto",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "LTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/mw001_ltc_weekly_30k_crypto.json"
+    },
+    {
+      "name": "matrend001_ltc_weekly_30k_crypto",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "LTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/matrend001_ltc_weekly_30k_crypto.json"
+    },
+    {
+      "name": "matrend002_ltc_weekly_30k_crypto",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "LTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/matrend002_ltc_weekly_30k_crypto.json"
+    },
+    {
+      "name": "ts002_ltc_weekly_30k_crypto",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "LTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/ts002_ltc_weekly_30k_crypto.json"
+    },
+    {
+      "name": "ts003_ltc_weekly_30k_crypto",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "LTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/ts003_ltc_weekly_30k_crypto.json"
+    },
+    {
+      "name": "ts004_ltc_weekly_30k_crypto",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "LTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/ts004_ltc_weekly_30k_crypto.json"
+    },
+    {
+      "name": "ts005_ltc_weekly_30k_crypto",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "LTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/ts005_ltc_weekly_30k_crypto.json"
+    },
+    {
+      "name": "qs001_btc_ltc_basket_weekly_30k_crypto",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "BTC",
+        "LTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/qs001_btc_ltc_basket_weekly_30k_crypto.json"
+    },
+    {
+      "name": "qs002_btc_ltc_basket_weekly_30k_crypto",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "BTC",
+        "LTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/qs002_btc_ltc_basket_weekly_30k_crypto.json"
+    },
+    {
+      "name": "pairs001_btc_ltc_pair_weekly_30k_crypto",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "BTC",
+        "LTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/pairs001_btc_ltc_pair_weekly_30k_crypto.json"
+    },
+    {
+      "name": "qs001_ltc_btc_basket_weekly_30k_crypto",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "LTC",
+        "BTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/qs001_ltc_btc_basket_weekly_30k_crypto.json"
+    },
+    {
+      "name": "qs002_ltc_btc_basket_weekly_30k_crypto",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "LTC",
+        "BTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/qs002_ltc_btc_basket_weekly_30k_crypto.json"
+    },
+    {
+      "name": "pairs001_ltc_btc_pair_weekly_30k_crypto",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "LTC",
+        "BTC"
+      ],
+      "config_path": "TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/crypto_momentum_lab_30k_20260529/pairs001_ltc_btc_pair_weekly_30k_crypto.json"
+    }
+  ]
+}

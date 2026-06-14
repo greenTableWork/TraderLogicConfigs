@@ -1,0 +1,23 @@
+{
+  "strategy_type": "MovingAverageCross",
+  "trendMode": "MATREND-002",
+  "fastWindow": 2,
+  "middleWindow": 5,
+  "slowWindow": 13,
+  "orderQuantityInUSD": 30000.0,
+  "orderQuantity": 571.64634,
+  "contract": {
+    "symbol": "LTC",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "LTC",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/MATREND002_LTC_WEEKLY_30K_CRYPTO",
+  "ledgerContextCollection": "MATREND002_LTC_WEEKLY_30K_CRYPTO_context"
+}

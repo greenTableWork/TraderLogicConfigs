@@ -1,0 +1,22 @@
+{
+  "strategy_type": "MovingAverageCross",
+  "trendMode": "MW-001",
+  "fastWindow": 26,
+  "slowWindow": 116,
+  "orderQuantityInUSD": 20531.97,
+  "orderQuantity": 19.0,
+  "contract": {
+    "symbol": "LLY",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "LLY",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/mw001_lly_weekly_30k_ibkr_OPTIMIZED",
+  "ledgerContextCollection": "mw001_lly_weekly_30k_ibkr_OPTIMIZED_context"
+}

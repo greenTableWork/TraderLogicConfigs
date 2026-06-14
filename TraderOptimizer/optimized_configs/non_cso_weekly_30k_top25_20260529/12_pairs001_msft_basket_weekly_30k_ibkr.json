@@ -1,0 +1,64 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "PAIRS-001",
+  "portfolioNotional": 30000.0,
+  "maxGrossExposure": 1.9458095580310473,
+  "pairWindow": 109,
+  "pairEntryZ": 2.9681094126334986,
+  "pairExitZ": 0.7493128836489503,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {
+      "symbol": "MSFT",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "AMZN",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "GOOGL",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "AVGO",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "GOOG",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "META",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "pairs": [
+    {
+      "left": "MSFT",
+      "right": "AMZN"
+    },
+    {
+      "left": "GOOGL",
+      "right": "AVGO"
+    },
+    {
+      "left": "GOOG",
+      "right": "META"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/pairs001_msft_basket_weekly_30k_ibkr_OPTIMIZED",
+  "ledgerContextCollection": "pairs001_msft_basket_weekly_30k_ibkr_OPTIMIZED_context"
+}

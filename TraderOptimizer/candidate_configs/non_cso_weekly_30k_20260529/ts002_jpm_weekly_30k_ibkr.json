@@ -1,0 +1,22 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-002",
+  "fastWindow": 3,
+  "slowWindow": 9,
+  "orderQuantity": 97,
+  "contract": {
+    "symbol": "JPM",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "JPM",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/TS002_JPM_WEEKLY_30K_IBKR",
+  "ledgerContextCollection": "TS002_JPM_WEEKLY_30K_IBKR_context",
+  "orderQuantityInUSD": 30000.0
+}

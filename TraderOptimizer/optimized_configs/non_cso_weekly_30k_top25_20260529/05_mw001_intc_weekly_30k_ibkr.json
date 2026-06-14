@@ -1,0 +1,22 @@
+{
+  "strategy_type": "MovingAverageCross",
+  "trendMode": "MW-001",
+  "fastWindow": 29,
+  "slowWindow": 62,
+  "orderQuantityInUSD": 22570.0,
+  "orderQuantity": 185.0,
+  "contract": {
+    "symbol": "INTC",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "INTC",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/mw001_intc_weekly_30k_ibkr_OPTIMIZED",
+  "ledgerContextCollection": "mw001_intc_weekly_30k_ibkr_OPTIMIZED_context"
+}

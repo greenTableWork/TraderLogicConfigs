@@ -1,0 +1,22 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-002",
+  "fastWindow": 3,
+  "slowWindow": 9,
+  "orderQuantity": 111,
+  "contract": {
+    "symbol": "AMZN",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "AMZN",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/TS002_AMZN_WEEKLY_30K_IBKR",
+  "ledgerContextCollection": "TS002_AMZN_WEEKLY_30K_IBKR_context",
+  "orderQuantityInUSD": 30000.0
+}

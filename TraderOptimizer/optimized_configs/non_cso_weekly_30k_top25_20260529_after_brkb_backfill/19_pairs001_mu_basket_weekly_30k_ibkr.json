@@ -1,0 +1,64 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "PAIRS-001",
+  "portfolioNotional": 30000.0,
+  "maxGrossExposure": 0.9012552145650452,
+  "pairWindow": 95,
+  "pairEntryZ": 2.820336073335816,
+  "pairExitZ": 0.2986830659782709,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {
+      "symbol": "MU",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "AMD",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "XOM",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "WMT",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "V",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "JNJ",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "pairs": [
+    {
+      "left": "MU",
+      "right": "AMD"
+    },
+    {
+      "left": "XOM",
+      "right": "WMT"
+    },
+    {
+      "left": "V",
+      "right": "JNJ"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/pairs001_mu_basket_weekly_30k_ibkr_OPTIMIZED",
+  "ledgerContextCollection": "pairs001_mu_basket_weekly_30k_ibkr_OPTIMIZED_context"
+}

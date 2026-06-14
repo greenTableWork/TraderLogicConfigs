@@ -1,0 +1,64 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "PAIRS-001",
+  "portfolioNotional": 30000.0,
+  "maxGrossExposure": 1.0,
+  "pairWindow": 109,
+  "pairEntryZ": 2.7935759520064747,
+  "pairExitZ": 0.25523819840014217,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {
+      "symbol": "LLY",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "MU",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "AMD",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "XOM",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "WMT",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "V",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "pairs": [
+    {
+      "left": "LLY",
+      "right": "MU"
+    },
+    {
+      "left": "AMD",
+      "right": "XOM"
+    },
+    {
+      "left": "WMT",
+      "right": "V"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/pairs001_lly_basket_weekly_30k_ibkr_OPTIMIZED",
+  "ledgerContextCollection": "pairs001_lly_basket_weekly_30k_ibkr_OPTIMIZED_context"
+}

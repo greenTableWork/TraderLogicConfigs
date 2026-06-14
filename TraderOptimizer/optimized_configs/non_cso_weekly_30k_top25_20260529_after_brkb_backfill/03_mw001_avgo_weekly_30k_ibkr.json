@@ -1,0 +1,22 @@
+{
+  "strategy_type": "MovingAverageCross",
+  "trendMode": "MW-001",
+  "fastWindow": 15,
+  "slowWindow": 36,
+  "orderQuantityInUSD": 23424.8,
+  "orderQuantity": 56.0,
+  "contract": {
+    "symbol": "AVGO",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "AVGO",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/mw001_avgo_weekly_30k_ibkr_OPTIMIZED",
+  "ledgerContextCollection": "mw001_avgo_weekly_30k_ibkr_OPTIMIZED_context"
+}
