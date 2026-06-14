@@ -1,0 +1,22 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-005",
+  "rsiPeriod": 7,
+  "divergenceLookback": 5,
+  "orderQuantity": 91,
+  "contract": {
+    "symbol": "V",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "V",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/TS005_V_WEEKLY_30K_IBKR",
+  "ledgerContextCollection": "TS005_V_WEEKLY_30K_IBKR_context",
+  "orderQuantityInUSD": 30000.0
+}

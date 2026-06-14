@@ -1,0 +1,49 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "QS-001",
+  "portfolioNotional": 30000.0,
+  "targetVolatility": 0.36937612787653507,
+  "maxGrossExposure": 0.2519269290090258,
+  "volatilityWindow": 52,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {
+      "symbol": "JPM",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "LLY",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "MU",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "AMD",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "XOM",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "WMT",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/qs001_jpm_basket_weekly_30k_ibkr_OPTIMIZED",
+  "ledgerContextCollection": "qs001_jpm_basket_weekly_30k_ibkr_OPTIMIZED_context"
+}

@@ -1,0 +1,2316 @@
+{
+  "report_name": "non_cso_weekly_30k_20260529",
+  "generated_at_utc": "2026-05-31T02:19:53.664342+00:00",
+  "source_template_dir": "TraderOptimizer/candidate_configs/non_cso_weekly_20260522",
+  "candidate_count": 200,
+  "strategy_budget": 30000.0,
+  "scoring_window": {
+    "start_utc": "2026-05-26T13:30:00+00:00",
+    "end_utc": "2026-05-29T19:59:00+00:00"
+  },
+  "bar_size": "1 min",
+  "what_to_show": "TRADES",
+  "use_rth": true,
+  "configs": [
+    {
+      "name": "matrend001_aapl_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "AAPL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_aapl_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_amd_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "AMD"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_amd_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_amzn_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "AMZN"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_amzn_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_avgo_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "AVGO"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_avgo_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_brk_b_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "BRK.B"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_brk_b_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_cost_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "COST"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_cost_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_goog_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "GOOG"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_goog_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_googl_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "GOOGL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_googl_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_intc_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "INTC"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_intc_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_jnj_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "JNJ"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_jnj_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_jpm_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "JPM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_jpm_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_lly_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "LLY"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_lly_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_meta_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "META"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_meta_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_msft_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "MSFT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_msft_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_mu_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "MU"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_mu_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_nvda_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "NVDA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_nvda_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_tsla_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "TSLA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_tsla_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_v_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "V"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_v_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_wmt_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "WMT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_wmt_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend001_xom_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-001",
+      "symbols": [
+        "XOM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_xom_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_aapl_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "AAPL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_aapl_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_amd_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "AMD"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_amd_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_amzn_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "AMZN"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_amzn_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_avgo_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "AVGO"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_avgo_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_brk_b_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "BRK.B"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_brk_b_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_cost_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "COST"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_cost_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_goog_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "GOOG"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_goog_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_googl_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "GOOGL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_googl_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_intc_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "INTC"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_intc_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_jnj_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "JNJ"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_jnj_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_jpm_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "JPM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_jpm_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_lly_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "LLY"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_lly_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_meta_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "META"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_meta_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_msft_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "MSFT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_msft_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_mu_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "MU"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_mu_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_nvda_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "NVDA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_nvda_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_tsla_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "TSLA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_tsla_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_v_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "V"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_v_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_wmt_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "WMT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_wmt_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "matrend002_xom_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MATREND-002",
+      "symbols": [
+        "XOM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend002_xom_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_aapl_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "AAPL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_aapl_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_amd_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "AMD"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_amd_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_amzn_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "AMZN"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_amzn_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_avgo_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "AVGO"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_avgo_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_brk_b_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "BRK.B"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_brk_b_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_cost_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "COST"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_cost_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_goog_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "GOOG"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_goog_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_googl_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "GOOGL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_googl_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_intc_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "INTC"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_intc_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_jnj_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "JNJ"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_jnj_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_jpm_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "JPM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_jpm_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_lly_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "LLY"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_lly_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_meta_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "META"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_meta_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_msft_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "MSFT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_msft_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_mu_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "MU"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_mu_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_nvda_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "NVDA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_nvda_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_tsla_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "TSLA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_tsla_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_v_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "V"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_v_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_wmt_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "WMT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_wmt_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "mw001_xom_weekly_30k_ibkr",
+      "strategy_type": "MovingAverageCross",
+      "variant": "MW-001",
+      "symbols": [
+        "XOM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_xom_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_aapl_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "AVGO",
+        "GOOG"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_aapl_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_amd_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "AMD",
+        "XOM",
+        "WMT",
+        "V",
+        "JNJ",
+        "INTC"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_amd_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_amzn_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "AMZN",
+        "GOOGL",
+        "AVGO",
+        "GOOG",
+        "META",
+        "TSLA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_amzn_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_avgo_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "AVGO",
+        "GOOG",
+        "META",
+        "TSLA",
+        "BRK.B",
+        "JPM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_avgo_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_brk_b_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "BRK.B",
+        "JPM",
+        "LLY",
+        "MU",
+        "AMD",
+        "XOM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_brk_b_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_cost_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "COST",
+        "NVDA",
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_cost_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_goog_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "GOOG",
+        "META",
+        "TSLA",
+        "BRK.B",
+        "JPM",
+        "LLY"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_goog_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_googl_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "GOOGL",
+        "AVGO",
+        "GOOG",
+        "META",
+        "TSLA",
+        "BRK.B"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_googl_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_intc_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "INTC",
+        "COST",
+        "NVDA",
+        "AAPL",
+        "MSFT",
+        "AMZN"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_intc_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_jnj_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "JNJ",
+        "INTC",
+        "COST",
+        "NVDA",
+        "AAPL",
+        "MSFT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_jnj_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_jpm_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "JPM",
+        "LLY",
+        "MU",
+        "AMD",
+        "XOM",
+        "WMT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_jpm_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_lly_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "LLY",
+        "MU",
+        "AMD",
+        "XOM",
+        "WMT",
+        "V"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_lly_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_meta_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "META",
+        "TSLA",
+        "BRK.B",
+        "JPM",
+        "LLY",
+        "MU"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_meta_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_msft_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "AVGO",
+        "GOOG",
+        "META"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_msft_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_mu_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "MU",
+        "AMD",
+        "XOM",
+        "WMT",
+        "V",
+        "JNJ"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_mu_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_nvda_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "NVDA",
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "AVGO"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_nvda_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_tsla_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "TSLA",
+        "BRK.B",
+        "JPM",
+        "LLY",
+        "MU",
+        "AMD"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_tsla_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_v_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "V",
+        "JNJ",
+        "INTC",
+        "COST",
+        "NVDA",
+        "AAPL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_v_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_wmt_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "WMT",
+        "V",
+        "JNJ",
+        "INTC",
+        "COST",
+        "NVDA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_wmt_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "pairs001_xom_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "PAIRS-001",
+      "symbols": [
+        "XOM",
+        "WMT",
+        "V",
+        "JNJ",
+        "INTC",
+        "COST"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_xom_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_aapl_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "AVGO",
+        "GOOG"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_aapl_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_amd_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "AMD",
+        "XOM",
+        "WMT",
+        "V",
+        "JNJ",
+        "INTC"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_amd_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_amzn_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "AMZN",
+        "GOOGL",
+        "AVGO",
+        "GOOG",
+        "META",
+        "TSLA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_amzn_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_avgo_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "AVGO",
+        "GOOG",
+        "META",
+        "TSLA",
+        "BRK.B",
+        "JPM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_avgo_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_brk_b_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "BRK.B",
+        "JPM",
+        "LLY",
+        "MU",
+        "AMD",
+        "XOM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_brk_b_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_cost_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "COST",
+        "NVDA",
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_cost_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_goog_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "GOOG",
+        "META",
+        "TSLA",
+        "BRK.B",
+        "JPM",
+        "LLY"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_goog_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_googl_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "GOOGL",
+        "AVGO",
+        "GOOG",
+        "META",
+        "TSLA",
+        "BRK.B"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_googl_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_intc_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "INTC",
+        "COST",
+        "NVDA",
+        "AAPL",
+        "MSFT",
+        "AMZN"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_intc_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_jnj_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "JNJ",
+        "INTC",
+        "COST",
+        "NVDA",
+        "AAPL",
+        "MSFT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_jnj_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_jpm_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "JPM",
+        "LLY",
+        "MU",
+        "AMD",
+        "XOM",
+        "WMT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_jpm_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_lly_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "LLY",
+        "MU",
+        "AMD",
+        "XOM",
+        "WMT",
+        "V"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_lly_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_meta_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "META",
+        "TSLA",
+        "BRK.B",
+        "JPM",
+        "LLY",
+        "MU"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_meta_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_msft_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "AVGO",
+        "GOOG",
+        "META"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_msft_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_mu_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "MU",
+        "AMD",
+        "XOM",
+        "WMT",
+        "V",
+        "JNJ"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_mu_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_nvda_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "NVDA",
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "AVGO"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_nvda_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_tsla_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "TSLA",
+        "BRK.B",
+        "JPM",
+        "LLY",
+        "MU",
+        "AMD"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_tsla_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_v_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "V",
+        "JNJ",
+        "INTC",
+        "COST",
+        "NVDA",
+        "AAPL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_v_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_wmt_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "WMT",
+        "V",
+        "JNJ",
+        "INTC",
+        "COST",
+        "NVDA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_wmt_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs001_xom_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-001",
+      "symbols": [
+        "XOM",
+        "WMT",
+        "V",
+        "JNJ",
+        "INTC",
+        "COST"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_xom_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_aapl_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "AVGO",
+        "GOOG"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_aapl_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_amd_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "AMD",
+        "XOM",
+        "WMT",
+        "V",
+        "JNJ",
+        "INTC"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_amd_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_amzn_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "AMZN",
+        "GOOGL",
+        "AVGO",
+        "GOOG",
+        "META",
+        "TSLA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_amzn_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_avgo_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "AVGO",
+        "GOOG",
+        "META",
+        "TSLA",
+        "BRK.B",
+        "JPM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_avgo_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_brk_b_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "BRK.B",
+        "JPM",
+        "LLY",
+        "MU",
+        "AMD",
+        "XOM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_brk_b_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_cost_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "COST",
+        "NVDA",
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_cost_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_goog_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "GOOG",
+        "META",
+        "TSLA",
+        "BRK.B",
+        "JPM",
+        "LLY"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_goog_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_googl_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "GOOGL",
+        "AVGO",
+        "GOOG",
+        "META",
+        "TSLA",
+        "BRK.B"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_googl_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_intc_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "INTC",
+        "COST",
+        "NVDA",
+        "AAPL",
+        "MSFT",
+        "AMZN"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_intc_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_jnj_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "JNJ",
+        "INTC",
+        "COST",
+        "NVDA",
+        "AAPL",
+        "MSFT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_jnj_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_jpm_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "JPM",
+        "LLY",
+        "MU",
+        "AMD",
+        "XOM",
+        "WMT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_jpm_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_lly_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "LLY",
+        "MU",
+        "AMD",
+        "XOM",
+        "WMT",
+        "V"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_lly_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_meta_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "META",
+        "TSLA",
+        "BRK.B",
+        "JPM",
+        "LLY",
+        "MU"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_meta_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_msft_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "AVGO",
+        "GOOG",
+        "META"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_msft_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_mu_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "MU",
+        "AMD",
+        "XOM",
+        "WMT",
+        "V",
+        "JNJ"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_mu_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_nvda_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "NVDA",
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "AVGO"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_nvda_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_tsla_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "TSLA",
+        "BRK.B",
+        "JPM",
+        "LLY",
+        "MU",
+        "AMD"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_tsla_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_v_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "V",
+        "JNJ",
+        "INTC",
+        "COST",
+        "NVDA",
+        "AAPL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_v_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_wmt_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "WMT",
+        "V",
+        "JNJ",
+        "INTC",
+        "COST",
+        "NVDA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_wmt_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "qs002_xom_basket_weekly_30k_ibkr",
+      "strategy_type": "PortfolioAllocation",
+      "variant": "QS-002",
+      "symbols": [
+        "XOM",
+        "WMT",
+        "V",
+        "JNJ",
+        "INTC",
+        "COST"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_xom_basket_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_aapl_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "AAPL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_aapl_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_amd_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "AMD"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_amd_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_amzn_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "AMZN"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_amzn_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_avgo_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "AVGO"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_avgo_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_brk_b_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "BRK.B"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_brk_b_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_cost_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "COST"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_cost_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_goog_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "GOOG"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_goog_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_googl_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "GOOGL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_googl_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_intc_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "INTC"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_intc_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_jnj_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "JNJ"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_jnj_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_jpm_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "JPM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_jpm_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_lly_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "LLY"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_lly_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_meta_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "META"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_meta_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_msft_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "MSFT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_msft_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_mu_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "MU"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_mu_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_nvda_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "NVDA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_nvda_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_tsla_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "TSLA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_tsla_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_v_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "V"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_v_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_wmt_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "WMT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_wmt_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts002_xom_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-002",
+      "symbols": [
+        "XOM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_xom_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_aapl_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "AAPL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_aapl_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_amd_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "AMD"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_amd_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_amzn_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "AMZN"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_amzn_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_avgo_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "AVGO"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_avgo_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_brk_b_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "BRK.B"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_brk_b_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_cost_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "COST"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_cost_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_goog_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "GOOG"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_goog_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_googl_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "GOOGL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_googl_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_intc_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "INTC"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_intc_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_jnj_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "JNJ"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_jnj_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_jpm_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "JPM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_jpm_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_lly_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "LLY"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_lly_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_meta_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "META"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_meta_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_msft_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "MSFT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_msft_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_mu_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "MU"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_mu_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_nvda_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "NVDA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_nvda_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_tsla_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "TSLA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_tsla_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_v_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "V"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_v_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_wmt_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "WMT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_wmt_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts003_xom_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-003",
+      "symbols": [
+        "XOM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_xom_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_aapl_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "AAPL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_aapl_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_amd_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "AMD"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_amd_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_amzn_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "AMZN"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_amzn_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_avgo_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "AVGO"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_avgo_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_brk_b_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "BRK.B"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_brk_b_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_cost_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "COST"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_cost_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_goog_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "GOOG"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_goog_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_googl_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "GOOGL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_googl_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_intc_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "INTC"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_intc_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_jnj_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "JNJ"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_jnj_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_jpm_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "JPM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_jpm_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_lly_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "LLY"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_lly_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_meta_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "META"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_meta_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_msft_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "MSFT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_msft_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_mu_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "MU"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_mu_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_nvda_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "NVDA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_nvda_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_tsla_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "TSLA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_tsla_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_v_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "V"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_v_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_wmt_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "WMT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_wmt_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts004_xom_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-004",
+      "symbols": [
+        "XOM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_xom_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_aapl_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "AAPL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_aapl_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_amd_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "AMD"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_amd_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_amzn_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "AMZN"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_amzn_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_avgo_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "AVGO"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_avgo_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_brk_b_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "BRK.B"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_brk_b_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_cost_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "COST"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_cost_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_goog_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "GOOG"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_goog_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_googl_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "GOOGL"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_googl_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_intc_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "INTC"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_intc_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_jnj_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "JNJ"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_jnj_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_jpm_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "JPM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_jpm_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_lly_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "LLY"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_lly_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_meta_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "META"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_meta_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_msft_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "MSFT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_msft_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_mu_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "MU"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_mu_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_nvda_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "NVDA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_nvda_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_tsla_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "TSLA"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_tsla_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_v_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "V"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_v_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_wmt_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "WMT"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_wmt_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    },
+    {
+      "name": "ts005_xom_weekly_30k_ibkr",
+      "strategy_type": "TechnicalSignal",
+      "variant": "TS-005",
+      "symbols": [
+        "XOM"
+      ],
+      "config_path": "TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts005_xom_weekly_30k_ibkr.json",
+      "budget": 30000.0
+    }
+  ]
+}

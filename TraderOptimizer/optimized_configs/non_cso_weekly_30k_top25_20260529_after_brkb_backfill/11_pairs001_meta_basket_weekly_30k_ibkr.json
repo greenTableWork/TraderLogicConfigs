@@ -1,0 +1,64 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "PAIRS-001",
+  "portfolioNotional": 30000.0,
+  "maxGrossExposure": 1.0,
+  "pairWindow": 89,
+  "pairEntryZ": 2.9728547144799,
+  "pairExitZ": 0.3807753769527738,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {
+      "symbol": "META",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "TSLA",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "BRK.B",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "JPM",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "LLY",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "MU",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "pairs": [
+    {
+      "left": "META",
+      "right": "TSLA"
+    },
+    {
+      "left": "BRK.B",
+      "right": "JPM"
+    },
+    {
+      "left": "LLY",
+      "right": "MU"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/pairs001_meta_basket_weekly_30k_ibkr_OPTIMIZED",
+  "ledgerContextCollection": "pairs001_meta_basket_weekly_30k_ibkr_OPTIMIZED_context"
+}

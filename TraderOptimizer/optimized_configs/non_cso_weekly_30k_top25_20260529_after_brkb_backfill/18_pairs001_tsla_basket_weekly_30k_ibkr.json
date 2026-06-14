@@ -1,0 +1,64 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "PAIRS-001",
+  "portfolioNotional": 30000.0,
+  "maxGrossExposure": 0.9101262574178901,
+  "pairWindow": 120,
+  "pairEntryZ": 2.9637537906632105,
+  "pairExitZ": 0.4841277350361847,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {
+      "symbol": "TSLA",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "BRK.B",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "JPM",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "LLY",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "MU",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "AMD",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "pairs": [
+    {
+      "left": "TSLA",
+      "right": "BRK.B"
+    },
+    {
+      "left": "JPM",
+      "right": "LLY"
+    },
+    {
+      "left": "MU",
+      "right": "AMD"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/pairs001_tsla_basket_weekly_30k_ibkr_OPTIMIZED",
+  "ledgerContextCollection": "pairs001_tsla_basket_weekly_30k_ibkr_OPTIMIZED_context"
+}

@@ -1,0 +1,946 @@
+{
+  "report_name": "non_cso_weekly_30k_top25_20260529",
+  "generated_at_utc": "2026-05-31T02:56:20+00:00",
+  "data_source": "PostgreSQL historical_bars",
+  "bar_size": "1 min",
+  "what_to_show": "TRADES",
+  "use_rth": true,
+  "scoring_window": {
+    "start_utc": "2026-05-26T13:30:00+00:00",
+    "end_utc": "2026-05-29T19:59:00+00:00"
+  },
+  "strategy_budget": 30000.0,
+  "backtester_starting_cash": 30000,
+  "candidate_count": 200,
+  "optimizer_trials_per_candidate": 25,
+  "workers": 6,
+  "batch_summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/batch_summary.json",
+  "candidate_index": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/index.json",
+  "selection_rule": "Top 25 non-skipped candidates ranked by actual TraderCore BackTester net PnL over the scoring window; benchmark gate status is retained in metadata but not used as a hard filter because the request optimized for profit.",
+  "result_counts": {
+    "benchmark_failed": 128,
+    "skipped": 68,
+    "ok": 4
+  },
+  "selected_counts": {
+    "benchmark_failed": 21,
+    "ok": 4
+  },
+  "known_skips": {
+    "missing_10_second_brk_b_bars": "BRK.B-linked 10 sec candidates had no bars for the scoring window.",
+    "postgres_deadlocks": "A small number of candidates were skipped after PostgreSQL deadlocks during concurrent optimization/backtesting."
+  },
+  "configs": [
+    {
+      "rank": 1,
+      "name": "ts004_amd_weekly_30k_ibkr",
+      "variant": "TS-004",
+      "strategy_type": "TechnicalSignal",
+      "symbols": [
+        "AMD"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/01_ts004_amd_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_amd_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/ts004_amd_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/ts004_amd_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.051070 did not beat same-stock hold 0.061277",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.051070 did not beat same-stock hold 0.061277",
+        "net_pnl": 1532.099999999995,
+        "return_pct": 0.05106999999999983,
+        "fills": 0,
+        "ending_equity": 31532.099999999995,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.06127714473630125,
+        "same_stock_excess_return_pct": -0.010207144736301417,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": 0.04276664164861116,
+        "spx_passed": true,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "matrend001_mu_weekly_30k_ibkr",
+      "variant": "MATREND-001",
+      "strategy_type": "MovingAverageCross",
+      "symbols": [
+        "MU"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/02_matrend001_mu_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_mu_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/matrend001_mu_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/matrend001_mu_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.040634 did not beat same-stock hold 0.175238",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.040634 did not beat same-stock hold 0.175238",
+        "net_pnl": 1219.0200000000186,
+        "return_pct": 0.04063400000000062,
+        "fills": 0,
+        "ending_equity": 31219.02000000002,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.17523824143743089,
+        "same_stock_excess_return_pct": -0.13460424143743027,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": 0.03233064164861195,
+        "spx_passed": true,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "ts004_avgo_weekly_30k_ibkr",
+      "variant": "TS-004",
+      "strategy_type": "TechnicalSignal",
+      "symbols": [
+        "AVGO"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/03_ts004_avgo_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_avgo_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/ts004_avgo_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/ts004_avgo_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.038833 did not beat same-stock hold 0.069080",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.038833 did not beat same-stock hold 0.069080",
+        "net_pnl": 1164.9999999999964,
+        "return_pct": 0.03883333333333321,
+        "fills": 0,
+        "ending_equity": 31164.999999999996,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.06907974340584903,
+        "same_stock_excess_return_pct": -0.03024641007251582,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": 0.03052997498194454,
+        "spx_passed": true,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "ts003_amd_weekly_30k_ibkr",
+      "variant": "TS-003",
+      "strategy_type": "TechnicalSignal",
+      "symbols": [
+        "AMD"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/04_ts003_amd_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_amd_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/ts003_amd_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/ts003_amd_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.021134 did not beat same-stock hold 0.061277",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.021134 did not beat same-stock hold 0.061277",
+        "net_pnl": 634.0125000000153,
+        "return_pct": 0.02113375000000051,
+        "fills": 0,
+        "ending_equity": 30634.012500000015,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.06127714473630125,
+        "same_stock_excess_return_pct": -0.04014339473630074,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": 0.01283039164861184,
+        "spx_passed": true,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "mw001_intc_weekly_30k_ibkr",
+      "variant": "MW-001",
+      "strategy_type": "MovingAverageCross",
+      "symbols": [
+        "INTC"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/05_mw001_intc_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_intc_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/mw001_intc_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/mw001_intc_weekly_30k_ibkr/best_summary.json",
+      "status": "ok",
+      "reason": null,
+      "backtester": {
+        "status": "ok",
+        "reason": null,
+        "net_pnl": 614.5499999999774,
+        "return_pct": 0.020484999999999247,
+        "fills": 0,
+        "ending_equity": 30614.549999999977,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": -0.06036885245901637,
+        "same_stock_excess_return_pct": 0.08085385245901561,
+        "same_stock_passed": true,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": 0.012181641648610577,
+        "spx_passed": true,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 6,
+      "name": "qs002_aapl_basket_weekly_30k_ibkr",
+      "variant": "QS-002",
+      "strategy_type": "PortfolioAllocation",
+      "symbols": [
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "AVGO",
+        "GOOG"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/06_qs002_aapl_basket_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_aapl_basket_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs002_aapl_basket_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs002_aapl_basket_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.018814 did not beat same-stock hold 0.022793",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.018814 did not beat same-stock hold 0.022793",
+        "net_pnl": 564.414211639647,
+        "return_pct": 0.0188138070546549,
+        "fills": 0,
+        "ending_equity": 30564.414211639647,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.02279327187063924,
+        "same_stock_excess_return_pct": -0.003979464815984341,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": 0.01051044870326623,
+        "spx_passed": true,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 7,
+      "name": "qs002_nvda_basket_weekly_30k_ibkr",
+      "variant": "QS-002",
+      "strategy_type": "PortfolioAllocation",
+      "symbols": [
+        "NVDA",
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "AVGO"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/07_qs002_nvda_basket_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_nvda_basket_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs002_nvda_basket_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs002_nvda_basket_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.018019 did not beat same-stock hold 0.021918",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.018019 did not beat same-stock hold 0.021918",
+        "net_pnl": 540.574810909533,
+        "return_pct": 0.018019160363651098,
+        "fills": 0,
+        "ending_equity": 30540.574810909533,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.02191844069628605,
+        "same_stock_excess_return_pct": -0.0038992803326349523,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": 0.009715802012262428,
+        "spx_passed": true,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 8,
+      "name": "qs002_jnj_basket_weekly_30k_ibkr",
+      "variant": "QS-002",
+      "strategy_type": "PortfolioAllocation",
+      "symbols": [
+        "JNJ",
+        "INTC",
+        "COST",
+        "NVDA",
+        "AAPL",
+        "MSFT"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/08_qs002_jnj_basket_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_jnj_basket_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs002_jnj_basket_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs002_jnj_basket_weekly_30k_ibkr/best_summary.json",
+      "status": "ok",
+      "reason": null,
+      "backtester": {
+        "status": "ok",
+        "reason": null,
+        "net_pnl": 516.9034615233104,
+        "return_pct": 0.017230115384110345,
+        "fills": 0,
+        "ending_equity": 30516.90346152331,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": -0.01589831860701476,
+        "same_stock_excess_return_pct": 0.033128433991125104,
+        "same_stock_passed": true,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": 0.008926757032721675,
+        "spx_passed": true,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 9,
+      "name": "qs002_msft_basket_weekly_30k_ibkr",
+      "variant": "QS-002",
+      "strategy_type": "PortfolioAllocation",
+      "symbols": [
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "AVGO",
+        "GOOG",
+        "META"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/09_qs002_msft_basket_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_msft_basket_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs002_msft_basket_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs002_msft_basket_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.014892 did not beat same-stock hold 0.027692",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.014892 did not beat same-stock hold 0.027692",
+        "net_pnl": 446.76341061105995,
+        "return_pct": 0.014892113687035332,
+        "fills": 0,
+        "ending_equity": 30446.76341061106,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.027692446651528008,
+        "same_stock_excess_return_pct": -0.012800332964492676,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": 0.0065887553356466615,
+        "spx_passed": true,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 10,
+      "name": "ts003_avgo_weekly_30k_ibkr",
+      "variant": "TS-003",
+      "strategy_type": "TechnicalSignal",
+      "symbols": [
+        "AVGO"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/10_ts003_avgo_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts003_avgo_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/ts003_avgo_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/ts003_avgo_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.012950 did not beat same-stock hold 0.069080",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.012950 did not beat same-stock hold 0.069080",
+        "net_pnl": 388.5000000000109,
+        "return_pct": 0.012950000000000364,
+        "fills": 0,
+        "ending_equity": 30388.50000000001,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.06907974340584903,
+        "same_stock_excess_return_pct": -0.05612974340584867,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": 0.004646641648611694,
+        "spx_passed": true,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 11,
+      "name": "ts004_intc_weekly_30k_ibkr",
+      "variant": "TS-004",
+      "strategy_type": "TechnicalSignal",
+      "symbols": [
+        "INTC"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/11_ts004_intc_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts004_intc_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/ts004_intc_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/ts004_intc_weekly_30k_ibkr/best_summary.json",
+      "status": "ok",
+      "reason": null,
+      "backtester": {
+        "status": "ok",
+        "reason": null,
+        "net_pnl": 359.700000000008,
+        "return_pct": 0.011990000000000266,
+        "fills": 0,
+        "ending_equity": 30359.700000000008,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": -0.06036885245901637,
+        "same_stock_excess_return_pct": 0.07235885245901663,
+        "same_stock_passed": true,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": 0.003686641648611596,
+        "spx_passed": true,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 12,
+      "name": "pairs001_msft_basket_weekly_30k_ibkr",
+      "variant": "PAIRS-001",
+      "strategy_type": "PortfolioAllocation",
+      "symbols": [
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "AVGO",
+        "GOOG",
+        "META"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/12_pairs001_msft_basket_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_msft_basket_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/pairs001_msft_basket_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/pairs001_msft_basket_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.011486 did not beat same-stock hold 0.027692",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.011486 did not beat same-stock hold 0.027692",
+        "net_pnl": 344.590994568287,
+        "return_pct": 0.011486366485609566,
+        "fills": 0,
+        "ending_equity": 30344.590994568287,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.027692446651528008,
+        "same_stock_excess_return_pct": -0.016206080165918443,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": 0.003183008134220896,
+        "spx_passed": true,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 13,
+      "name": "pairs001_nvda_basket_weekly_30k_ibkr",
+      "variant": "PAIRS-001",
+      "strategy_type": "PortfolioAllocation",
+      "symbols": [
+        "NVDA",
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "AVGO"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/13_pairs001_nvda_basket_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_nvda_basket_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/pairs001_nvda_basket_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/pairs001_nvda_basket_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.011117 did not beat same-stock hold 0.021918",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.011117 did not beat same-stock hold 0.021918",
+        "net_pnl": 333.5003486001842,
+        "return_pct": 0.011116678286672807,
+        "fills": 0,
+        "ending_equity": 30333.500348600184,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.02191844069628605,
+        "same_stock_excess_return_pct": -0.010801762409613244,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": 0.0028133199352841365,
+        "spx_passed": true,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 14,
+      "name": "mw001_avgo_weekly_30k_ibkr",
+      "variant": "MW-001",
+      "strategy_type": "MovingAverageCross",
+      "symbols": [
+        "AVGO"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/14_mw001_avgo_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_avgo_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/mw001_avgo_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/mw001_avgo_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.009793 did not beat same-stock hold 0.069080",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.009793 did not beat same-stock hold 0.069080",
+        "net_pnl": 293.78750000000946,
+        "return_pct": 0.009792916666666983,
+        "fills": 0,
+        "ending_equity": 30293.78750000001,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.06907974340584903,
+        "same_stock_excess_return_pct": -0.05928682673918205,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": 0.0014895583152783123,
+        "spx_passed": true,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 15,
+      "name": "qs002_jpm_basket_weekly_30k_ibkr",
+      "variant": "QS-002",
+      "strategy_type": "PortfolioAllocation",
+      "symbols": [
+        "JPM",
+        "LLY",
+        "MU",
+        "AMD",
+        "XOM",
+        "WMT"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/15_qs002_jpm_basket_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs002_jpm_basket_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs002_jpm_basket_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs002_jpm_basket_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.009762 did not beat same-stock hold 0.023070",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.009762 did not beat same-stock hold 0.023070",
+        "net_pnl": 292.86659851793956,
+        "return_pct": 0.009762219950597985,
+        "fills": 0,
+        "ending_equity": 30292.86659851794,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.02307018584756782,
+        "same_stock_excess_return_pct": -0.013307965896969837,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": 0.0014588615992093146,
+        "spx_passed": true,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 16,
+      "name": "matrend001_tsla_weekly_30k_ibkr",
+      "variant": "MATREND-001",
+      "strategy_type": "MovingAverageCross",
+      "symbols": [
+        "TSLA"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/16_matrend001_tsla_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_tsla_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/matrend001_tsla_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/matrend001_tsla_weekly_30k_ibkr/best_summary.json",
+      "status": "ok",
+      "reason": null,
+      "backtester": {
+        "status": "ok",
+        "reason": null,
+        "net_pnl": 274.0075000000252,
+        "return_pct": 0.009133583333334172,
+        "fills": 0,
+        "ending_equity": 30274.007500000025,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.008207979720813819,
+        "same_stock_excess_return_pct": 0.0009256036125203527,
+        "same_stock_passed": true,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": 0.0008302249819455015,
+        "spx_passed": true,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 17,
+      "name": "matrend001_avgo_weekly_30k_ibkr",
+      "variant": "MATREND-001",
+      "strategy_type": "MovingAverageCross",
+      "symbols": [
+        "AVGO"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/17_matrend001_avgo_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_avgo_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/matrend001_avgo_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/matrend001_avgo_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.007832 did not beat SPX 0.008303",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.007832 did not beat SPX 0.008303",
+        "net_pnl": 234.94999999997162,
+        "return_pct": 0.00783166666666572,
+        "fills": 0,
+        "ending_equity": 30234.94999999997,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.06907974340584903,
+        "same_stock_excess_return_pct": -0.06124807673918331,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": -0.00047169168472295,
+        "spx_passed": false,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 18,
+      "name": "mw001_amd_weekly_30k_ibkr",
+      "variant": "MW-001",
+      "strategy_type": "MovingAverageCross",
+      "symbols": [
+        "AMD"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/18_mw001_amd_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/mw001_amd_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/mw001_amd_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/mw001_amd_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.007163 did not beat SPX 0.008303",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.007163 did not beat SPX 0.008303",
+        "net_pnl": 214.899999999976,
+        "return_pct": 0.007163333333332533,
+        "fills": 0,
+        "ending_equity": 30214.899999999976,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.06127714473630125,
+        "same_stock_excess_return_pct": -0.05411381140296871,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": -0.0011400250180561376,
+        "spx_passed": false,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 19,
+      "name": "qs001_msft_basket_weekly_30k_ibkr",
+      "variant": "QS-001",
+      "strategy_type": "PortfolioAllocation",
+      "symbols": [
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "AVGO",
+        "GOOG",
+        "META"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/19_qs001_msft_basket_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_msft_basket_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs001_msft_basket_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs001_msft_basket_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.006616 did not beat SPX 0.008303",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.006616 did not beat SPX 0.008303",
+        "net_pnl": 198.48332414167453,
+        "return_pct": 0.0066161108047224845,
+        "fills": 0,
+        "ending_equity": 30198.483324141675,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.027692446651528008,
+        "same_stock_excess_return_pct": -0.021076335846805523,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": -0.0016872475466661856,
+        "spx_passed": false,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 20,
+      "name": "pairs001_cost_basket_weekly_30k_ibkr",
+      "variant": "PAIRS-001",
+      "strategy_type": "PortfolioAllocation",
+      "symbols": [
+        "COST",
+        "NVDA",
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/20_pairs001_cost_basket_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/pairs001_cost_basket_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/pairs001_cost_basket_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/pairs001_cost_basket_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.006573 did not beat SPX 0.008303",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.006573 did not beat SPX 0.008303",
+        "net_pnl": 197.17538169762338,
+        "return_pct": 0.006572512723254113,
+        "fills": 0,
+        "ending_equity": 30197.175381697623,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": -0.0010447416813738528,
+        "same_stock_excess_return_pct": 0.007617254404627965,
+        "same_stock_passed": true,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": -0.0017308456281345573,
+        "spx_passed": false,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 21,
+      "name": "qs001_lly_basket_weekly_30k_ibkr",
+      "variant": "QS-001",
+      "strategy_type": "PortfolioAllocation",
+      "symbols": [
+        "LLY",
+        "MU",
+        "AMD",
+        "XOM",
+        "WMT",
+        "V"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/21_qs001_lly_basket_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_lly_basket_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs001_lly_basket_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs001_lly_basket_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.006441 did not beat SPX 0.008303",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.006441 did not beat SPX 0.008303",
+        "net_pnl": 193.2288071138537,
+        "return_pct": 0.0064409602371284565,
+        "fills": 0,
+        "ending_equity": 30193.228807113854,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.02782878493194318,
+        "same_stock_excess_return_pct": -0.021387824694814726,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": -0.0018623981142602136,
+        "spx_passed": false,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 22,
+      "name": "ts002_tsla_weekly_30k_ibkr",
+      "variant": "TS-002",
+      "strategy_type": "TechnicalSignal",
+      "symbols": [
+        "TSLA"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/22_ts002_tsla_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/ts002_tsla_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/ts002_tsla_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/ts002_tsla_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.006391 did not beat SPX 0.008303",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.006391 did not beat SPX 0.008303",
+        "net_pnl": 191.72000000002663,
+        "return_pct": 0.006390666666667554,
+        "fills": 0,
+        "ending_equity": 30191.720000000027,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.008207979720813819,
+        "same_stock_excess_return_pct": -0.0018173130541462648,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": -0.001912691684721116,
+        "spx_passed": false,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 23,
+      "name": "matrend001_amd_weekly_30k_ibkr",
+      "variant": "MATREND-001",
+      "strategy_type": "MovingAverageCross",
+      "symbols": [
+        "AMD"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/23_matrend001_amd_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/matrend001_amd_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/matrend001_amd_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/matrend001_amd_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.006266 did not beat SPX 0.008303",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.006266 did not beat SPX 0.008303",
+        "net_pnl": 187.9900000000198,
+        "return_pct": 0.006266333333333993,
+        "fills": 0,
+        "ending_equity": 30187.99000000002,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.06127714473630125,
+        "same_stock_excess_return_pct": -0.055010811402967257,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": -0.002037025018054677,
+        "spx_passed": false,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 24,
+      "name": "qs001_aapl_basket_weekly_30k_ibkr",
+      "variant": "QS-001",
+      "strategy_type": "PortfolioAllocation",
+      "symbols": [
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "AVGO",
+        "GOOG"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/24_qs001_aapl_basket_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_aapl_basket_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs001_aapl_basket_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs001_aapl_basket_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.005349 did not beat SPX 0.008303",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.005349 did not beat SPX 0.008303",
+        "net_pnl": 160.48286765424928,
+        "return_pct": 0.005349428921808309,
+        "fills": 0,
+        "ending_equity": 30160.48286765425,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.02279327187063924,
+        "same_stock_excess_return_pct": -0.01744384294883093,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": -0.002953929429580361,
+        "spx_passed": false,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    },
+    {
+      "rank": 25,
+      "name": "qs001_jpm_basket_weekly_30k_ibkr",
+      "variant": "QS-001",
+      "strategy_type": "PortfolioAllocation",
+      "symbols": [
+        "JPM",
+        "LLY",
+        "MU",
+        "AMD",
+        "XOM",
+        "WMT"
+      ],
+      "selected_config": "TraderOptimizer/optimized_configs/non_cso_weekly_30k_top25_20260529/25_qs001_jpm_basket_weekly_30k_ibkr.json",
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/candidate_configs/non_cso_weekly_30k_20260529/qs001_jpm_basket_weekly_30k_ibkr.json",
+      "best_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs001_jpm_basket_weekly_30k_ibkr/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/non_cso_weekly_30k_20260529/qs001_jpm_basket_weekly_30k_ibkr/best_summary.json",
+      "status": "benchmark_failed",
+      "reason": "BackTester return 0.005154 did not beat SPX 0.008303",
+      "backtester": {
+        "status": "benchmark_failed",
+        "reason": "BackTester return 0.005154 did not beat SPX 0.008303",
+        "net_pnl": 154.6269708996915,
+        "return_pct": 0.00515423236332305,
+        "fills": 0,
+        "ending_equity": 30154.62697089969,
+        "allocated_capital": 30000.0,
+        "same_stock_return_pct": 0.02307018584756782,
+        "same_stock_excess_return_pct": -0.01791595348424477,
+        "same_stock_passed": false,
+        "spx_return_pct": 0.00830335835138867,
+        "spx_excess_return_pct": -0.00314912598806562,
+        "spx_passed": false,
+        "positive_return_passed": true
+      },
+      "deployment_exchange_values": [
+        "IBKR"
+      ]
+    }
+  ],
+  "budget_policy": "BackTester starting cash is 30000 USD and optimizer-enforced per-strategy notional is capped at 30000 USD. Optimized single-symbol configs may use less than the cap when the selected integer share quantity is below the maximum allowed by the budget."
+}

@@ -1,0 +1,32 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "PAIRS-001",
+  "portfolioNotional": 30000.0,
+  "maxGrossExposure": 1.25,
+  "pairWindow": 8,
+  "pairEntryZ": 0.8,
+  "pairExitZ": 0.2,
+  "minTradeQuantity": 1e-05,
+  "contracts": [
+    {
+      "symbol": "BTC",
+      "secType": "CRYPTO",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "LTC",
+      "secType": "CRYPTO",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "pairs": [
+    {
+      "left": "BTC",
+      "right": "LTC"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/PAIRS001_BTC_LTC_PAIR_WEEKLY_30K_CRYPTO",
+  "ledgerContextCollection": "PAIRS001_BTC_LTC_PAIR_WEEKLY_30K_CRYPTO_context"
+}

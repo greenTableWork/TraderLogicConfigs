@@ -1,0 +1,28 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "RESMOM-001",
+  "portfolioNotional": 30000.0,
+  "maxGrossExposure": 0.15,
+  "minTradeQuantity": 1.0,
+  "limitPriceOffsetBps": 100.0,
+  "contracts": [
+    {"symbol": "AAPL", "secType": "STOCK", "currency": "USD", "exchange": "IBKR"},
+    {"symbol": "V", "secType": "STOCK", "currency": "USD", "exchange": "IBKR"},
+    {"symbol": "INTC", "secType": "STOCK", "currency": "USD", "exchange": "IBKR"},
+    {"symbol": "AMZN", "secType": "STOCK", "currency": "USD", "exchange": "IBKR"},
+    {"symbol": "BRK.B", "secType": "STOCK", "currency": "USD", "exchange": "IBKR"},
+    {"symbol": "JNJ", "secType": "STOCK", "currency": "USD", "exchange": "IBKR"},
+    {"symbol": "TSLA", "secType": "STOCK", "currency": "USD", "exchange": "IBKR"}
+  ],
+  "targetWeights": [
+    {"symbol": "AAPL", "weight": -0.02},
+    {"symbol": "V", "weight": -0.02},
+    {"symbol": "INTC", "weight": -0.02},
+    {"symbol": "AMZN", "weight": -0.02},
+    {"symbol": "BRK.B", "weight": -0.02},
+    {"symbol": "JNJ", "weight": -0.02},
+    {"symbol": "TSLA", "weight": -0.02}
+  ],
+  "ledgerPath": "data/TraderLedger/validation_resmom_sell_basket_c_30k_ibkr",
+  "ledgerContextCollection": "validation_resmom_sell_basket_c_30k_ibkr_context"
+}

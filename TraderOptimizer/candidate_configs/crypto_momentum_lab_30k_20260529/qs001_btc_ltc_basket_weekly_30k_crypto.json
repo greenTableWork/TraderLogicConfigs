@@ -1,0 +1,25 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "QS-001",
+  "portfolioNotional": 30000.0,
+  "targetVolatility": 0.25,
+  "maxGrossExposure": 1.25,
+  "volatilityWindow": 6,
+  "minTradeQuantity": 1e-05,
+  "contracts": [
+    {
+      "symbol": "BTC",
+      "secType": "CRYPTO",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "LTC",
+      "secType": "CRYPTO",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/QS001_BTC_LTC_BASKET_WEEKLY_30K_CRYPTO",
+  "ledgerContextCollection": "QS001_BTC_LTC_BASKET_WEEKLY_30K_CRYPTO_context"
+}

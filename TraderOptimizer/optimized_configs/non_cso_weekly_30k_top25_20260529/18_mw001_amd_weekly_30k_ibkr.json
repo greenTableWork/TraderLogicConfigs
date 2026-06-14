@@ -1,0 +1,22 @@
+{
+  "strategy_type": "MovingAverageCross",
+  "trendMode": "MW-001",
+  "fastWindow": 2,
+  "slowWindow": 6,
+  "orderQuantityInUSD": 19461.600000000002,
+  "orderQuantity": 40.0,
+  "contract": {
+    "symbol": "AMD",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "AMD",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/mw001_amd_weekly_30k_ibkr_OPTIMIZED",
+  "ledgerContextCollection": "mw001_amd_weekly_30k_ibkr_OPTIMIZED_context"
+}

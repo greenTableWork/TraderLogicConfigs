@@ -1,0 +1,23 @@
+{
+  "strategy_type": "MovingAverageCross",
+  "trendMode": "MATREND-002",
+  "fastWindow": 2,
+  "middleWindow": 5,
+  "slowWindow": 13,
+  "orderQuantityInUSD": 30000.0,
+  "orderQuantity": 29,
+  "contract": {
+    "symbol": "COST",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "COST",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/MATREND002_COST_WEEKLY_30K_IBKR",
+  "ledgerContextCollection": "MATREND002_COST_WEEKLY_30K_IBKR_context"
+}

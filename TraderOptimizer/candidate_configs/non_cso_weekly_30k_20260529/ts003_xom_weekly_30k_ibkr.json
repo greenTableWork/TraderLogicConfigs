@@ -1,0 +1,23 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-003",
+  "middleWindow": 10,
+  "trendWindow": 20,
+  "bandStddev": 1.0,
+  "orderQuantity": 195,
+  "contract": {
+    "symbol": "XOM",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "XOM",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/TS003_XOM_WEEKLY_30K_IBKR",
+  "ledgerContextCollection": "TS003_XOM_WEEKLY_30K_IBKR_context",
+  "orderQuantityInUSD": 30000.0
+}

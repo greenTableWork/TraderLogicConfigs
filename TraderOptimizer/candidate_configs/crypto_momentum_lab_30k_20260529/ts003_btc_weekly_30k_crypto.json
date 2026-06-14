@@ -1,0 +1,23 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-003",
+  "middleWindow": 10,
+  "trendWindow": 20,
+  "bandStddev": 1.0,
+  "orderQuantityInUSD": 30000.0,
+  "orderQuantity": 0.39139,
+  "contract": {
+    "symbol": "BTC",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "BTC",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/TS003_BTC_WEEKLY_30K_CRYPTO",
+  "ledgerContextCollection": "TS003_BTC_WEEKLY_30K_CRYPTO_context"
+}

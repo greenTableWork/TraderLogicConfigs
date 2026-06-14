@@ -1,0 +1,22 @@
+{
+  "strategy_type": "MovingAverageCross",
+  "trendMode": "MW-001",
+  "fastWindow": 2,
+  "slowWindow": 6,
+  "orderQuantityInUSD": 30000.0,
+  "orderQuantity": 128,
+  "contract": {
+    "symbol": "JNJ",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "JNJ",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/MW001_JNJ_WEEKLY_30K_IBKR",
+  "ledgerContextCollection": "MW001_JNJ_WEEKLY_30K_IBKR_context"
+}

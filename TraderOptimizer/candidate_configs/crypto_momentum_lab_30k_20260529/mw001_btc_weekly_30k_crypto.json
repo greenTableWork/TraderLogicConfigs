@@ -1,0 +1,22 @@
+{
+  "strategy_type": "MovingAverageCross",
+  "trendMode": "MW-001",
+  "fastWindow": 2,
+  "slowWindow": 6,
+  "orderQuantityInUSD": 30000.0,
+  "orderQuantity": 0.39139,
+  "contract": {
+    "symbol": "BTC",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "BTC",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/MW001_BTC_WEEKLY_30K_CRYPTO",
+  "ledgerContextCollection": "MW001_BTC_WEEKLY_30K_CRYPTO_context"
+}

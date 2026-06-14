@@ -1,0 +1,22 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-005",
+  "rsiPeriod": 7,
+  "divergenceLookback": 5,
+  "orderQuantityInUSD": 30000.0,
+  "orderQuantity": 571.64634,
+  "contract": {
+    "symbol": "LTC",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "LTC",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/TS005_LTC_WEEKLY_30K_CRYPTO",
+  "ledgerContextCollection": "TS005_LTC_WEEKLY_30K_CRYPTO_context"
+}

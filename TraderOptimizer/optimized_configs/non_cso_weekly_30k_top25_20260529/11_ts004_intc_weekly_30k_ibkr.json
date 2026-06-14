@@ -1,0 +1,23 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-004",
+  "openingRangeBars": 13,
+  "useAtrStop": false,
+  "atrWindow": 38,
+  "orderQuantity": 220.0,
+  "contract": {
+    "symbol": "INTC",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "INTC",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/ts004_intc_weekly_30k_ibkr_OPTIMIZED",
+  "ledgerContextCollection": "ts004_intc_weekly_30k_ibkr_OPTIMIZED_context",
+  "orderQuantityInUSD": 30000.0
+}

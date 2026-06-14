@@ -1,0 +1,64 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "PAIRS-001",
+  "portfolioNotional": 30000.0,
+  "maxGrossExposure": 1.25,
+  "pairWindow": 8,
+  "pairEntryZ": 0.8,
+  "pairExitZ": 0.2,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {
+      "symbol": "WMT",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "V",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "JNJ",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "INTC",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "COST",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "NVDA",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "pairs": [
+    {
+      "left": "WMT",
+      "right": "V"
+    },
+    {
+      "left": "JNJ",
+      "right": "INTC"
+    },
+    {
+      "left": "COST",
+      "right": "NVDA"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/PAIRS001_WMT_BASKET_WEEKLY_30K_IBKR",
+  "ledgerContextCollection": "PAIRS001_WMT_BASKET_WEEKLY_30K_IBKR_context"
+}

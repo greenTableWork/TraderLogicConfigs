@@ -1,0 +1,22 @@
+{
+  "strategy_type": "MovingAverageCross",
+  "trendMode": "MATREND-001",
+  "fastWindow": 16,
+  "slowWindow": 47,
+  "orderQuantityInUSD": 25098.0,
+  "orderQuantity": 60.0,
+  "contract": {
+    "symbol": "AVGO",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "AVGO",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/matrend001_avgo_weekly_30k_ibkr_OPTIMIZED",
+  "ledgerContextCollection": "matrend001_avgo_weekly_30k_ibkr_OPTIMIZED_context"
+}

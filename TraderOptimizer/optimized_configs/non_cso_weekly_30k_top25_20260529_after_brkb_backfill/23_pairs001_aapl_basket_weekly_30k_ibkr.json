@@ -1,0 +1,64 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "PAIRS-001",
+  "portfolioNotional": 30000.0,
+  "maxGrossExposure": 1.0,
+  "pairWindow": 95,
+  "pairEntryZ": 2.6563204990674527,
+  "pairExitZ": 0.09749388622719862,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {
+      "symbol": "AAPL",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "MSFT",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "AMZN",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "GOOGL",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "AVGO",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    },
+    {
+      "symbol": "GOOG",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "IBKR"
+    }
+  ],
+  "pairs": [
+    {
+      "left": "AAPL",
+      "right": "MSFT"
+    },
+    {
+      "left": "AMZN",
+      "right": "GOOGL"
+    },
+    {
+      "left": "AVGO",
+      "right": "GOOG"
+    }
+  ],
+  "ledgerPath": "data/TraderLedger/pairs001_aapl_basket_weekly_30k_ibkr_OPTIMIZED",
+  "ledgerContextCollection": "pairs001_aapl_basket_weekly_30k_ibkr_OPTIMIZED_context"
+}
