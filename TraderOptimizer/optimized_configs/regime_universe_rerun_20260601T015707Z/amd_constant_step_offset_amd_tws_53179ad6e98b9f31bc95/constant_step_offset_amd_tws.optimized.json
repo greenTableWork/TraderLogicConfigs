@@ -1,0 +1,235 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 505.98,
+  "stepDelta": 0.795513,
+  "executionLimitOffset": 3.977565,
+  "stateTransitionThreshold": 0.410571,
+  "orderQuantityInUSD": 3931.841135,
+  "orderQuantity": 8,
+  "contract": {
+    "symbol": "AMD",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "AMD",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_AMD_OPTIMIZED",
+  "ledgerContextCollection": "CSO_AMD_OPTIMIZED_context",
+  "strategyTuningProfile": {
+    "schema": "strategy_tuning_profile.v1",
+    "strategyName": "constant_step_offset_amd_tws",
+    "strategyType": "ConstantStepOffset",
+    "variant": "CSO",
+    "symbols": [
+      "AMD"
+    ],
+    "assetClasses": [
+      {
+        "symbol": "AMD",
+        "secType": "STOCK",
+        "exchange": "BACKTESTER"
+      }
+    ],
+    "tunedFor": {
+      "direction": {
+        "status": "active",
+        "expectedDirection": "up_or_down_around_baseline",
+        "sidePolicy": "mean_reversion_band",
+        "curveSlopeSeverity": 3,
+        "curveSlopeSeverityDefault": 3,
+        "curveSlopeSeverityMeaning": "higher means a steeper curve and stronger directional conviction",
+        "signalSource": "price_curve",
+        "tunedFields": [
+          "baseline_quantile",
+          "step_delta_pct",
+          "execution_steps",
+          "threshold_pct_of_step"
+        ],
+        "evidence": {
+          "aggregate": {
+            "primarySymbol": "AMD",
+            "predictedDirection": "down",
+            "curveSlopeSeverity": 3,
+            "averageWindowReturnPct": -0.007648697991736397
+          },
+          "bySymbol": {
+            "AMD": {
+              "firstTimestamp": "2026-05-29T13:30:00+00:00",
+              "lastTimestamp": "2026-05-29T19:59:50+00:00",
+              "bars": 2340,
+              "windowReturnPct": -0.007648697991736397,
+              "linearSlopePct": -0.024404016624795796,
+              "predictedDirection": "down",
+              "curveSlopeSeverity": 3,
+              "curveSlopeSeverityBaseline": 3
+            }
+          }
+        },
+        "observedCurveSlopeSeverity": 3,
+        "observedDirection": "down"
+      },
+      "volatility": {
+        "status": "planned_input",
+        "instrumentVolatility": {
+          "status": "planned_input",
+          "fields": [],
+          "purpose": "size exposure and classify whether the instrument itself is in a quiet or expanding regime",
+          "evidence": {
+            "AMD": {
+              "returnStddev": 0.0005914811033451863,
+              "realizedVolatilityPct": 0.028605924313718174,
+              "regime": "medium"
+            }
+          }
+        },
+        "marketVolatility": {
+          "status": "planned_input",
+          "proxySymbols": [
+            "SPX",
+            "VIX",
+            "ES"
+          ],
+          "purpose": "separate broad-market volatility from idiosyncratic instrument volatility"
+        }
+      },
+      "indexFuturesDirection": {
+        "status": "planned_input",
+        "instruments": [
+          {
+            "symbol": "AMD",
+            "status": "planned_input",
+            "candidateIndexFutures": [
+              "NQ",
+              "ES"
+            ]
+          }
+        ],
+        "insightMethod": "compare index-future slope and session return against the strategy direction; confirm aligned moves and down-weight direction or momentum when futures conflict",
+        "evidence": {
+          "status": "not_loaded",
+          "aggregate": {
+            "predictedDirection": "unknown",
+            "curveSlopeSeverity": 3
+          },
+          "byFuture": {},
+          "instrumentAlignment": {
+            "status": "not_loaded"
+          }
+        }
+      },
+      "optionsProbabilityMap3d": {
+        "status": "planned_input",
+        "underlyings": [
+          "AMD"
+        ],
+        "source": "options_trades",
+        "probabilityMap3d": {
+          "axes": [
+            "expiration_days",
+            "strike_moneyness",
+            "trade_time_bucket"
+          ],
+          "cellValues": [
+            "up_probability",
+            "down_probability",
+            "momentum_probability",
+            "call_put_premium_ratio",
+            "trade_volume",
+            "open_interest",
+            "implied_volatility"
+          ],
+          "predictionTargets": [
+            "direction",
+            "momentum"
+          ]
+        }
+      },
+      "tradeVolumeOrderbook": {
+        "status": "partial",
+        "tradeVolume": {
+          "status": "active",
+          "symbols": [
+            "AMD"
+          ],
+          "features": [
+            "bar_volume",
+            "volume_z_score",
+            "relative_volume"
+          ],
+          "evidence": {
+            "bySymbol": {
+              "AMD": {
+                "latestVolume": 151141.0,
+                "averageVolume": 6112.679914529915,
+                "relativeVolume": 24.72581619082262,
+                "priceVolumeCorrelation": 0.14889899255550595,
+                "predictedDirection": "down",
+                "confidence": 0.2977979851110119
+              }
+            },
+            "aggregate": {
+              "primarySymbol": "AMD",
+              "predictedDirection": "down",
+              "confidence": 0.2977979851110119
+            }
+          }
+        },
+        "orderbook": {
+          "status": "external_branch_integration",
+          "branch": "codex/l2-orderbook-ingestion",
+          "strategyHook": "Strategy::onOrderBookUpdate",
+          "features": [
+            "bid_ask_imbalance",
+            "book_pressure",
+            "depth_slope"
+          ],
+          "evidenceStatus": "awaiting_l2_orderbook_ingestion"
+        },
+        "predictionUse": "combine current volume impulse with orderbook imbalance to adjust direction and momentum confidence",
+        "evidence": {
+          "status": "volume_only",
+          "volumeDirection": "down",
+          "fusionDirection": "down",
+          "confidence": 0.2977979851110119,
+          "orderbookStatus": "awaiting_l2_orderbook_ingestion",
+          "integrationBranch": "codex/l2-orderbook-ingestion",
+          "requiredOrderbookFeatures": [
+            "bid_ask_imbalance",
+            "book_pressure",
+            "depth_slope"
+          ],
+          "fusionMethod": "use current volume as the first direction vote, then raise or lower confidence with L2 orderbook imbalance once orderbook events are wired"
+        }
+      }
+    },
+    "optimizedFor": {
+      "primaryObjective": "maximize_train_validation_excess_return",
+      "selectionScore": "0.70 train excess return + 0.30 validation excess return minus inventory, drawdown, and no-trade penalties",
+      "backtesterGates": [
+        "positive_strategy_return",
+        "beat_spx_same_window",
+        "beat_same_stock_buy_and_hold"
+      ],
+      "strategyBudget": null,
+      "hyperparameters": [
+        "baseline_quantile",
+        "execution_steps",
+        "order_quantity_usd",
+        "step_delta_pct",
+        "threshold_pct_of_step"
+      ]
+    },
+    "categoryLabels": [
+      "direction",
+      "volatility",
+      "indexFuturesDirection",
+      "optionsProbabilityMap3d",
+      "tradeVolumeOrderbook"
+    ]
+  }
+}

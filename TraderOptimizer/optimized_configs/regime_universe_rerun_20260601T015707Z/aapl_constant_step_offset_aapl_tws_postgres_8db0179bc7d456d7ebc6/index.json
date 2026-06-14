@@ -1,0 +1,232 @@
+{
+  "configs": [
+    {
+      "name": "constant_step_offset_aapl_tws_postgres",
+      "strategy_type": "ConstantStepOffset",
+      "variant": "CSO",
+      "symbols": [
+        "AAPL"
+      ],
+      "source_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderCore/configs/backtesting/constant_step_offset_aapl_tws_postgres.json",
+      "best_value": 0.005633483321343969,
+      "strategy_return_pct": 0.000976075000000128,
+      "benchmark_return_pct": -0.0014559068219634356,
+      "excess_return_pct": 0.0024319818219635638,
+      "exported_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderCore/TraderLogicConfigs/TraderOptimizer/optimized_configs/regime_universe_rerun_20260601T015707Z/aapl_constant_step_offset_aapl_tws_postgres_8db0179bc7d456d7ebc6/constant_step_offset_aapl_tws_postgres.optimized.json",
+      "run_config": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/regime_tuning_universe/tasks_rerun_20260601T015707Z/aapl_constant_step_offset_aapl_tws_postgres_8db0179bc7d456d7ebc6/constant_step_offset_aapl_tws_postgres/best_config.json",
+      "summary": "/Users/vrajpandya/.openclaw/workspace/Trader/TraderOptimizer/runs/regime_tuning_universe/tasks_rerun_20260601T015707Z/aapl_constant_step_offset_aapl_tws_postgres_8db0179bc7d456d7ebc6/constant_step_offset_aapl_tws_postgres/best_summary.json",
+      "tuning_profile": {
+        "schema": "strategy_tuning_profile.v1",
+        "strategyName": "constant_step_offset_aapl_tws_postgres",
+        "strategyType": "ConstantStepOffset",
+        "variant": "CSO",
+        "symbols": [
+          "AAPL"
+        ],
+        "assetClasses": [
+          {
+            "symbol": "AAPL",
+            "secType": "STOCK",
+            "exchange": "BACKTESTER"
+          }
+        ],
+        "tunedFor": {
+          "direction": {
+            "status": "active",
+            "expectedDirection": "up_or_down_around_baseline",
+            "sidePolicy": "mean_reversion_band",
+            "curveSlopeSeverity": 3,
+            "curveSlopeSeverityDefault": 3,
+            "curveSlopeSeverityMeaning": "higher means a steeper curve and stronger directional conviction",
+            "signalSource": "price_curve",
+            "tunedFields": [
+              "baseline_quantile",
+              "step_delta_pct",
+              "execution_steps",
+              "threshold_pct_of_step"
+            ],
+            "evidence": {
+              "aggregate": {
+                "primarySymbol": "AAPL",
+                "predictedDirection": "down",
+                "curveSlopeSeverity": 2,
+                "averageWindowReturnPct": -0.0014399078458978698
+              },
+              "bySymbol": {
+                "AAPL": {
+                  "firstTimestamp": "2026-05-29T13:30:00+00:00",
+                  "lastTimestamp": "2026-05-29T19:59:50+00:00",
+                  "bars": 2340,
+                  "windowReturnPct": -0.0014399078458978698,
+                  "linearSlopePct": -0.00857161729782789,
+                  "predictedDirection": "down",
+                  "curveSlopeSeverity": 2,
+                  "curveSlopeSeverityBaseline": 3
+                }
+              }
+            },
+            "observedCurveSlopeSeverity": 2,
+            "observedDirection": "down"
+          },
+          "volatility": {
+            "status": "planned_input",
+            "instrumentVolatility": {
+              "status": "planned_input",
+              "fields": [],
+              "purpose": "size exposure and classify whether the instrument itself is in a quiet or expanding regime",
+              "evidence": {
+                "AAPL": {
+                  "returnStddev": 0.0002263861114273147,
+                  "realizedVolatilityPct": 0.010948758857284021,
+                  "regime": "medium"
+                }
+              }
+            },
+            "marketVolatility": {
+              "status": "planned_input",
+              "proxySymbols": [
+                "SPX",
+                "VIX",
+                "ES"
+              ],
+              "purpose": "separate broad-market volatility from idiosyncratic instrument volatility"
+            }
+          },
+          "indexFuturesDirection": {
+            "status": "planned_input",
+            "instruments": [
+              {
+                "symbol": "AAPL",
+                "status": "planned_input",
+                "candidateIndexFutures": [
+                  "NQ",
+                  "ES"
+                ]
+              }
+            ],
+            "insightMethod": "compare index-future slope and session return against the strategy direction; confirm aligned moves and down-weight direction or momentum when futures conflict",
+            "evidence": {
+              "status": "not_loaded",
+              "aggregate": {
+                "predictedDirection": "unknown",
+                "curveSlopeSeverity": 3
+              },
+              "byFuture": {},
+              "instrumentAlignment": {
+                "status": "not_loaded"
+              }
+            }
+          },
+          "optionsProbabilityMap3d": {
+            "status": "planned_input",
+            "underlyings": [
+              "AAPL"
+            ],
+            "source": "options_trades",
+            "probabilityMap3d": {
+              "axes": [
+                "expiration_days",
+                "strike_moneyness",
+                "trade_time_bucket"
+              ],
+              "cellValues": [
+                "up_probability",
+                "down_probability",
+                "momentum_probability",
+                "call_put_premium_ratio",
+                "trade_volume",
+                "open_interest",
+                "implied_volatility"
+              ],
+              "predictionTargets": [
+                "direction",
+                "momentum"
+              ]
+            }
+          },
+          "tradeVolumeOrderbook": {
+            "status": "partial",
+            "tradeVolume": {
+              "status": "active",
+              "symbols": [
+                "AAPL"
+              ],
+              "features": [
+                "bar_volume",
+                "volume_z_score",
+                "relative_volume"
+              ],
+              "evidence": {
+                "bySymbol": {
+                  "AAPL": {
+                    "latestVolume": 247611.0,
+                    "averageVolume": 11083.05641025641,
+                    "relativeVolume": 22.341400317231756,
+                    "priceVolumeCorrelation": 0.10655810306923205,
+                    "predictedDirection": "down",
+                    "confidence": 0.2131162061384641
+                  }
+                },
+                "aggregate": {
+                  "primarySymbol": "AAPL",
+                  "predictedDirection": "down",
+                  "confidence": 0.2131162061384641
+                }
+              }
+            },
+            "orderbook": {
+              "status": "external_branch_integration",
+              "branch": "codex/l2-orderbook-ingestion",
+              "strategyHook": "Strategy::onOrderBookUpdate",
+              "features": [
+                "bid_ask_imbalance",
+                "book_pressure",
+                "depth_slope"
+              ],
+              "evidenceStatus": "awaiting_l2_orderbook_ingestion"
+            },
+            "predictionUse": "combine current volume impulse with orderbook imbalance to adjust direction and momentum confidence",
+            "evidence": {
+              "status": "volume_only",
+              "volumeDirection": "down",
+              "fusionDirection": "down",
+              "confidence": 0.2131162061384641,
+              "orderbookStatus": "awaiting_l2_orderbook_ingestion",
+              "integrationBranch": "codex/l2-orderbook-ingestion",
+              "requiredOrderbookFeatures": [
+                "bid_ask_imbalance",
+                "book_pressure",
+                "depth_slope"
+              ],
+              "fusionMethod": "use current volume as the first direction vote, then raise or lower confidence with L2 orderbook imbalance once orderbook events are wired"
+            }
+          }
+        },
+        "optimizedFor": {
+          "primaryObjective": "maximize_train_validation_excess_return",
+          "selectionScore": "0.70 train excess return + 0.30 validation excess return minus inventory, drawdown, and no-trade penalties",
+          "backtesterGates": [
+            "positive_strategy_return",
+            "beat_spx_same_window",
+            "beat_same_stock_buy_and_hold"
+          ],
+          "strategyBudget": null,
+          "hyperparameters": [
+            "baseline_quantile",
+            "execution_steps",
+            "order_quantity_usd",
+            "step_delta_pct",
+            "threshold_pct_of_step"
+          ]
+        },
+        "categoryLabels": [
+          "direction",
+          "volatility",
+          "indexFuturesDirection",
+          "optionsProbabilityMap3d",
+          "tradeVolumeOrderbook"
+        ]
+      }
+    }
+  ]
+}
