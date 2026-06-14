@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 100000.0,
+  "stepDelta": 5000.0,
+  "executionLimitOffset": 40000.0,
+  "stateTransitionThreshold": 24.0,
+  "orderQuantityInUSD": 10.0,
+  "orderQuantity": 0.00014,
+  "contract": {
+    "symbol": "BTC",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "BTC-USD",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "COINBASE"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_BTC_IBKR_COMMISSION_TEST",
+  "ledgerContextCollection": "CSO_BTC_IBKR_COMMISSION_TEST_context"
+}

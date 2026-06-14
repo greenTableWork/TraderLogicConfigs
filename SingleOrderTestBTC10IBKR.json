@@ -1,0 +1,14 @@
+{
+  "strategy_type": "SingleOrderTest",
+  "orderQuantityInUSD": 10.0,
+  "limitPrice": 65000.0,
+  "priceSubscription": {
+    "type": "price"
+  },
+  "contract": {
+    "symbol": "BTC",
+    "secType": "CRYPTO",
+    "currency": "USD",
+    "exchange": "IBKR"
+  }
+}
