@@ -1,0 +1,25 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "REGIME-001",
+  "portfolioNotional": 100000.0,
+  "maxGrossExposure": 1.0,
+  "defaultRegimeExposure": 1.0,
+  "minTradeQuantity": 0.0001,
+  "contracts": [
+    {
+      "symbol": "AMD",
+      "secType": "STOCK",
+      "currency": "USD",
+      "exchange": "BACKTESTER"
+    }
+  ],
+  "targetWeights": [
+    {
+      "symbol": "AMD",
+      "weight": 1.0
+    }
+  ],
+  "researchNotes": "Static AMD target-weight allocation for the 2026-05-22 to 2026-06-22 monthly return validation window using 10-second RTH PostgreSQL bars.",
+  "ledgerPath": "data/TraderLedger/REGIME001_AMD_STATIC_TARGET_MONTHLY",
+  "ledgerContextCollection": "REGIME001_AMD_STATIC_TARGET_MONTHLY_context"
+}
