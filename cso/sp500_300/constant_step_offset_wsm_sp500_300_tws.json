@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 226.92,
+  "stepDelta": 0.11,
+  "executionLimitOffset": 55.0,
+  "stateTransitionThreshold": 0.03,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "WSM",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "WSM",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_WSM_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_WSM_TWS_context"
+}

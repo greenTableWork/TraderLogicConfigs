@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 298.01,
+  "stepDelta": 0.15,
+  "executionLimitOffset": 75.0,
+  "stateTransitionThreshold": 0.04,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "AAPL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "AAPL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_AAPL_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_AAPL_TWS_context"
+}

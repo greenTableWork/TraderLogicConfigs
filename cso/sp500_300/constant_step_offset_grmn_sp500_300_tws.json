@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 234.2,
+  "stepDelta": 0.12,
+  "executionLimitOffset": 60.0,
+  "stateTransitionThreshold": 0.03,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "GRMN",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "GRMN",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_GRMN_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_GRMN_TWS_context"
+}

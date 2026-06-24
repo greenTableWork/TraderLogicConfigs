@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 225.12,
+  "stepDelta": 0.11,
+  "executionLimitOffset": 55.0,
+  "stateTransitionThreshold": 0.03,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "MTB",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "MTB",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_MTB_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_MTB_TWS_context"
+}

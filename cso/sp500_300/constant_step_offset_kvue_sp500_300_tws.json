@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 18.12,
+  "stepDelta": 0.01,
+  "executionLimitOffset": 5.0,
+  "stateTransitionThreshold": 0.01,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 16,
+  "contract": {
+    "symbol": "KVUE",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "KVUE",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_KVUE_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_KVUE_TWS_context"
+}

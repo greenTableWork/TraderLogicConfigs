@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 246.38,
+  "stepDelta": 0.12,
+  "executionLimitOffset": 60.0,
+  "stateTransitionThreshold": 0.03,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "CME",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "CME",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_CME_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_CME_TWS_context"
+}

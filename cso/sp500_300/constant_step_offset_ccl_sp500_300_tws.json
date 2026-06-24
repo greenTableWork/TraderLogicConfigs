@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 30.87,
+  "stepDelta": 0.02,
+  "executionLimitOffset": 10.0,
+  "stateTransitionThreshold": 0.01,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 9,
+  "contract": {
+    "symbol": "CCL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "CCL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_CCL_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_CCL_TWS_context"
+}

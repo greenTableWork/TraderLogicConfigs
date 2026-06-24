@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 169.67,
+  "stepDelta": 0.08,
+  "executionLimitOffset": 40.0,
+  "stateTransitionThreshold": 0.02,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "ANET",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "ANET",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_ANET_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_ANET_TWS_context"
+}

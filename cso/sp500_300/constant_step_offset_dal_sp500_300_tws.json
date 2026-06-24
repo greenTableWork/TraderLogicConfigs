@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 84.18,
+  "stepDelta": 0.04,
+  "executionLimitOffset": 20.0,
+  "stateTransitionThreshold": 0.01,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 3,
+  "contract": {
+    "symbol": "DAL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "DAL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_DAL_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_DAL_TWS_context"
+}

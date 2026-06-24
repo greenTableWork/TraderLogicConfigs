@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 135.06,
+  "stepDelta": 0.07,
+  "executionLimitOffset": 35.0,
+  "stateTransitionThreshold": 0.02,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 2,
+  "contract": {
+    "symbol": "NRG",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "NRG",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_NRG_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_NRG_TWS_context"
+}

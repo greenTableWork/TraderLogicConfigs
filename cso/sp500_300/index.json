@@ -1,0 +1,4613 @@
+{
+  "name": "sp500_cso_300_tws",
+  "strategy_type": "ConstantStepOffset",
+  "generatedAt": "2026-06-21T16:31:34Z",
+  "constituentSource": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+  "priceSource": "Yahoo Finance chart API daily close, range=10d",
+  "budgetUSD": 300.0,
+  "constituentCount": 394,
+  "quoteFallbacks": [],
+  "notes": [
+    "ConstantStepOffset accepts one contract per config, so this directory contains one config per eligible S&P 500 listed stock.",
+    "Configs whose minimum whole-share stock order exceeded the 300 USD budget were removed."
+  ],
+  "configs": [
+    {
+      "symbol": "A",
+      "security": "Agilent Technologies",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_a_sp500_300_tws.json",
+      "baseline": 127.06,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 254.12
+    },
+    {
+      "symbol": "AAPL",
+      "security": "Apple Inc.",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_aapl_sp500_300_tws.json",
+      "baseline": 298.01,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 298.01
+    },
+    {
+      "symbol": "ABBV",
+      "security": "AbbVie",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_abbv_sp500_300_tws.json",
+      "baseline": 216.49,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 216.49
+    },
+    {
+      "symbol": "ABNB",
+      "security": "Airbnb",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_abnb_sp500_300_tws.json",
+      "baseline": 142.41,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 284.82
+    },
+    {
+      "symbol": "ABT",
+      "security": "Abbott Laboratories",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_abt_sp500_300_tws.json",
+      "baseline": 88.41,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 265.23
+    },
+    {
+      "symbol": "ACGL",
+      "security": "Arch Capital Group",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_acgl_sp500_300_tws.json",
+      "baseline": 91.18,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 273.54
+    },
+    {
+      "symbol": "ACN",
+      "security": "Accenture",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_acn_sp500_300_tws.json",
+      "baseline": 127.98,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 255.96
+    },
+    {
+      "symbol": "ADBE",
+      "security": "Adobe Inc.",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_adbe_sp500_300_tws.json",
+      "baseline": 195.16,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 195.16
+    },
+    {
+      "symbol": "ADM",
+      "security": "Archer Daniels Midland",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_adm_sp500_300_tws.json",
+      "baseline": 75.1,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 225.3
+    },
+    {
+      "symbol": "ADP",
+      "security": "Automatic Data Processing",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_adp_sp500_300_tws.json",
+      "baseline": 218.41,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 218.41
+    },
+    {
+      "symbol": "ADSK",
+      "security": "Autodesk",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_adsk_sp500_300_tws.json",
+      "baseline": 193.82,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 193.82
+    },
+    {
+      "symbol": "AEE",
+      "security": "Ameren",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_aee_sp500_300_tws.json",
+      "baseline": 108.67,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 217.34
+    },
+    {
+      "symbol": "AEP",
+      "security": "American Electric Power",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_aep_sp500_300_tws.json",
+      "baseline": 127.69,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 255.38
+    },
+    {
+      "symbol": "AES",
+      "security": "AES Corporation",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_aes_sp500_300_tws.json",
+      "baseline": 14.62,
+      "orderQuantity": 20,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 292.4
+    },
+    {
+      "symbol": "AFL",
+      "security": "Aflac",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_afl_sp500_300_tws.json",
+      "baseline": 115.47,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 230.94
+    },
+    {
+      "symbol": "AIG",
+      "security": "American International Group",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_aig_sp500_300_tws.json",
+      "baseline": 74.02,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 296.08
+    },
+    {
+      "symbol": "AIZ",
+      "security": "Assurant",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_aiz_sp500_300_tws.json",
+      "baseline": 259.86,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 259.86
+    },
+    {
+      "symbol": "AJG",
+      "security": "Arthur J. Gallagher & Co.",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ajg_sp500_300_tws.json",
+      "baseline": 214.06,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 214.06
+    },
+    {
+      "symbol": "AKAM",
+      "security": "Akamai Technologies",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_akam_sp500_300_tws.json",
+      "baseline": 124.91,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 249.82
+    },
+    {
+      "symbol": "ALB",
+      "security": "Albemarle Corporation",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_alb_sp500_300_tws.json",
+      "baseline": 160.35,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 160.35
+    },
+    {
+      "symbol": "ALGN",
+      "security": "Align Technology",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_algn_sp500_300_tws.json",
+      "baseline": 182.08,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 182.08
+    },
+    {
+      "symbol": "ALL",
+      "security": "Allstate",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_all_sp500_300_tws.json",
+      "baseline": 221.17,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 221.17
+    },
+    {
+      "symbol": "ALLE",
+      "security": "Allegion",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_alle_sp500_300_tws.json",
+      "baseline": 133.57,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 267.14
+    },
+    {
+      "symbol": "AMCR",
+      "security": "Amcor",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_amcr_sp500_300_tws.json",
+      "baseline": 41.08,
+      "orderQuantity": 7,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 287.56
+    },
+    {
+      "symbol": "AME",
+      "security": "Ametek",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ame_sp500_300_tws.json",
+      "baseline": 237.42,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 237.42
+    },
+    {
+      "symbol": "AMT",
+      "security": "American Tower",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_amt_sp500_300_tws.json",
+      "baseline": 176.05,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 176.05
+    },
+    {
+      "symbol": "AMZN",
+      "security": "Amazon",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_amzn_sp500_300_tws.json",
+      "baseline": 244.39,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 244.39
+    },
+    {
+      "symbol": "ANET",
+      "security": "Arista Networks",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_anet_sp500_300_tws.json",
+      "baseline": 169.67,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 169.67
+    },
+    {
+      "symbol": "AOS",
+      "security": "A. O. Smith",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_aos_sp500_300_tws.json",
+      "baseline": 58.22,
+      "orderQuantity": 5,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 291.1
+    },
+    {
+      "symbol": "APA",
+      "security": "APA Corporation",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_apa_sp500_300_tws.json",
+      "baseline": 33.03,
+      "orderQuantity": 9,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 297.27
+    },
+    {
+      "symbol": "APD",
+      "security": "Air Products",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_apd_sp500_300_tws.json",
+      "baseline": 280.21,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 280.21
+    },
+    {
+      "symbol": "APH",
+      "security": "Amphenol",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_aph_sp500_300_tws.json",
+      "baseline": 163.96,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 163.96
+    },
+    {
+      "symbol": "APO",
+      "security": "Apollo Global Management",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_apo_sp500_300_tws.json",
+      "baseline": 137.5,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 275.0
+    },
+    {
+      "symbol": "APTV",
+      "security": "Aptiv",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_aptv_sp500_300_tws.json",
+      "baseline": 63.68,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 254.72
+    },
+    {
+      "symbol": "ARE",
+      "security": "Alexandria Real Estate Equities",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_are_sp500_300_tws.json",
+      "baseline": 51.03,
+      "orderQuantity": 5,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 255.15
+    },
+    {
+      "symbol": "ARES",
+      "security": "Ares Management",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ares_sp500_300_tws.json",
+      "baseline": 129.34,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 258.68
+    },
+    {
+      "symbol": "ATO",
+      "security": "Atmos Energy",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ato_sp500_300_tws.json",
+      "baseline": 170.11,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 170.11
+    },
+    {
+      "symbol": "AVB",
+      "security": "AvalonBay Communities",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_avb_sp500_300_tws.json",
+      "baseline": 177.32,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 177.32
+    },
+    {
+      "symbol": "AVY",
+      "security": "Avery Dennison",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_avy_sp500_300_tws.json",
+      "baseline": 158.68,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 158.68
+    },
+    {
+      "symbol": "AWK",
+      "security": "American Water Works",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_awk_sp500_300_tws.json",
+      "baseline": 125.07,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 250.14
+    },
+    {
+      "symbol": "BA",
+      "security": "Boeing",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ba_sp500_300_tws.json",
+      "baseline": 222.72,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 222.72
+    },
+    {
+      "symbol": "BAC",
+      "security": "Bank of America",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_bac_sp500_300_tws.json",
+      "baseline": 56.2,
+      "orderQuantity": 5,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 281.0
+    },
+    {
+      "symbol": "BALL",
+      "security": "Ball Corporation",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ball_sp500_300_tws.json",
+      "baseline": 57.72,
+      "orderQuantity": 5,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 288.6
+    },
+    {
+      "symbol": "BAX",
+      "security": "Baxter International",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_bax_sp500_300_tws.json",
+      "baseline": 19.89,
+      "orderQuantity": 15,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 298.35
+    },
+    {
+      "symbol": "BBY",
+      "security": "Best Buy",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_bby_sp500_300_tws.json",
+      "baseline": 74.73,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 298.92
+    },
+    {
+      "symbol": "BDX",
+      "security": "Becton Dickinson",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_bdx_sp500_300_tws.json",
+      "baseline": 143.98,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 287.96
+    },
+    {
+      "symbol": "BEN",
+      "security": "Franklin Resources",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ben_sp500_300_tws.json",
+      "baseline": 33.05,
+      "orderQuantity": 9,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 297.45
+    },
+    {
+      "symbol": "BF.B",
+      "security": "Brown\u2013Forman",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_bf_b_sp500_300_tws.json",
+      "baseline": 26.64,
+      "orderQuantity": 11,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 293.04
+    },
+    {
+      "symbol": "BG",
+      "security": "Bunge Global",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_bg_sp500_300_tws.json",
+      "baseline": 112.58,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 225.16
+    },
+    {
+      "symbol": "BIIB",
+      "security": "Biogen",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_biib_sp500_300_tws.json",
+      "baseline": 196.58,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 196.58
+    },
+    {
+      "symbol": "BKNG",
+      "security": "Booking Holdings",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_bkng_sp500_300_tws.json",
+      "baseline": 171.78,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 171.78
+    },
+    {
+      "symbol": "BKR",
+      "security": "Baker Hughes",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_bkr_sp500_300_tws.json",
+      "baseline": 58.41,
+      "orderQuantity": 5,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 292.05
+    },
+    {
+      "symbol": "BLDR",
+      "security": "Builders FirstSource",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_bldr_sp500_300_tws.json",
+      "baseline": 80.59,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 241.77
+    },
+    {
+      "symbol": "BMY",
+      "security": "Bristol Myers Squibb",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_bmy_sp500_300_tws.json",
+      "baseline": 54.0,
+      "orderQuantity": 5,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 270.0
+    },
+    {
+      "symbol": "BNY",
+      "security": "BNY Mellon",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_bny_sp500_300_tws.json",
+      "baseline": 143.63,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 287.26
+    },
+    {
+      "symbol": "BR",
+      "security": "Broadridge Financial Solutions",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_br_sp500_300_tws.json",
+      "baseline": 137.6,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 275.2
+    },
+    {
+      "symbol": "BRO",
+      "security": "Brown & Brown",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_bro_sp500_300_tws.json",
+      "baseline": 59.1,
+      "orderQuantity": 5,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 295.5
+    },
+    {
+      "symbol": "BSX",
+      "security": "Boston Scientific",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_bsx_sp500_300_tws.json",
+      "baseline": 45.29,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 271.74
+    },
+    {
+      "symbol": "BX",
+      "security": "Blackstone Inc.",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_bx_sp500_300_tws.json",
+      "baseline": 123.79,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 247.58
+    },
+    {
+      "symbol": "BXP",
+      "security": "BXP, Inc.",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_bxp_sp500_300_tws.json",
+      "baseline": 64.7,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 258.8
+    },
+    {
+      "symbol": "C",
+      "security": "Citigroup",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_c_sp500_300_tws.json",
+      "baseline": 143.06,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 286.12
+    },
+    {
+      "symbol": "CAG",
+      "security": "Conagra Brands",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cag_sp500_300_tws.json",
+      "baseline": 13.2,
+      "orderQuantity": 22,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 290.4
+    },
+    {
+      "symbol": "CAH",
+      "security": "Cardinal Health",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cah_sp500_300_tws.json",
+      "baseline": 221.77,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 221.77
+    },
+    {
+      "symbol": "CARR",
+      "security": "Carrier Global",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_carr_sp500_300_tws.json",
+      "baseline": 71.81,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 287.24
+    },
+    {
+      "symbol": "CBOE",
+      "security": "Cboe Global Markets",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cboe_sp500_300_tws.json",
+      "baseline": 249.1,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 249.1
+    },
+    {
+      "symbol": "CBRE",
+      "security": "CBRE Group",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cbre_sp500_300_tws.json",
+      "baseline": 131.55,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 263.1
+    },
+    {
+      "symbol": "CCI",
+      "security": "Crown Castle",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cci_sp500_300_tws.json",
+      "baseline": 82.05,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 246.15
+    },
+    {
+      "symbol": "CCL",
+      "security": "Carnival Corporation",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ccl_sp500_300_tws.json",
+      "baseline": 30.87,
+      "orderQuantity": 9,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 277.83
+    },
+    {
+      "symbol": "CDW",
+      "security": "CDW Corporation",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cdw_sp500_300_tws.json",
+      "baseline": 128.37,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 256.74
+    },
+    {
+      "symbol": "CEG",
+      "security": "Constellation Energy",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ceg_sp500_300_tws.json",
+      "baseline": 274.06,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 274.06
+    },
+    {
+      "symbol": "CF",
+      "security": "CF Industries",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cf_sp500_300_tws.json",
+      "baseline": 102.93,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 205.86
+    },
+    {
+      "symbol": "CFG",
+      "security": "Citizens Financial Group",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cfg_sp500_300_tws.json",
+      "baseline": 67.08,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 268.32
+    },
+    {
+      "symbol": "CHD",
+      "security": "Church & Dwight",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_chd_sp500_300_tws.json",
+      "baseline": 95.63,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 286.89
+    },
+    {
+      "symbol": "CHRW",
+      "security": "C.H. Robinson",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_chrw_sp500_300_tws.json",
+      "baseline": 185.04,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 185.04
+    },
+    {
+      "symbol": "CHTR",
+      "security": "Charter Communications",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_chtr_sp500_300_tws.json",
+      "baseline": 126.23,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 252.46
+    },
+    {
+      "symbol": "CI",
+      "security": "Cigna",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ci_sp500_300_tws.json",
+      "baseline": 279.27,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 279.27
+    },
+    {
+      "symbol": "CINF",
+      "security": "Cincinnati Financial",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cinf_sp500_300_tws.json",
+      "baseline": 170.2,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 170.2
+    },
+    {
+      "symbol": "CL",
+      "security": "Colgate-Palmolive",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cl_sp500_300_tws.json",
+      "baseline": 89.48,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 268.44
+    },
+    {
+      "symbol": "CLX",
+      "security": "Clorox",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_clx_sp500_300_tws.json",
+      "baseline": 95.8,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 287.4
+    },
+    {
+      "symbol": "CMCSA",
+      "security": "Comcast",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cmcsa_sp500_300_tws.json",
+      "baseline": 22.43,
+      "orderQuantity": 13,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 291.59
+    },
+    {
+      "symbol": "CME",
+      "security": "CME Group",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cme_sp500_300_tws.json",
+      "baseline": 246.38,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 246.38
+    },
+    {
+      "symbol": "CMG",
+      "security": "Chipotle Mexican Grill",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cmg_sp500_300_tws.json",
+      "baseline": 32.49,
+      "orderQuantity": 9,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 292.41
+    },
+    {
+      "symbol": "CMS",
+      "security": "CMS Energy",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cms_sp500_300_tws.json",
+      "baseline": 73.38,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 293.52
+    },
+    {
+      "symbol": "CNC",
+      "security": "Centene Corporation",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cnc_sp500_300_tws.json",
+      "baseline": 61.02,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 244.08
+    },
+    {
+      "symbol": "CNP",
+      "security": "CenterPoint Energy",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cnp_sp500_300_tws.json",
+      "baseline": 42.82,
+      "orderQuantity": 7,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 299.74
+    },
+    {
+      "symbol": "COF",
+      "security": "Capital One",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cof_sp500_300_tws.json",
+      "baseline": 201.53,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 201.53
+    },
+    {
+      "symbol": "COIN",
+      "security": "Coinbase",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_coin_sp500_300_tws.json",
+      "baseline": 163.26,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 163.26
+    },
+    {
+      "symbol": "COO",
+      "security": "Cooper Companies (The)",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_coo_sp500_300_tws.json",
+      "baseline": 65.91,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 263.64
+    },
+    {
+      "symbol": "COP",
+      "security": "ConocoPhillips",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cop_sp500_300_tws.json",
+      "baseline": 107.74,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 215.48
+    },
+    {
+      "symbol": "COR",
+      "security": "Cencora",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cor_sp500_300_tws.json",
+      "baseline": 271.83,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 271.83
+    },
+    {
+      "symbol": "CPRT",
+      "security": "Copart",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cprt_sp500_300_tws.json",
+      "baseline": 30.23,
+      "orderQuantity": 9,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 272.07
+    },
+    {
+      "symbol": "CPT",
+      "security": "Camden Property Trust",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cpt_sp500_300_tws.json",
+      "baseline": 108.99,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 217.98
+    },
+    {
+      "symbol": "CRH",
+      "security": "CRH plc",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_crh_sp500_300_tws.json",
+      "baseline": 111.24,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 222.48
+    },
+    {
+      "symbol": "CRL",
+      "security": "Charles River Laboratories",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_crl_sp500_300_tws.json",
+      "baseline": 185.0,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 185.0
+    },
+    {
+      "symbol": "CRM",
+      "security": "Salesforce",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_crm_sp500_300_tws.json",
+      "baseline": 151.78,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 151.78
+    },
+    {
+      "symbol": "CSCO",
+      "security": "Cisco",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_csco_sp500_300_tws.json",
+      "baseline": 119.54,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 239.08
+    },
+    {
+      "symbol": "CSGP",
+      "security": "CoStar Group",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_csgp_sp500_300_tws.json",
+      "baseline": 30.12,
+      "orderQuantity": 9,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 271.08
+    },
+    {
+      "symbol": "CSX",
+      "security": "CSX Corporation",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_csx_sp500_300_tws.json",
+      "baseline": 45.63,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 273.78
+    },
+    {
+      "symbol": "CTAS",
+      "security": "Cintas",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ctas_sp500_300_tws.json",
+      "baseline": 170.85,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 170.85
+    },
+    {
+      "symbol": "CTSH",
+      "security": "Cognizant",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ctsh_sp500_300_tws.json",
+      "baseline": 43.7,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 262.2
+    },
+    {
+      "symbol": "CTVA",
+      "security": "Corteva",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ctva_sp500_300_tws.json",
+      "baseline": 78.59,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 235.77
+    },
+    {
+      "symbol": "CVNA",
+      "security": "Carvana",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cvna_sp500_300_tws.json",
+      "baseline": 66.56,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 266.24
+    },
+    {
+      "symbol": "CVS",
+      "security": "CVS Health",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cvs_sp500_300_tws.json",
+      "baseline": 98.32,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 294.96
+    },
+    {
+      "symbol": "CVX",
+      "security": "Chevron Corporation",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_cvx_sp500_300_tws.json",
+      "baseline": 173.63,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 173.63
+    },
+    {
+      "symbol": "D",
+      "security": "Dominion Energy",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_d_sp500_300_tws.json",
+      "baseline": 68.41,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 273.64
+    },
+    {
+      "symbol": "DAL",
+      "security": "Delta Air Lines",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dal_sp500_300_tws.json",
+      "baseline": 84.18,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 252.54
+    },
+    {
+      "symbol": "DASH",
+      "security": "DoorDash",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dash_sp500_300_tws.json",
+      "baseline": 173.46,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 173.46
+    },
+    {
+      "symbol": "DD",
+      "security": "DuPont",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dd_sp500_300_tws.json",
+      "baseline": 47.71,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 286.26
+    },
+    {
+      "symbol": "DDOG",
+      "security": "Datadog",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ddog_sp500_300_tws.json",
+      "baseline": 223.0,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 223.0
+    },
+    {
+      "symbol": "DECK",
+      "security": "Deckers Brands",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_deck_sp500_300_tws.json",
+      "baseline": 109.11,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 218.22
+    },
+    {
+      "symbol": "DG",
+      "security": "Dollar General",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dg_sp500_300_tws.json",
+      "baseline": 113.45,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 226.9
+    },
+    {
+      "symbol": "DGX",
+      "security": "Quest Diagnostics",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dgx_sp500_300_tws.json",
+      "baseline": 195.0,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 195.0
+    },
+    {
+      "symbol": "DHI",
+      "security": "D. R. Horton",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dhi_sp500_300_tws.json",
+      "baseline": 157.81,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 157.81
+    },
+    {
+      "symbol": "DHR",
+      "security": "Danaher Corporation",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dhr_sp500_300_tws.json",
+      "baseline": 177.17,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 177.17
+    },
+    {
+      "symbol": "DIS",
+      "security": "Walt Disney Company (The)",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dis_sp500_300_tws.json",
+      "baseline": 103.89,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 207.78
+    },
+    {
+      "symbol": "DLR",
+      "security": "Digital Realty",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dlr_sp500_300_tws.json",
+      "baseline": 188.15,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 188.15
+    },
+    {
+      "symbol": "DLTR",
+      "security": "Dollar Tree",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dltr_sp500_300_tws.json",
+      "baseline": 111.65,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 223.3
+    },
+    {
+      "symbol": "DOC",
+      "security": "Healthpeak Properties",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_doc_sp500_300_tws.json",
+      "baseline": 19.56,
+      "orderQuantity": 15,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 293.4
+    },
+    {
+      "symbol": "DOV",
+      "security": "Dover Corporation",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dov_sp500_300_tws.json",
+      "baseline": 223.57,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 223.57
+    },
+    {
+      "symbol": "DOW",
+      "security": "Dow Inc.",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dow_sp500_300_tws.json",
+      "baseline": 31.73,
+      "orderQuantity": 9,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 285.57
+    },
+    {
+      "symbol": "DRI",
+      "security": "Darden Restaurants",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dri_sp500_300_tws.json",
+      "baseline": 213.45,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 213.45
+    },
+    {
+      "symbol": "DTE",
+      "security": "DTE Energy",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dte_sp500_300_tws.json",
+      "baseline": 147.56,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 295.12
+    },
+    {
+      "symbol": "DUK",
+      "security": "Duke Energy",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_duk_sp500_300_tws.json",
+      "baseline": 123.86,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 247.72
+    },
+    {
+      "symbol": "DVA",
+      "security": "DaVita",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dva_sp500_300_tws.json",
+      "baseline": 207.91,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 207.91
+    },
+    {
+      "symbol": "DVN",
+      "security": "Devon Energy",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dvn_sp500_300_tws.json",
+      "baseline": 42.12,
+      "orderQuantity": 7,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 294.84
+    },
+    {
+      "symbol": "DXCM",
+      "security": "Dexcom",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_dxcm_sp500_300_tws.json",
+      "baseline": 72.47,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 289.88
+    },
+    {
+      "symbol": "EA",
+      "security": "Electronic Arts",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ea_sp500_300_tws.json",
+      "baseline": 202.15,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 202.15
+    },
+    {
+      "symbol": "EBAY",
+      "security": "eBay Inc.",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ebay_sp500_300_tws.json",
+      "baseline": 108.24,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 216.48
+    },
+    {
+      "symbol": "ECL",
+      "security": "Ecolab",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ecl_sp500_300_tws.json",
+      "baseline": 269.12,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 269.12
+    },
+    {
+      "symbol": "ED",
+      "security": "Consolidated Edison",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ed_sp500_300_tws.json",
+      "baseline": 106.36,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 212.72
+    },
+    {
+      "symbol": "EFX",
+      "security": "Equifax",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_efx_sp500_300_tws.json",
+      "baseline": 153.93,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 153.93
+    },
+    {
+      "symbol": "EIX",
+      "security": "Edison International",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_eix_sp500_300_tws.json",
+      "baseline": 71.89,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 287.56
+    },
+    {
+      "symbol": "EL",
+      "security": "Est\u00e9e Lauder Companies (The)",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_el_sp500_300_tws.json",
+      "baseline": 84.81,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 254.43
+    },
+    {
+      "symbol": "EMR",
+      "security": "Emerson Electric",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_emr_sp500_300_tws.json",
+      "baseline": 150.66,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 150.66
+    },
+    {
+      "symbol": "EOG",
+      "security": "EOG Resources",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_eog_sp500_300_tws.json",
+      "baseline": 129.98,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 259.96
+    },
+    {
+      "symbol": "EQR",
+      "security": "Equity Residential",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_eqr_sp500_300_tws.json",
+      "baseline": 64.09,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 256.36
+    },
+    {
+      "symbol": "EQT",
+      "security": "EQT Corporation",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_eqt_sp500_300_tws.json",
+      "baseline": 50.72,
+      "orderQuantity": 5,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 253.6
+    },
+    {
+      "symbol": "ERIE",
+      "security": "Erie Indemnity",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_erie_sp500_300_tws.json",
+      "baseline": 221.14,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 221.14
+    },
+    {
+      "symbol": "ES",
+      "security": "Eversource Energy",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_es_sp500_300_tws.json",
+      "baseline": 69.59,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 278.36
+    },
+    {
+      "symbol": "ESS",
+      "security": "Essex Property Trust",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ess_sp500_300_tws.json",
+      "baseline": 273.71,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 273.71
+    },
+    {
+      "symbol": "ETR",
+      "security": "Entergy",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_etr_sp500_300_tws.json",
+      "baseline": 111.11,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 222.22
+    },
+    {
+      "symbol": "EVRG",
+      "security": "Evergy",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_evrg_sp500_300_tws.json",
+      "baseline": 82.5,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 247.5
+    },
+    {
+      "symbol": "EW",
+      "security": "Edwards Lifesciences",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ew_sp500_300_tws.json",
+      "baseline": 87.36,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 262.08
+    },
+    {
+      "symbol": "EXC",
+      "security": "Exelon",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_exc_sp500_300_tws.json",
+      "baseline": 45.81,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 274.86
+    },
+    {
+      "symbol": "EXE",
+      "security": "Expand Energy",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_exe_sp500_300_tws.json",
+      "baseline": 86.98,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 260.94
+    },
+    {
+      "symbol": "EXPD",
+      "security": "Expeditors International",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_expd_sp500_300_tws.json",
+      "baseline": 161.32,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 161.32
+    },
+    {
+      "symbol": "EXPE",
+      "security": "Expedia Group",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_expe_sp500_300_tws.json",
+      "baseline": 240.9,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 240.9
+    },
+    {
+      "symbol": "EXR",
+      "security": "Extra Space Storage",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_exr_sp500_300_tws.json",
+      "baseline": 145.33,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 290.66
+    },
+    {
+      "symbol": "F",
+      "security": "Ford Motor Company",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_f_sp500_300_tws.json",
+      "baseline": 14.06,
+      "orderQuantity": 21,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 295.26
+    },
+    {
+      "symbol": "FANG",
+      "security": "Diamondback Energy",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_fang_sp500_300_tws.json",
+      "baseline": 183.5,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 183.5
+    },
+    {
+      "symbol": "FAST",
+      "security": "Fastenal",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_fast_sp500_300_tws.json",
+      "baseline": 45.89,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 275.34
+    },
+    {
+      "symbol": "FCX",
+      "security": "Freeport-McMoRan",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_fcx_sp500_300_tws.json",
+      "baseline": 68.68,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 274.72
+    },
+    {
+      "symbol": "FDS",
+      "security": "FactSet",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_fds_sp500_300_tws.json",
+      "baseline": 221.29,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 221.29
+    },
+    {
+      "symbol": "FDXF",
+      "security": "FedEx Freight",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_fdxf_sp500_300_tws.json",
+      "baseline": 162.85,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 162.85
+    },
+    {
+      "symbol": "FE",
+      "security": "FirstEnergy",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_fe_sp500_300_tws.json",
+      "baseline": 46.45,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 278.7
+    },
+    {
+      "symbol": "FIS",
+      "security": "Fidelity National Information Services",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_fis_sp500_300_tws.json",
+      "baseline": 38.21,
+      "orderQuantity": 7,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 267.47
+    },
+    {
+      "symbol": "FISV",
+      "security": "Fiserv",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_fisv_sp500_300_tws.json",
+      "baseline": 47.86,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 287.16
+    },
+    {
+      "symbol": "FITB",
+      "security": "Fifth Third Bancorp",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_fitb_sp500_300_tws.json",
+      "baseline": 52.74,
+      "orderQuantity": 5,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 263.7
+    },
+    {
+      "symbol": "FLEX",
+      "security": "Flex Ltd.",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_flex_sp500_300_tws.json",
+      "baseline": 147.61,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 295.22
+    },
+    {
+      "symbol": "FOX",
+      "security": "Fox Corporation (Class B)",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_fox_sp500_300_tws.json",
+      "baseline": 46.95,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 281.7
+    },
+    {
+      "symbol": "FOXA",
+      "security": "Fox Corporation (Class A)",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_foxa_sp500_300_tws.json",
+      "baseline": 52.23,
+      "orderQuantity": 5,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 261.15
+    },
+    {
+      "symbol": "FRT",
+      "security": "Federal Realty Investment Trust",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_frt_sp500_300_tws.json",
+      "baseline": 120.39,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 240.78
+    },
+    {
+      "symbol": "FSLR",
+      "security": "First Solar",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_fslr_sp500_300_tws.json",
+      "baseline": 257.7,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 257.7
+    },
+    {
+      "symbol": "FTNT",
+      "security": "Fortinet",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ftnt_sp500_300_tws.json",
+      "baseline": 144.73,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 289.46
+    },
+    {
+      "symbol": "FTV",
+      "security": "Fortive",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ftv_sp500_300_tws.json",
+      "baseline": 61.03,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 244.12
+    },
+    {
+      "symbol": "GDDY",
+      "security": "GoDaddy",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_gddy_sp500_300_tws.json",
+      "baseline": 77.04,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 231.12
+    },
+    {
+      "symbol": "GEHC",
+      "security": "GE HealthCare",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_gehc_sp500_300_tws.json",
+      "baseline": 61.59,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 246.36
+    },
+    {
+      "symbol": "GEN",
+      "security": "Gen Digital",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_gen_sp500_300_tws.json",
+      "baseline": 24.18,
+      "orderQuantity": 12,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 290.16
+    },
+    {
+      "symbol": "GILD",
+      "security": "Gilead Sciences",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_gild_sp500_300_tws.json",
+      "baseline": 123.76,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 247.52
+    },
+    {
+      "symbol": "GIS",
+      "security": "General Mills",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_gis_sp500_300_tws.json",
+      "baseline": 33.42,
+      "orderQuantity": 8,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 267.36
+    },
+    {
+      "symbol": "GL",
+      "security": "Globe Life",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_gl_sp500_300_tws.json",
+      "baseline": 170.76,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 170.76
+    },
+    {
+      "symbol": "GLW",
+      "security": "Corning Inc.",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_glw_sp500_300_tws.json",
+      "baseline": 194.92,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 194.92
+    },
+    {
+      "symbol": "GM",
+      "security": "General Motors",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_gm_sp500_300_tws.json",
+      "baseline": 79.29,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 237.87
+    },
+    {
+      "symbol": "GNRC",
+      "security": "Generac",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_gnrc_sp500_300_tws.json",
+      "baseline": 279.15,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 279.15
+    },
+    {
+      "symbol": "GPC",
+      "security": "Genuine Parts Company",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_gpc_sp500_300_tws.json",
+      "baseline": 108.7,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 217.4
+    },
+    {
+      "symbol": "GPN",
+      "security": "Global Payments",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_gpn_sp500_300_tws.json",
+      "baseline": 66.88,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 267.52
+    },
+    {
+      "symbol": "GRMN",
+      "security": "Garmin",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_grmn_sp500_300_tws.json",
+      "baseline": 234.2,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 234.2
+    },
+    {
+      "symbol": "HAL",
+      "security": "Halliburton",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_hal_sp500_300_tws.json",
+      "baseline": 34.93,
+      "orderQuantity": 8,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 279.44
+    },
+    {
+      "symbol": "HAS",
+      "security": "Hasbro",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_has_sp500_300_tws.json",
+      "baseline": 84.74,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 254.22
+    },
+    {
+      "symbol": "HBAN",
+      "security": "Huntington Bancshares",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_hban_sp500_300_tws.json",
+      "baseline": 16.86,
+      "orderQuantity": 17,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 286.62
+    },
+    {
+      "symbol": "HIG",
+      "security": "Hartford (The)",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_hig_sp500_300_tws.json",
+      "baseline": 128.25,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 256.5
+    },
+    {
+      "symbol": "HII",
+      "security": "Huntington Ingalls Industries",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_hii_sp500_300_tws.json",
+      "baseline": 285.43,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 285.43
+    },
+    {
+      "symbol": "HON",
+      "security": "Honeywell",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_hon_sp500_300_tws.json",
+      "baseline": 229.01,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 229.01
+    },
+    {
+      "symbol": "HOOD",
+      "security": "Robinhood Markets",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_hood_sp500_300_tws.json",
+      "baseline": 108.15,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 216.3
+    },
+    {
+      "symbol": "HPE",
+      "security": "Hewlett Packard Enterprise",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_hpe_sp500_300_tws.json",
+      "baseline": 47.41,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 284.46
+    },
+    {
+      "symbol": "HPQ",
+      "security": "HP Inc.",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_hpq_sp500_300_tws.json",
+      "baseline": 23.5,
+      "orderQuantity": 12,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 282.0
+    },
+    {
+      "symbol": "HRL",
+      "security": "Hormel Foods",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_hrl_sp500_300_tws.json",
+      "baseline": 24.16,
+      "orderQuantity": 12,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 289.92
+    },
+    {
+      "symbol": "HSIC",
+      "security": "Henry Schein",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_hsic_sp500_300_tws.json",
+      "baseline": 79.92,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 239.76
+    },
+    {
+      "symbol": "HST",
+      "security": "Host Hotels & Resorts",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_hst_sp500_300_tws.json",
+      "baseline": 25.01,
+      "orderQuantity": 11,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 275.11
+    },
+    {
+      "symbol": "HSY",
+      "security": "Hershey Company (The)",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_hsy_sp500_300_tws.json",
+      "baseline": 172.63,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 172.63
+    },
+    {
+      "symbol": "HWM",
+      "security": "Howmet Aerospace",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_hwm_sp500_300_tws.json",
+      "baseline": 277.66,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 277.66
+    },
+    {
+      "symbol": "IBKR",
+      "security": "Interactive Brokers",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ibkr_sp500_300_tws.json",
+      "baseline": 96.0,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 288.0
+    },
+    {
+      "symbol": "IBM",
+      "security": "IBM",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ibm_sp500_300_tws.json",
+      "baseline": 249.1,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 249.1
+    },
+    {
+      "symbol": "ICE",
+      "security": "Intercontinental Exchange",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ice_sp500_300_tws.json",
+      "baseline": 133.88,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 267.76
+    },
+    {
+      "symbol": "IEX",
+      "security": "IDEX Corporation",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_iex_sp500_300_tws.json",
+      "baseline": 224.93,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 224.93
+    },
+    {
+      "symbol": "IFF",
+      "security": "International Flavors & Fragrances",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_iff_sp500_300_tws.json",
+      "baseline": 76.72,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 230.16
+    },
+    {
+      "symbol": "INCY",
+      "security": "Incyte",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_incy_sp500_300_tws.json",
+      "baseline": 98.22,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 294.66
+    },
+    {
+      "symbol": "INTC",
+      "security": "Intel",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_intc_sp500_300_tws.json",
+      "baseline": 133.99,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 267.98
+    },
+    {
+      "symbol": "INTU",
+      "security": "Intuit",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_intu_sp500_300_tws.json",
+      "baseline": 267.0,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 267.0
+    },
+    {
+      "symbol": "INVH",
+      "security": "Invitation Homes",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_invh_sp500_300_tws.json",
+      "baseline": 28.41,
+      "orderQuantity": 10,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 284.1
+    },
+    {
+      "symbol": "IP",
+      "security": "International Paper",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ip_sp500_300_tws.json",
+      "baseline": 36.82,
+      "orderQuantity": 8,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 294.56
+    },
+    {
+      "symbol": "IQV",
+      "security": "IQVIA",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_iqv_sp500_300_tws.json",
+      "baseline": 167.77,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 167.77
+    },
+    {
+      "symbol": "IR",
+      "security": "Ingersoll Rand",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ir_sp500_300_tws.json",
+      "baseline": 77.91,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 233.73
+    },
+    {
+      "symbol": "IRM",
+      "security": "Iron Mountain",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_irm_sp500_300_tws.json",
+      "baseline": 127.83,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 255.66
+    },
+    {
+      "symbol": "IT",
+      "security": "Gartner",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_it_sp500_300_tws.json",
+      "baseline": 127.49,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 254.98
+    },
+    {
+      "symbol": "ITW",
+      "security": "Illinois Tool Works",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_itw_sp500_300_tws.json",
+      "baseline": 264.09,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 264.09
+    },
+    {
+      "symbol": "IVZ",
+      "security": "Invesco",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ivz_sp500_300_tws.json",
+      "baseline": 28.14,
+      "orderQuantity": 10,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 281.4
+    },
+    {
+      "symbol": "J",
+      "security": "Jacobs Solutions",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_j_sp500_300_tws.json",
+      "baseline": 120.97,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 241.94
+    },
+    {
+      "symbol": "JBHT",
+      "security": "J.B. Hunt",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_jbht_sp500_300_tws.json",
+      "baseline": 271.22,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 271.22
+    },
+    {
+      "symbol": "JCI",
+      "security": "Johnson Controls",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_jci_sp500_300_tws.json",
+      "baseline": 144.82,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 289.64
+    },
+    {
+      "symbol": "JKHY",
+      "security": "Jack Henry & Associates",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_jkhy_sp500_300_tws.json",
+      "baseline": 126.23,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 252.46
+    },
+    {
+      "symbol": "JNJ",
+      "security": "Johnson & Johnson",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_jnj_sp500_300_tws.json",
+      "baseline": 228.39,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 228.39
+    },
+    {
+      "symbol": "KDP",
+      "security": "Keurig Dr Pepper",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_kdp_sp500_300_tws.json",
+      "baseline": 30.76,
+      "orderQuantity": 9,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 276.84
+    },
+    {
+      "symbol": "KEY",
+      "security": "KeyCorp",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_key_sp500_300_tws.json",
+      "baseline": 22.59,
+      "orderQuantity": 13,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 293.67
+    },
+    {
+      "symbol": "KHC",
+      "security": "Kraft Heinz",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_khc_sp500_300_tws.json",
+      "baseline": 22.82,
+      "orderQuantity": 13,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 296.66
+    },
+    {
+      "symbol": "KIM",
+      "security": "Kimco Realty",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_kim_sp500_300_tws.json",
+      "baseline": 24.38,
+      "orderQuantity": 12,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 292.56
+    },
+    {
+      "symbol": "KKR",
+      "security": "KKR & Co.",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_kkr_sp500_300_tws.json",
+      "baseline": 97.01,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 291.03
+    },
+    {
+      "symbol": "KLAC",
+      "security": "KLA Corporation",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_klac_sp500_300_tws.json",
+      "baseline": 259.56,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 259.56
+    },
+    {
+      "symbol": "KMB",
+      "security": "Kimberly-Clark",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_kmb_sp500_300_tws.json",
+      "baseline": 102.56,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 205.12
+    },
+    {
+      "symbol": "KMI",
+      "security": "Kinder Morgan",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_kmi_sp500_300_tws.json",
+      "baseline": 31.59,
+      "orderQuantity": 9,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 284.31
+    },
+    {
+      "symbol": "KO",
+      "security": "Coca-Cola Company (The)",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ko_sp500_300_tws.json",
+      "baseline": 79.39,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 238.17
+    },
+    {
+      "symbol": "KR",
+      "security": "Kroger",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_kr_sp500_300_tws.json",
+      "baseline": 56.61,
+      "orderQuantity": 5,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 283.05
+    },
+    {
+      "symbol": "KVUE",
+      "security": "Kenvue",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_kvue_sp500_300_tws.json",
+      "baseline": 18.12,
+      "orderQuantity": 16,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 289.92
+    },
+    {
+      "symbol": "L",
+      "security": "Loews Corporation",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_l_sp500_300_tws.json",
+      "baseline": 107.28,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 214.56
+    },
+    {
+      "symbol": "LDOS",
+      "security": "Leidos",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ldos_sp500_300_tws.json",
+      "baseline": 107.12,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 214.24
+    },
+    {
+      "symbol": "LEN",
+      "security": "Lennar",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_len_sp500_300_tws.json",
+      "baseline": 89.73,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 269.19
+    },
+    {
+      "symbol": "LH",
+      "security": "Labcorp",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_lh_sp500_300_tws.json",
+      "baseline": 255.82,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 255.82
+    },
+    {
+      "symbol": "LHX",
+      "security": "L3Harris",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_lhx_sp500_300_tws.json",
+      "baseline": 294.82,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 294.82
+    },
+    {
+      "symbol": "LNT",
+      "security": "Alliant Energy",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_lnt_sp500_300_tws.json",
+      "baseline": 73.0,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 292.0
+    },
+    {
+      "symbol": "LOW",
+      "security": "Lowe's",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_low_sp500_300_tws.json",
+      "baseline": 222.2,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 222.2
+    },
+    {
+      "symbol": "LULU",
+      "security": "Lululemon Athletica",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_lulu_sp500_300_tws.json",
+      "baseline": 111.77,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 223.54
+    },
+    {
+      "symbol": "LUV",
+      "security": "Southwest Airlines",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_luv_sp500_300_tws.json",
+      "baseline": 47.97,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 287.82
+    },
+    {
+      "symbol": "LVS",
+      "security": "Las Vegas Sands",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_lvs_sp500_300_tws.json",
+      "baseline": 48.72,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 292.32
+    },
+    {
+      "symbol": "LYB",
+      "security": "LyondellBasell",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_lyb_sp500_300_tws.json",
+      "baseline": 60.07,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 240.28
+    },
+    {
+      "symbol": "LYV",
+      "security": "Live Nation Entertainment",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_lyv_sp500_300_tws.json",
+      "baseline": 171.24,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 171.24
+    },
+    {
+      "symbol": "MAA",
+      "security": "Mid-America Apartment Communities",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_maa_sp500_300_tws.json",
+      "baseline": 132.5,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 265.0
+    },
+    {
+      "symbol": "MAS",
+      "security": "Masco",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_mas_sp500_300_tws.json",
+      "baseline": 74.38,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 297.52
+    },
+    {
+      "symbol": "MCD",
+      "security": "McDonald's",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_mcd_sp500_300_tws.json",
+      "baseline": 278.61,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 278.61
+    },
+    {
+      "symbol": "MCHP",
+      "security": "Microchip Technology",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_mchp_sp500_300_tws.json",
+      "baseline": 99.77,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 299.31
+    },
+    {
+      "symbol": "MDLZ",
+      "security": "Mondelez International",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_mdlz_sp500_300_tws.json",
+      "baseline": 60.12,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 240.48
+    },
+    {
+      "symbol": "MDT",
+      "security": "Medtronic",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_mdt_sp500_300_tws.json",
+      "baseline": 79.34,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 238.02
+    },
+    {
+      "symbol": "MET",
+      "security": "MetLife",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_met_sp500_300_tws.json",
+      "baseline": 85.58,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 256.74
+    },
+    {
+      "symbol": "MGM",
+      "security": "MGM Resorts",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_mgm_sp500_300_tws.json",
+      "baseline": 46.84,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 281.04
+    },
+    {
+      "symbol": "MKC",
+      "security": "McCormick & Company",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_mkc_sp500_300_tws.json",
+      "baseline": 46.64,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 279.84
+    },
+    {
+      "symbol": "MMM",
+      "security": "3M",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_mmm_sp500_300_tws.json",
+      "baseline": 160.6,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 160.6
+    },
+    {
+      "symbol": "MNST",
+      "security": "Monster Beverage",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_mnst_sp500_300_tws.json",
+      "baseline": 91.34,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 274.02
+    },
+    {
+      "symbol": "MO",
+      "security": "Altria",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_mo_sp500_300_tws.json",
+      "baseline": 69.12,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 276.48
+    },
+    {
+      "symbol": "MOS",
+      "security": "Mosaic Company (The)",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_mos_sp500_300_tws.json",
+      "baseline": 22.9,
+      "orderQuantity": 13,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 297.7
+    },
+    {
+      "symbol": "MPC",
+      "security": "Marathon Petroleum",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_mpc_sp500_300_tws.json",
+      "baseline": 242.91,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 242.91
+    },
+    {
+      "symbol": "MRK",
+      "security": "Merck & Co.",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_mrk_sp500_300_tws.json",
+      "baseline": 113.87,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 227.74
+    },
+    {
+      "symbol": "MRNA",
+      "security": "Moderna",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_mrna_sp500_300_tws.json",
+      "baseline": 63.96,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 255.84
+    },
+    {
+      "symbol": "MRSH",
+      "security": "Marsh McLennan",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_mrsh_sp500_300_tws.json",
+      "baseline": 162.41,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 162.41
+    },
+    {
+      "symbol": "MS",
+      "security": "Morgan Stanley",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ms_sp500_300_tws.json",
+      "baseline": 223.17,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 223.17
+    },
+    {
+      "symbol": "MTB",
+      "security": "M&T Bank",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_mtb_sp500_300_tws.json",
+      "baseline": 225.12,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 225.12
+    },
+    {
+      "symbol": "NCLH",
+      "security": "Norwegian Cruise Line Holdings",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_nclh_sp500_300_tws.json",
+      "baseline": 20.44,
+      "orderQuantity": 14,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 286.16
+    },
+    {
+      "symbol": "NDAQ",
+      "security": "Nasdaq, Inc.",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ndaq_sp500_300_tws.json",
+      "baseline": 82.24,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 246.72
+    },
+    {
+      "symbol": "NDSN",
+      "security": "Nordson Corporation",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ndsn_sp500_300_tws.json",
+      "baseline": 295.92,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 295.92
+    },
+    {
+      "symbol": "NEE",
+      "security": "NextEra Energy",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_nee_sp500_300_tws.json",
+      "baseline": 86.75,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 260.25
+    },
+    {
+      "symbol": "NEM",
+      "security": "Newmont",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_nem_sp500_300_tws.json",
+      "baseline": 103.79,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 207.58
+    },
+    {
+      "symbol": "NFLX",
+      "security": "Netflix",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_nflx_sp500_300_tws.json",
+      "baseline": 77.38,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 232.14
+    },
+    {
+      "symbol": "NI",
+      "security": "NiSource",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ni_sp500_300_tws.json",
+      "baseline": 47.26,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 283.56
+    },
+    {
+      "symbol": "NKE",
+      "security": "Nike, Inc.",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_nke_sp500_300_tws.json",
+      "baseline": 45.2,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 271.2
+    },
+    {
+      "symbol": "NOW",
+      "security": "ServiceNow",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_now_sp500_300_tws.json",
+      "baseline": 95.04,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 285.12
+    },
+    {
+      "symbol": "NRG",
+      "security": "NRG Energy",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_nrg_sp500_300_tws.json",
+      "baseline": 135.06,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 270.12
+    },
+    {
+      "symbol": "NTAP",
+      "security": "NetApp",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ntap_sp500_300_tws.json",
+      "baseline": 159.71,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 159.71
+    },
+    {
+      "symbol": "NTRS",
+      "security": "Northern Trust",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ntrs_sp500_300_tws.json",
+      "baseline": 172.11,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 172.11
+    },
+    {
+      "symbol": "NUE",
+      "security": "Nucor",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_nue_sp500_300_tws.json",
+      "baseline": 243.83,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 243.83
+    },
+    {
+      "symbol": "NVDA",
+      "security": "Nvidia",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_nvda_sp500_300_tws.json",
+      "baseline": 210.69,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 210.69
+    },
+    {
+      "symbol": "NWS",
+      "security": "News Corp (Class B)",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_nws_sp500_300_tws.json",
+      "baseline": 28.75,
+      "orderQuantity": 10,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 287.5
+    },
+    {
+      "symbol": "NWSA",
+      "security": "News Corp (Class A)",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_nwsa_sp500_300_tws.json",
+      "baseline": 25.28,
+      "orderQuantity": 11,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 278.08
+    },
+    {
+      "symbol": "O",
+      "security": "Realty Income",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_o_sp500_300_tws.json",
+      "baseline": 60.24,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 240.96
+    },
+    {
+      "symbol": "ODFL",
+      "security": "Old Dominion",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_odfl_sp500_300_tws.json",
+      "baseline": 221.04,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 221.04
+    },
+    {
+      "symbol": "OKE",
+      "security": "Oneok",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_oke_sp500_300_tws.json",
+      "baseline": 85.03,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 255.09
+    },
+    {
+      "symbol": "OMC",
+      "security": "Omnicom Group",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_omc_sp500_300_tws.json",
+      "baseline": 71.35,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 285.4
+    },
+    {
+      "symbol": "ON",
+      "security": "ON Semiconductor",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_on_sp500_300_tws.json",
+      "baseline": 121.62,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 243.24
+    },
+    {
+      "symbol": "ORCL",
+      "security": "Oracle Corporation",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_orcl_sp500_300_tws.json",
+      "baseline": 184.29,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 184.29
+    },
+    {
+      "symbol": "ORLY",
+      "security": "O\u2019Reilly Automotive",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_orly_sp500_300_tws.json",
+      "baseline": 86.84,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 260.52
+    },
+    {
+      "symbol": "OTIS",
+      "security": "Otis Worldwide",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_otis_sp500_300_tws.json",
+      "baseline": 73.27,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 293.08
+    },
+    {
+      "symbol": "OXY",
+      "security": "Occidental Petroleum",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_oxy_sp500_300_tws.json",
+      "baseline": 51.82,
+      "orderQuantity": 5,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 259.1
+    },
+    {
+      "symbol": "PANW",
+      "security": "Palo Alto Networks",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_panw_sp500_300_tws.json",
+      "baseline": 287.78,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 287.78
+    },
+    {
+      "symbol": "PAYX",
+      "security": "Paychex",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_payx_sp500_300_tws.json",
+      "baseline": 98.24,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 294.72
+    },
+    {
+      "symbol": "PCAR",
+      "security": "Paccar",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_pcar_sp500_300_tws.json",
+      "baseline": 118.95,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 237.9
+    },
+    {
+      "symbol": "PCG",
+      "security": "PG&E Corporation",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_pcg_sp500_300_tws.json",
+      "baseline": 16.48,
+      "orderQuantity": 18,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 296.64
+    },
+    {
+      "symbol": "PEG",
+      "security": "Public Service Enterprise Group",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_peg_sp500_300_tws.json",
+      "baseline": 79.89,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 239.67
+    },
+    {
+      "symbol": "PEP",
+      "security": "PepsiCo",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_pep_sp500_300_tws.json",
+      "baseline": 142.02,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 284.04
+    },
+    {
+      "symbol": "PFE",
+      "security": "Pfizer",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_pfe_sp500_300_tws.json",
+      "baseline": 25.21,
+      "orderQuantity": 11,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 277.31
+    },
+    {
+      "symbol": "PFG",
+      "security": "Principal Financial Group",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_pfg_sp500_300_tws.json",
+      "baseline": 109.57,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 219.14
+    },
+    {
+      "symbol": "PG",
+      "security": "Procter & Gamble",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_pg_sp500_300_tws.json",
+      "baseline": 150.38,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 150.38
+    },
+    {
+      "symbol": "PGR",
+      "security": "Progressive Corporation",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_pgr_sp500_300_tws.json",
+      "baseline": 204.87,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 204.87
+    },
+    {
+      "symbol": "PHM",
+      "security": "PulteGroup",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_phm_sp500_300_tws.json",
+      "baseline": 126.96,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 253.92
+    },
+    {
+      "symbol": "PKG",
+      "security": "Packaging Corporation of America",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_pkg_sp500_300_tws.json",
+      "baseline": 229.02,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 229.02
+    },
+    {
+      "symbol": "PLD",
+      "security": "Prologis",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_pld_sp500_300_tws.json",
+      "baseline": 140.54,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 281.08
+    },
+    {
+      "symbol": "PLTR",
+      "security": "Palantir Technologies",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_pltr_sp500_300_tws.json",
+      "baseline": 128.47,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 256.94
+    },
+    {
+      "symbol": "PM",
+      "security": "Philip Morris International",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_pm_sp500_300_tws.json",
+      "baseline": 178.4,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 178.4
+    },
+    {
+      "symbol": "PNC",
+      "security": "PNC Financial Services",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_pnc_sp500_300_tws.json",
+      "baseline": 232.04,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 232.04
+    },
+    {
+      "symbol": "PNR",
+      "security": "Pentair",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_pnr_sp500_300_tws.json",
+      "baseline": 74.32,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 297.28
+    },
+    {
+      "symbol": "PNW",
+      "security": "Pinnacle West Capital",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_pnw_sp500_300_tws.json",
+      "baseline": 102.32,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 204.64
+    },
+    {
+      "symbol": "PODD",
+      "security": "Insulet Corporation",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_podd_sp500_300_tws.json",
+      "baseline": 145.76,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 291.52
+    },
+    {
+      "symbol": "PPG",
+      "security": "PPG Industries",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ppg_sp500_300_tws.json",
+      "baseline": 118.25,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 236.5
+    },
+    {
+      "symbol": "PPL",
+      "security": "PPL Corporation",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ppl_sp500_300_tws.json",
+      "baseline": 35.38,
+      "orderQuantity": 8,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 283.04
+    },
+    {
+      "symbol": "PRU",
+      "security": "Prudential Financial",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_pru_sp500_300_tws.json",
+      "baseline": 106.53,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 213.06
+    },
+    {
+      "symbol": "PSKY",
+      "security": "Paramount Skydance Corporation",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_psky_sp500_300_tws.json",
+      "baseline": 9.94,
+      "orderQuantity": 30,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 298.2
+    },
+    {
+      "symbol": "PSX",
+      "security": "Phillips 66",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_psx_sp500_300_tws.json",
+      "baseline": 166.14,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 166.14
+    },
+    {
+      "symbol": "PTC",
+      "security": "PTC Inc.",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ptc_sp500_300_tws.json",
+      "baseline": 114.75,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 229.5
+    },
+    {
+      "symbol": "PYPL",
+      "security": "PayPal",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_pypl_sp500_300_tws.json",
+      "baseline": 42.51,
+      "orderQuantity": 7,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 297.57
+    },
+    {
+      "symbol": "Q",
+      "security": "Qnity Electronics",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_q_sp500_300_tws.json",
+      "baseline": 168.98,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 168.98
+    },
+    {
+      "symbol": "QCOM",
+      "security": "Qualcomm",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_qcom_sp500_300_tws.json",
+      "baseline": 226.11,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 226.11
+    },
+    {
+      "symbol": "REG",
+      "security": "Regency Centers",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_reg_sp500_300_tws.json",
+      "baseline": 76.88,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 230.64
+    },
+    {
+      "symbol": "RF",
+      "security": "Regions Financial Corporation",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_rf_sp500_300_tws.json",
+      "baseline": 28.62,
+      "orderQuantity": 10,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 286.2
+    },
+    {
+      "symbol": "RJF",
+      "security": "Raymond James Financial",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_rjf_sp500_300_tws.json",
+      "baseline": 155.86,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 155.86
+    },
+    {
+      "symbol": "RMD",
+      "security": "ResMed",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_rmd_sp500_300_tws.json",
+      "baseline": 188.63,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 188.63
+    },
+    {
+      "symbol": "ROL",
+      "security": "Rollins, Inc.",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_rol_sp500_300_tws.json",
+      "baseline": 44.96,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 269.76
+    },
+    {
+      "symbol": "ROST",
+      "security": "Ross Stores",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_rost_sp500_300_tws.json",
+      "baseline": 232.8,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 232.8
+    },
+    {
+      "symbol": "RSG",
+      "security": "Republic Services",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_rsg_sp500_300_tws.json",
+      "baseline": 204.94,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 204.94
+    },
+    {
+      "symbol": "RTX",
+      "security": "RTX Corporation",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_rtx_sp500_300_tws.json",
+      "baseline": 185.6,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 185.6
+    },
+    {
+      "symbol": "RVTY",
+      "security": "Revvity",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_rvty_sp500_300_tws.json",
+      "baseline": 100.0,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 300.0
+    },
+    {
+      "symbol": "SATS",
+      "security": "EchoStar",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_sats_sp500_300_tws.json",
+      "baseline": 109.17,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 218.34
+    },
+    {
+      "symbol": "SBAC",
+      "security": "SBA Communications",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_sbac_sp500_300_tws.json",
+      "baseline": 186.87,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 186.87
+    },
+    {
+      "symbol": "SBUX",
+      "security": "Starbucks",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_sbux_sp500_300_tws.json",
+      "baseline": 100.65,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 201.3
+    },
+    {
+      "symbol": "SCHW",
+      "security": "Charles Schwab Corporation",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_schw_sp500_300_tws.json",
+      "baseline": 91.7,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 275.1
+    },
+    {
+      "symbol": "SJM",
+      "security": "J.M. Smucker Company (The)",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_sjm_sp500_300_tws.json",
+      "baseline": 110.86,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 221.72
+    },
+    {
+      "symbol": "SLB",
+      "security": "Schlumberger",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_slb_sp500_300_tws.json",
+      "baseline": 48.09,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 288.54
+    },
+    {
+      "symbol": "SMCI",
+      "security": "Supermicro",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_smci_sp500_300_tws.json",
+      "baseline": 30.66,
+      "orderQuantity": 9,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 275.94
+    },
+    {
+      "symbol": "SO",
+      "security": "Southern Company",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_so_sp500_300_tws.json",
+      "baseline": 93.09,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 279.27
+    },
+    {
+      "symbol": "SOLV",
+      "security": "Solventum",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_solv_sp500_300_tws.json",
+      "baseline": 75.43,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 226.29
+    },
+    {
+      "symbol": "SPG",
+      "security": "Simon Property Group",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_spg_sp500_300_tws.json",
+      "baseline": 211.33,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 211.33
+    },
+    {
+      "symbol": "SRE",
+      "security": "Sempra",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_sre_sp500_300_tws.json",
+      "baseline": 90.69,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 272.07
+    },
+    {
+      "symbol": "STE",
+      "security": "Steris",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ste_sp500_300_tws.json",
+      "baseline": 202.61,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 202.61
+    },
+    {
+      "symbol": "STLD",
+      "security": "Steel Dynamics",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_stld_sp500_300_tws.json",
+      "baseline": 249.91,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 249.91
+    },
+    {
+      "symbol": "STT",
+      "security": "State Street Corporation",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_stt_sp500_300_tws.json",
+      "baseline": 168.31,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 168.31
+    },
+    {
+      "symbol": "STZ",
+      "security": "Constellation Brands",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_stz_sp500_300_tws.json",
+      "baseline": 141.18,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 282.36
+    },
+    {
+      "symbol": "SW",
+      "security": "Smurfit Westrock",
+      "sector": "Materials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_sw_sp500_300_tws.json",
+      "baseline": 44.2,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 265.2
+    },
+    {
+      "symbol": "SWK",
+      "security": "Stanley Black & Decker",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_swk_sp500_300_tws.json",
+      "baseline": 86.75,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 260.25
+    },
+    {
+      "symbol": "SWKS",
+      "security": "Skyworks Solutions",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_swks_sp500_300_tws.json",
+      "baseline": 72.45,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 289.8
+    },
+    {
+      "symbol": "SYF",
+      "security": "Synchrony Financial",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_syf_sp500_300_tws.json",
+      "baseline": 75.26,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 225.78
+    },
+    {
+      "symbol": "SYY",
+      "security": "Sysco",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_syy_sp500_300_tws.json",
+      "baseline": 78.7,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 236.1
+    },
+    {
+      "symbol": "T",
+      "security": "AT&T",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_t_sp500_300_tws.json",
+      "baseline": 22.01,
+      "orderQuantity": 13,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 286.13
+    },
+    {
+      "symbol": "TAP",
+      "security": "Molson Coors Beverage Company",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_tap_sp500_300_tws.json",
+      "baseline": 39.4,
+      "orderQuantity": 7,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 275.8
+    },
+    {
+      "symbol": "TECH",
+      "security": "Bio-Techne",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_tech_sp500_300_tws.json",
+      "baseline": 57.94,
+      "orderQuantity": 5,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 289.7
+    },
+    {
+      "symbol": "TEL",
+      "security": "TE Connectivity",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_tel_sp500_300_tws.json",
+      "baseline": 217.64,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 217.64
+    },
+    {
+      "symbol": "TFC",
+      "security": "Truist Financial",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_tfc_sp500_300_tws.json",
+      "baseline": 48.33,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 289.98
+    },
+    {
+      "symbol": "TGT",
+      "security": "Target Corporation",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_tgt_sp500_300_tws.json",
+      "baseline": 130.74,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 261.48
+    },
+    {
+      "symbol": "TJX",
+      "security": "TJX Companies",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_tjx_sp500_300_tws.json",
+      "baseline": 163.81,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 163.81
+    },
+    {
+      "symbol": "TKO",
+      "security": "TKO Group Holdings",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_tko_sp500_300_tws.json",
+      "baseline": 198.78,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 198.78
+    },
+    {
+      "symbol": "TMUS",
+      "security": "T-Mobile US",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_tmus_sp500_300_tws.json",
+      "baseline": 181.67,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 181.67
+    },
+    {
+      "symbol": "TPR",
+      "security": "Tapestry, Inc.",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_tpr_sp500_300_tws.json",
+      "baseline": 143.5,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 287.0
+    },
+    {
+      "symbol": "TRGP",
+      "security": "Targa Resources",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_trgp_sp500_300_tws.json",
+      "baseline": 258.58,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 258.58
+    },
+    {
+      "symbol": "TRMB",
+      "security": "Trimble Inc.",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_trmb_sp500_300_tws.json",
+      "baseline": 49.16,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 294.96
+    },
+    {
+      "symbol": "TROW",
+      "security": "T. Rowe Price",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_trow_sp500_300_tws.json",
+      "baseline": 107.65,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 215.3
+    },
+    {
+      "symbol": "TSCO",
+      "security": "Tractor Supply",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_tsco_sp500_300_tws.json",
+      "baseline": 30.24,
+      "orderQuantity": 9,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 272.16
+    },
+    {
+      "symbol": "TSN",
+      "security": "Tyson Foods",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_tsn_sp500_300_tws.json",
+      "baseline": 55.46,
+      "orderQuantity": 5,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 277.3
+    },
+    {
+      "symbol": "TTD",
+      "security": "Trade Desk (The)",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ttd_sp500_300_tws.json",
+      "baseline": 18.51,
+      "orderQuantity": 16,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 296.16
+    },
+    {
+      "symbol": "TTWO",
+      "security": "Take-Two Interactive",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ttwo_sp500_300_tws.json",
+      "baseline": 239.28,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 239.28
+    },
+    {
+      "symbol": "TXT",
+      "security": "Textron",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_txt_sp500_300_tws.json",
+      "baseline": 89.47,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 268.41
+    },
+    {
+      "symbol": "TYL",
+      "security": "Tyler Technologies",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_tyl_sp500_300_tws.json",
+      "baseline": 278.91,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 278.91
+    },
+    {
+      "symbol": "UAL",
+      "security": "United Airlines Holdings",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ual_sp500_300_tws.json",
+      "baseline": 118.32,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 236.64
+    },
+    {
+      "symbol": "UBER",
+      "security": "Uber",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_uber_sp500_300_tws.json",
+      "baseline": 71.64,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 286.56
+    },
+    {
+      "symbol": "UDR",
+      "security": "UDR, Inc.",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_udr_sp500_300_tws.json",
+      "baseline": 37.56,
+      "orderQuantity": 7,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 262.92
+    },
+    {
+      "symbol": "UHS",
+      "security": "Universal Health Services",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_uhs_sp500_300_tws.json",
+      "baseline": 141.17,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 282.34
+    },
+    {
+      "symbol": "UNP",
+      "security": "Union Pacific Corporation",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_unp_sp500_300_tws.json",
+      "baseline": 256.88,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 256.88
+    },
+    {
+      "symbol": "UPS",
+      "security": "United Parcel Service",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_ups_sp500_300_tws.json",
+      "baseline": 104.86,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 209.72
+    },
+    {
+      "symbol": "USB",
+      "security": "U.S. Bancorp",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_usb_sp500_300_tws.json",
+      "baseline": 58.14,
+      "orderQuantity": 5,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 290.7
+    },
+    {
+      "symbol": "VEEV",
+      "security": "Veeva Systems",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_veev_sp500_300_tws.json",
+      "baseline": 153.3,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 153.3
+    },
+    {
+      "symbol": "VICI",
+      "security": "Vici Properties",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_vici_sp500_300_tws.json",
+      "baseline": 26.28,
+      "orderQuantity": 11,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 289.08
+    },
+    {
+      "symbol": "VLO",
+      "security": "Valero Energy",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_vlo_sp500_300_tws.json",
+      "baseline": 236.3,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 236.3
+    },
+    {
+      "symbol": "VLTO",
+      "security": "Veralto",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_vlto_sp500_300_tws.json",
+      "baseline": 84.02,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 252.06
+    },
+    {
+      "symbol": "VRSK",
+      "security": "Verisk Analytics",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_vrsk_sp500_300_tws.json",
+      "baseline": 173.8,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 173.8
+    },
+    {
+      "symbol": "VRSN",
+      "security": "Verisign",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_vrsn_sp500_300_tws.json",
+      "baseline": 264.64,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 264.64
+    },
+    {
+      "symbol": "VST",
+      "security": "Vistra Corp.",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_vst_sp500_300_tws.json",
+      "baseline": 163.75,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 163.75
+    },
+    {
+      "symbol": "VTR",
+      "security": "Ventas",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_vtr_sp500_300_tws.json",
+      "baseline": 81.6,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 244.8
+    },
+    {
+      "symbol": "VTRS",
+      "security": "Viatris",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_vtrs_sp500_300_tws.json",
+      "baseline": 15.37,
+      "orderQuantity": 19,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 292.03
+    },
+    {
+      "symbol": "VZ",
+      "security": "Verizon",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_vz_sp500_300_tws.json",
+      "baseline": 45.37,
+      "orderQuantity": 6,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 272.22
+    },
+    {
+      "symbol": "WAB",
+      "security": "Wabtec",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_wab_sp500_300_tws.json",
+      "baseline": 273.83,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 273.83
+    },
+    {
+      "symbol": "WBD",
+      "security": "Warner Bros. Discovery",
+      "sector": "Communication Services",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_wbd_sp500_300_tws.json",
+      "baseline": 26.2,
+      "orderQuantity": 11,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 288.2
+    },
+    {
+      "symbol": "WDAY",
+      "security": "Workday, Inc.",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_wday_sp500_300_tws.json",
+      "baseline": 116.93,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 233.86
+    },
+    {
+      "symbol": "WEC",
+      "security": "WEC Energy Group",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_wec_sp500_300_tws.json",
+      "baseline": 112.17,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 224.34
+    },
+    {
+      "symbol": "WELL",
+      "security": "Welltower",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_well_sp500_300_tws.json",
+      "baseline": 206.65,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 206.65
+    },
+    {
+      "symbol": "WFC",
+      "security": "Wells Fargo",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_wfc_sp500_300_tws.json",
+      "baseline": 82.2,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 246.6
+    },
+    {
+      "symbol": "WM",
+      "security": "Waste Management",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_wm_sp500_300_tws.json",
+      "baseline": 214.6,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 214.6
+    },
+    {
+      "symbol": "WMB",
+      "security": "Williams Companies",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_wmb_sp500_300_tws.json",
+      "baseline": 73.12,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 292.48
+    },
+    {
+      "symbol": "WMT",
+      "security": "Walmart",
+      "sector": "Consumer Staples",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_wmt_sp500_300_tws.json",
+      "baseline": 117.18,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 234.36
+    },
+    {
+      "symbol": "WRB",
+      "security": "W. R. Berkley Corporation",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_wrb_sp500_300_tws.json",
+      "baseline": 67.18,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 268.72
+    },
+    {
+      "symbol": "WSM",
+      "security": "Williams-Sonoma, Inc.",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_wsm_sp500_300_tws.json",
+      "baseline": 226.92,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 226.92
+    },
+    {
+      "symbol": "WTW",
+      "security": "Willis Towers Watson",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_wtw_sp500_300_tws.json",
+      "baseline": 255.2,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 255.2
+    },
+    {
+      "symbol": "WY",
+      "security": "Weyerhaeuser",
+      "sector": "Real Estate",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_wy_sp500_300_tws.json",
+      "baseline": 24.32,
+      "orderQuantity": 12,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 291.84
+    },
+    {
+      "symbol": "WYNN",
+      "security": "Wynn Resorts",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_wynn_sp500_300_tws.json",
+      "baseline": 105.53,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 211.06
+    },
+    {
+      "symbol": "XEL",
+      "security": "Xcel Energy",
+      "sector": "Utilities",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_xel_sp500_300_tws.json",
+      "baseline": 77.41,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 232.23
+    },
+    {
+      "symbol": "XOM",
+      "security": "ExxonMobil",
+      "sector": "Energy",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_xom_sp500_300_tws.json",
+      "baseline": 137.81,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 275.62
+    },
+    {
+      "symbol": "XYL",
+      "security": "Xylem Inc.",
+      "sector": "Industrials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_xyl_sp500_300_tws.json",
+      "baseline": 111.42,
+      "orderQuantity": 2,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 222.84
+    },
+    {
+      "symbol": "XYZ",
+      "security": "Block, Inc.",
+      "sector": "Financials",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_xyz_sp500_300_tws.json",
+      "baseline": 74.78,
+      "orderQuantity": 4,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 299.12
+    },
+    {
+      "symbol": "YUM",
+      "security": "Yum! Brands",
+      "sector": "Consumer Discretionary",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_yum_sp500_300_tws.json",
+      "baseline": 151.99,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 151.99
+    },
+    {
+      "symbol": "ZBH",
+      "security": "Zimmer Biomet",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_zbh_sp500_300_tws.json",
+      "baseline": 87.97,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 263.91
+    },
+    {
+      "symbol": "ZBRA",
+      "security": "Zebra Technologies",
+      "sector": "Information Technology",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_zbra_sp500_300_tws.json",
+      "baseline": 235.98,
+      "orderQuantity": 1,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 235.98
+    },
+    {
+      "symbol": "ZTS",
+      "security": "Zoetis",
+      "sector": "Health Care",
+      "configPath": "TraderLogicConfigs/cso/sp500_300/constant_step_offset_zts_sp500_300_tws.json",
+      "baseline": 78.71,
+      "orderQuantity": 3,
+      "orderQuantityInUSD": 300.0,
+      "minimumWholeShareNotional": 236.13
+    }
+  ],
+  "removedCount": 109,
+  "removedBecauseMinimumWholeShareNotionalExceededBudget": [
+    {
+      "symbol": "ADI",
+      "security": "Analog Devices",
+      "baseline": 434.46,
+      "minimumWholeShareNotional": 434.46
+    },
+    {
+      "symbol": "AMAT",
+      "security": "Applied Materials",
+      "baseline": 617.11,
+      "minimumWholeShareNotional": 617.11
+    },
+    {
+      "symbol": "AMD",
+      "security": "Advanced Micro Devices",
+      "baseline": 537.37,
+      "minimumWholeShareNotional": 537.37
+    },
+    {
+      "symbol": "AMGN",
+      "security": "Amgen",
+      "baseline": 337.6,
+      "minimumWholeShareNotional": 337.6
+    },
+    {
+      "symbol": "AMP",
+      "security": "Ameriprise Financial",
+      "baseline": 467.43,
+      "minimumWholeShareNotional": 467.43
+    },
+    {
+      "symbol": "AON",
+      "security": "Aon plc",
+      "baseline": 317.74,
+      "minimumWholeShareNotional": 317.74
+    },
+    {
+      "symbol": "APP",
+      "security": "AppLovin",
+      "baseline": 469.71,
+      "minimumWholeShareNotional": 469.71
+    },
+    {
+      "symbol": "AVGO",
+      "security": "Broadcom",
+      "baseline": 411.35,
+      "minimumWholeShareNotional": 411.35
+    },
+    {
+      "symbol": "AXON",
+      "security": "Axon Enterprise",
+      "baseline": 423.4,
+      "minimumWholeShareNotional": 423.4
+    },
+    {
+      "symbol": "AXP",
+      "security": "American Express",
+      "baseline": 338.0,
+      "minimumWholeShareNotional": 338.0
+    },
+    {
+      "symbol": "AZO",
+      "security": "AutoZone",
+      "baseline": 3064.48,
+      "minimumWholeShareNotional": 3064.48
+    },
+    {
+      "symbol": "BLK",
+      "security": "BlackRock",
+      "baseline": 1050.09,
+      "minimumWholeShareNotional": 1050.09
+    },
+    {
+      "symbol": "BRK.B",
+      "security": "Berkshire Hathaway",
+      "baseline": 489.46,
+      "minimumWholeShareNotional": 489.46
+    },
+    {
+      "symbol": "CASY",
+      "security": "Casey's",
+      "baseline": 842.25,
+      "minimumWholeShareNotional": 842.25
+    },
+    {
+      "symbol": "CAT",
+      "security": "Caterpillar Inc.",
+      "baseline": 985.82,
+      "minimumWholeShareNotional": 985.82
+    },
+    {
+      "symbol": "CB",
+      "security": "Chubb Limited",
+      "baseline": 323.4,
+      "minimumWholeShareNotional": 323.4
+    },
+    {
+      "symbol": "CDNS",
+      "security": "Cadence Design Systems",
+      "baseline": 387.39,
+      "minimumWholeShareNotional": 387.39
+    },
+    {
+      "symbol": "CIEN",
+      "security": "Ciena",
+      "baseline": 428.22,
+      "minimumWholeShareNotional": 428.22
+    },
+    {
+      "symbol": "CMI",
+      "security": "Cummins",
+      "baseline": 716.86,
+      "minimumWholeShareNotional": 716.86
+    },
+    {
+      "symbol": "COHR",
+      "security": "Coherent Corp.",
+      "baseline": 389.57,
+      "minimumWholeShareNotional": 389.57
+    },
+    {
+      "symbol": "COST",
+      "security": "Costco",
+      "baseline": 951.45,
+      "minimumWholeShareNotional": 951.45
+    },
+    {
+      "symbol": "CPAY",
+      "security": "Corpay",
+      "baseline": 345.28,
+      "minimumWholeShareNotional": 345.28
+    },
+    {
+      "symbol": "CRWD",
+      "security": "CrowdStrike",
+      "baseline": 684.86,
+      "minimumWholeShareNotional": 684.86
+    },
+    {
+      "symbol": "DE",
+      "security": "Deere & Company",
+      "baseline": 589.24,
+      "minimumWholeShareNotional": 589.24
+    },
+    {
+      "symbol": "DELL",
+      "security": "Dell Technologies",
+      "baseline": 409.5,
+      "minimumWholeShareNotional": 409.5
+    },
+    {
+      "symbol": "DPZ",
+      "security": "Domino's",
+      "baseline": 312.47,
+      "minimumWholeShareNotional": 312.47
+    },
+    {
+      "symbol": "EG",
+      "security": "Everest Group",
+      "baseline": 335.63,
+      "minimumWholeShareNotional": 335.63
+    },
+    {
+      "symbol": "ELV",
+      "security": "Elevance Health",
+      "baseline": 388.5,
+      "minimumWholeShareNotional": 388.5
+    },
+    {
+      "symbol": "EME",
+      "security": "Emcor",
+      "baseline": 836.59,
+      "minimumWholeShareNotional": 836.59
+    },
+    {
+      "symbol": "EQIX",
+      "security": "Equinix",
+      "baseline": 1092.19,
+      "minimumWholeShareNotional": 1092.19
+    },
+    {
+      "symbol": "ETN",
+      "security": "Eaton Corporation",
+      "baseline": 421.77,
+      "minimumWholeShareNotional": 421.77
+    },
+    {
+      "symbol": "FDX",
+      "security": "FedEx",
+      "baseline": 326.2,
+      "minimumWholeShareNotional": 326.2
+    },
+    {
+      "symbol": "FFIV",
+      "security": "F5, Inc.",
+      "baseline": 385.49,
+      "minimumWholeShareNotional": 385.49
+    },
+    {
+      "symbol": "FICO",
+      "security": "Fair Isaac",
+      "baseline": 1096.48,
+      "minimumWholeShareNotional": 1096.48
+    },
+    {
+      "symbol": "FIX",
+      "security": "Comfort Systems USA",
+      "baseline": 1967.41,
+      "minimumWholeShareNotional": 1967.41
+    },
+    {
+      "symbol": "GD",
+      "security": "General Dynamics",
+      "baseline": 350.01,
+      "minimumWholeShareNotional": 350.01
+    },
+    {
+      "symbol": "GE",
+      "security": "GE Aerospace",
+      "baseline": 357.64,
+      "minimumWholeShareNotional": 357.64
+    },
+    {
+      "symbol": "GEV",
+      "security": "GE Vernova",
+      "baseline": 1109.73,
+      "minimumWholeShareNotional": 1109.73
+    },
+    {
+      "symbol": "GOOG",
+      "security": "Alphabet Inc. (Class C)",
+      "baseline": 367.46,
+      "minimumWholeShareNotional": 367.46
+    },
+    {
+      "symbol": "GOOGL",
+      "security": "Alphabet Inc. (Class A)",
+      "baseline": 368.03,
+      "minimumWholeShareNotional": 368.03
+    },
+    {
+      "symbol": "GS",
+      "security": "Goldman Sachs",
+      "baseline": 1096.56,
+      "minimumWholeShareNotional": 1096.56
+    },
+    {
+      "symbol": "GWW",
+      "security": "W. W. Grainger",
+      "baseline": 1365.41,
+      "minimumWholeShareNotional": 1365.41
+    },
+    {
+      "symbol": "HCA",
+      "security": "HCA Healthcare",
+      "baseline": 375.17,
+      "minimumWholeShareNotional": 375.17
+    },
+    {
+      "symbol": "HD",
+      "security": "Home Depot (The)",
+      "baseline": 334.28,
+      "minimumWholeShareNotional": 334.28
+    },
+    {
+      "symbol": "HLT",
+      "security": "Hilton Worldwide",
+      "baseline": 348.84,
+      "minimumWholeShareNotional": 348.84
+    },
+    {
+      "symbol": "HUBB",
+      "security": "Hubbell Incorporated",
+      "baseline": 523.69,
+      "minimumWholeShareNotional": 523.69
+    },
+    {
+      "symbol": "HUM",
+      "security": "Humana",
+      "baseline": 360.65,
+      "minimumWholeShareNotional": 360.65
+    },
+    {
+      "symbol": "IDXX",
+      "security": "Idexx Laboratories",
+      "baseline": 562.09,
+      "minimumWholeShareNotional": 562.09
+    },
+    {
+      "symbol": "ISRG",
+      "security": "Intuitive Surgical",
+      "baseline": 406.78,
+      "minimumWholeShareNotional": 406.78
+    },
+    {
+      "symbol": "JBL",
+      "security": "Jabil",
+      "baseline": 371.88,
+      "minimumWholeShareNotional": 371.88
+    },
+    {
+      "symbol": "JPM",
+      "security": "JPMorgan Chase",
+      "baseline": 325.22,
+      "minimumWholeShareNotional": 325.22
+    },
+    {
+      "symbol": "KEYS",
+      "security": "Keysight Technologies",
+      "baseline": 363.67,
+      "minimumWholeShareNotional": 363.67
+    },
+    {
+      "symbol": "LII",
+      "security": "Lennox International",
+      "baseline": 532.43,
+      "minimumWholeShareNotional": 532.43
+    },
+    {
+      "symbol": "LIN",
+      "security": "Linde plc",
+      "baseline": 512.15,
+      "minimumWholeShareNotional": 512.15
+    },
+    {
+      "symbol": "LITE",
+      "security": "Lumentum",
+      "baseline": 850.0,
+      "minimumWholeShareNotional": 850.0
+    },
+    {
+      "symbol": "LLY",
+      "security": "Lilly (Eli)",
+      "baseline": 1098.57,
+      "minimumWholeShareNotional": 1098.57
+    },
+    {
+      "symbol": "LMT",
+      "security": "Lockheed Martin",
+      "baseline": 510.95,
+      "minimumWholeShareNotional": 510.95
+    },
+    {
+      "symbol": "LRCX",
+      "security": "Lam Research",
+      "baseline": 389.04,
+      "minimumWholeShareNotional": 389.04
+    },
+    {
+      "symbol": "MA",
+      "security": "Mastercard",
+      "baseline": 489.79,
+      "minimumWholeShareNotional": 489.79
+    },
+    {
+      "symbol": "MAR",
+      "security": "Marriott International",
+      "baseline": 396.2,
+      "minimumWholeShareNotional": 396.2
+    },
+    {
+      "symbol": "MCK",
+      "security": "McKesson Corporation",
+      "baseline": 750.63,
+      "minimumWholeShareNotional": 750.63
+    },
+    {
+      "symbol": "MCO",
+      "security": "Moody's Corporation",
+      "baseline": 450.67,
+      "minimumWholeShareNotional": 450.67
+    },
+    {
+      "symbol": "META",
+      "security": "Meta Platforms",
+      "baseline": 577.22,
+      "minimumWholeShareNotional": 577.22
+    },
+    {
+      "symbol": "MLM",
+      "security": "Martin Marietta Materials",
+      "baseline": 609.12,
+      "minimumWholeShareNotional": 609.12
+    },
+    {
+      "symbol": "MPWR",
+      "security": "Monolithic Power Systems",
+      "baseline": 1563.7,
+      "minimumWholeShareNotional": 1563.7
+    },
+    {
+      "symbol": "MRVL",
+      "security": "Marvell Technology",
+      "baseline": 310.58,
+      "minimumWholeShareNotional": 310.58
+    },
+    {
+      "symbol": "MSCI",
+      "security": "MSCI Inc.",
+      "baseline": 581.19,
+      "minimumWholeShareNotional": 581.19
+    },
+    {
+      "symbol": "MSFT",
+      "security": "Microsoft",
+      "baseline": 379.4,
+      "minimumWholeShareNotional": 379.4
+    },
+    {
+      "symbol": "MSI",
+      "security": "Motorola Solutions",
+      "baseline": 395.17,
+      "minimumWholeShareNotional": 395.17
+    },
+    {
+      "symbol": "MTD",
+      "security": "Mettler Toledo",
+      "baseline": 1144.84,
+      "minimumWholeShareNotional": 1144.84
+    },
+    {
+      "symbol": "MU",
+      "security": "Micron Technology",
+      "baseline": 1133.99,
+      "minimumWholeShareNotional": 1133.99
+    },
+    {
+      "symbol": "NOC",
+      "security": "Northrop Grumman",
+      "baseline": 521.5,
+      "minimumWholeShareNotional": 521.5
+    },
+    {
+      "symbol": "NSC",
+      "security": "Norfolk Southern",
+      "baseline": 300.08,
+      "minimumWholeShareNotional": 300.08
+    },
+    {
+      "symbol": "NVR",
+      "security": "NVR, Inc.",
+      "baseline": 6490.93,
+      "minimumWholeShareNotional": 6490.93
+    },
+    {
+      "symbol": "NXPI",
+      "security": "NXP Semiconductors",
+      "baseline": 313.27,
+      "minimumWholeShareNotional": 313.27
+    },
+    {
+      "symbol": "PH",
+      "security": "Parker Hannifin",
+      "baseline": 953.27,
+      "minimumWholeShareNotional": 953.27
+    },
+    {
+      "symbol": "PSA",
+      "security": "Public Storage",
+      "baseline": 318.12,
+      "minimumWholeShareNotional": 318.12
+    },
+    {
+      "symbol": "PWR",
+      "security": "Quanta Services",
+      "baseline": 702.25,
+      "minimumWholeShareNotional": 702.25
+    },
+    {
+      "symbol": "RCL",
+      "security": "Royal Caribbean Group",
+      "baseline": 312.51,
+      "minimumWholeShareNotional": 312.51
+    },
+    {
+      "symbol": "REGN",
+      "security": "Regeneron Pharmaceuticals",
+      "baseline": 609.94,
+      "minimumWholeShareNotional": 609.94
+    },
+    {
+      "symbol": "RL",
+      "security": "Ralph Lauren Corporation",
+      "baseline": 413.01,
+      "minimumWholeShareNotional": 413.01
+    },
+    {
+      "symbol": "ROK",
+      "security": "Rockwell Automation",
+      "baseline": 473.79,
+      "minimumWholeShareNotional": 473.79
+    },
+    {
+      "symbol": "ROP",
+      "security": "Roper Technologies",
+      "baseline": 330.26,
+      "minimumWholeShareNotional": 330.26
+    },
+    {
+      "symbol": "SHW",
+      "security": "Sherwin-Williams",
+      "baseline": 320.79,
+      "minimumWholeShareNotional": 320.79
+    },
+    {
+      "symbol": "SNA",
+      "security": "Snap-on",
+      "baseline": 387.25,
+      "minimumWholeShareNotional": 387.25
+    },
+    {
+      "symbol": "SNDK",
+      "security": "Sandisk",
+      "baseline": 2184.75,
+      "minimumWholeShareNotional": 2184.75
+    },
+    {
+      "symbol": "SNPS",
+      "security": "Synopsys",
+      "baseline": 455.51,
+      "minimumWholeShareNotional": 455.51
+    },
+    {
+      "symbol": "SPGI",
+      "security": "S&P Global",
+      "baseline": 410.92,
+      "minimumWholeShareNotional": 410.92
+    },
+    {
+      "symbol": "STX",
+      "security": "Seagate Technology",
+      "baseline": 1070.23,
+      "minimumWholeShareNotional": 1070.23
+    },
+    {
+      "symbol": "SYK",
+      "security": "Stryker Corporation",
+      "baseline": 307.8,
+      "minimumWholeShareNotional": 307.8
+    },
+    {
+      "symbol": "TDG",
+      "security": "TransDigm Group",
+      "baseline": 1328.31,
+      "minimumWholeShareNotional": 1328.31
+    },
+    {
+      "symbol": "TDY",
+      "security": "Teledyne Technologies",
+      "baseline": 619.58,
+      "minimumWholeShareNotional": 619.58
+    },
+    {
+      "symbol": "TER",
+      "security": "Teradyne",
+      "baseline": 437.92,
+      "minimumWholeShareNotional": 437.92
+    },
+    {
+      "symbol": "TMO",
+      "security": "Thermo Fisher Scientific",
+      "baseline": 464.61,
+      "minimumWholeShareNotional": 464.61
+    },
+    {
+      "symbol": "TPL",
+      "security": "Texas Pacific Land Corporation",
+      "baseline": 355.11,
+      "minimumWholeShareNotional": 355.11
+    },
+    {
+      "symbol": "TRV",
+      "security": "Travelers Companies (The)",
+      "baseline": 307.81,
+      "minimumWholeShareNotional": 307.81
+    },
+    {
+      "symbol": "TSLA",
+      "security": "Tesla, Inc.",
+      "baseline": 400.49,
+      "minimumWholeShareNotional": 400.49
+    },
+    {
+      "symbol": "TT",
+      "security": "Trane Technologies",
+      "baseline": 483.4,
+      "minimumWholeShareNotional": 483.4
+    },
+    {
+      "symbol": "TXN",
+      "security": "Texas Instruments",
+      "baseline": 322.86,
+      "minimumWholeShareNotional": 322.86
+    },
+    {
+      "symbol": "ULTA",
+      "security": "Ulta Beauty",
+      "baseline": 456.13,
+      "minimumWholeShareNotional": 456.13
+    },
+    {
+      "symbol": "UNH",
+      "security": "UnitedHealth Group",
+      "baseline": 400.96,
+      "minimumWholeShareNotional": 400.96
+    },
+    {
+      "symbol": "URI",
+      "security": "United Rentals",
+      "baseline": 1076.81,
+      "minimumWholeShareNotional": 1076.81
+    },
+    {
+      "symbol": "V",
+      "security": "Visa Inc.",
+      "baseline": 327.24,
+      "minimumWholeShareNotional": 327.24
+    },
+    {
+      "symbol": "VMC",
+      "security": "Vulcan Materials Company",
+      "baseline": 302.84,
+      "minimumWholeShareNotional": 302.84
+    },
+    {
+      "symbol": "VRT",
+      "security": "Vertiv",
+      "baseline": 333.05,
+      "minimumWholeShareNotional": 333.05
+    },
+    {
+      "symbol": "VRTX",
+      "security": "Vertex Pharmaceuticals",
+      "baseline": 451.63,
+      "minimumWholeShareNotional": 451.63
+    },
+    {
+      "symbol": "WAT",
+      "security": "Waters Corporation",
+      "baseline": 355.44,
+      "minimumWholeShareNotional": 355.44
+    },
+    {
+      "symbol": "WDC",
+      "security": "Western Digital",
+      "baseline": 746.23,
+      "minimumWholeShareNotional": 746.23
+    },
+    {
+      "symbol": "WST",
+      "security": "West Pharmaceutical Services",
+      "baseline": 327.95,
+      "minimumWholeShareNotional": 327.95
+    }
+  ]
+}

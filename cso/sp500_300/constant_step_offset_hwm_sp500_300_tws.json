@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 277.66,
+  "stepDelta": 0.14,
+  "executionLimitOffset": 70.0,
+  "stateTransitionThreshold": 0.04,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "HWM",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "HWM",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_HWM_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_HWM_TWS_context"
+}

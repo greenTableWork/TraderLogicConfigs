@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 56.2,
+  "stepDelta": 0.03,
+  "executionLimitOffset": 15.0,
+  "stateTransitionThreshold": 0.01,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 5,
+  "contract": {
+    "symbol": "BAC",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "BAC",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_BAC_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_BAC_TWS_context"
+}

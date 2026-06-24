@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 91.7,
+  "stepDelta": 0.05,
+  "executionLimitOffset": 25.0,
+  "stateTransitionThreshold": 0.01,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 3,
+  "contract": {
+    "symbol": "SCHW",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "SCHW",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_SCHW_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_SCHW_TWS_context"
+}

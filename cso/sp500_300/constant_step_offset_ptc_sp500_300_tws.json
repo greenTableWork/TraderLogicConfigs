@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 114.75,
+  "stepDelta": 0.06,
+  "executionLimitOffset": 30.0,
+  "stateTransitionThreshold": 0.01,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 2,
+  "contract": {
+    "symbol": "PTC",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "PTC",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_PTC_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_PTC_TWS_context"
+}

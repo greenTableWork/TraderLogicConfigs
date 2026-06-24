@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 279.27,
+  "stepDelta": 0.14,
+  "executionLimitOffset": 70.0,
+  "stateTransitionThreshold": 0.04,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "CI",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "CI",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_CI_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_CI_TWS_context"
+}

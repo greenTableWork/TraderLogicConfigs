@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 184.29,
+  "stepDelta": 0.09,
+  "executionLimitOffset": 45.0,
+  "stateTransitionThreshold": 0.02,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "ORCL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "ORCL",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_ORCL_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_ORCL_TWS_context"
+}

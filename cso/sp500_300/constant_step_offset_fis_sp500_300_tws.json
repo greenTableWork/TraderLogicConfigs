@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 38.21,
+  "stepDelta": 0.02,
+  "executionLimitOffset": 10.0,
+  "stateTransitionThreshold": 0.01,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 7,
+  "contract": {
+    "symbol": "FIS",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "FIS",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_FIS_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_FIS_TWS_context"
+}

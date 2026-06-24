@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 9.94,
+  "stepDelta": 0.01,
+  "executionLimitOffset": 0.03,
+  "stateTransitionThreshold": 0.01,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 30,
+  "contract": {
+    "symbol": "PSKY",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "PSKY",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_PSKY_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_PSKY_TWS_context"
+}

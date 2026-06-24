@@ -1,0 +1,23 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 41.08,
+  "stepDelta": 0.02,
+  "executionLimitOffset": 10.0,
+  "stateTransitionThreshold": 0.01,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 7,
+  "contract": {
+    "symbol": "AMCR",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "AMCR",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_SP500_300_AMCR_TWS",
+  "ledgerContextCollection": "CSO_SP500_300_AMCR_TWS_context"
+}
