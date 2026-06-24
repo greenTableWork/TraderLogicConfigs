@@ -1,0 +1,23 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "LV-001",
+  "portfolioNotional": 10000.0,
+  "maxGrossExposure": 1.0,
+  "volatilityPeriodsPerYear": 252.0,
+  "lowVolatilityLookback": 20,
+  "lowVolatilityLegSize": 3,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {"symbol": "CL", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "GC", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "HG", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "NG", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "SI", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "ZB", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "ZN", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "ZT", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"}
+  ],
+  "researchNotes": "Daily low-volatility futures factor over the scraped futures basket; uses explicit futures_historical_bars expiry filters in the run config.",
+  "ledgerPath": "data/TraderLedger/LV002_LOW_VOL_FUTURES_DAILY",
+  "ledgerContextCollection": "LV002_LOW_VOL_FUTURES_DAILY_context"
+}

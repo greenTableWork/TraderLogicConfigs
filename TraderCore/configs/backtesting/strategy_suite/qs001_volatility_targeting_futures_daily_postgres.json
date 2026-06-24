@@ -1,0 +1,26 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "QS-001",
+  "portfolioNotional": 10000.0,
+  "targetVolatility": 0.12,
+  "maxGrossExposure": 1.0,
+  "realizedVolatilityWindow": 20,
+  "volatilityPeriodsPerYear": 252.0,
+  "minVolatilityExposure": 0.20,
+  "maxVolatilityExposure": 1.0,
+  "fallbackVolatilityExposure": 0.35,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {"symbol": "CL", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "GC", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "HG", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "NG", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "SI", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "ZB", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "ZN", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "ZT", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"}
+  ],
+  "researchNotes": "Daily futures-basket volatility targeting using scraped futures_historical_bars contracts with explicit expiry filters in the run config.",
+  "ledgerPath": "data/TraderLedger/QS001_VOL_TARGET_FUTURES_DAILY",
+  "ledgerContextCollection": "QS001_VOL_TARGET_FUTURES_DAILY_context"
+}

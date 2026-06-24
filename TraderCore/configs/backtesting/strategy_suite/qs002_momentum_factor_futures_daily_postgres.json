@@ -1,0 +1,25 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "QS-002",
+  "portfolioNotional": 10000.0,
+  "maxGrossExposure": 1.0,
+  "momentumLookback": 63,
+  "momentumSkipPeriods": 5,
+  "momentumLegSize": 2,
+  "momentumWeighting": "equal",
+  "momentumRebalanceInterval": 5,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {"symbol": "CL", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "GC", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "HG", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "NG", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "SI", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "ZB", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "ZN", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "ZT", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"}
+  ],
+  "researchNotes": "Daily cross-sectional momentum over the scraped futures basket; uses explicit futures_historical_bars expiry filters in the run config.",
+  "ledgerPath": "data/TraderLedger/QS002_MOMENTUM_FACTOR_FUTURES_DAILY",
+  "ledgerContextCollection": "QS002_MOMENTUM_FACTOR_FUTURES_DAILY_context"
+}

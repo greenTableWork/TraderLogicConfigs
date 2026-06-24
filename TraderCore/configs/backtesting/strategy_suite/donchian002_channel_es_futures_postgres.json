@@ -1,0 +1,22 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "DONCHIAN-001",
+  "donchianWindow": 180,
+  "entryMode": "breakout",
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "ES",
+    "secType": "FUTURE",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "ES",
+    "secType": "FUTURE",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "researchNotes": "Intraday ES futures Donchian breakout over the scraped 202606 ES 10-second RTH bars.",
+  "ledgerPath": "data/TraderLedger/TECH_DONCHIAN002_ES_FUTURES",
+  "ledgerContextCollection": "TECH_DONCHIAN002_ES_FUTURES_context"
+}

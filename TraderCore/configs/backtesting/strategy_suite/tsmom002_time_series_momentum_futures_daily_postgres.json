@@ -1,0 +1,28 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "TSMOM-001",
+  "portfolioNotional": 10000.0,
+  "maxGrossExposure": 1.0,
+  "tsmomLookback": 63,
+  "tsmomSkip": 5,
+  "tsmomHoldingPeriod": 20,
+  "tsmomRebalanceInterval": 5,
+  "tsmomVolatilityWindow": 20,
+  "tsmomVolatilityTarget": 0.12,
+  "tsmomSizingPolicy": "vol_target",
+  "tsmomPositionPolicy": "long_short",
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {"symbol": "CL", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "GC", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "HG", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "NG", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "SI", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "ZB", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "ZN", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "ZT", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"}
+  ],
+  "researchNotes": "Daily futures-basket time-series momentum using scraped futures_historical_bars contracts with explicit expiry filters in the run config.",
+  "ledgerPath": "data/TraderLedger/TSMOM002_FUTURES_DAILY",
+  "ledgerContextCollection": "TSMOM002_FUTURES_DAILY_context"
+}

@@ -1,0 +1,22 @@
+{
+  "strategy_type": "TechnicalSignal",
+  "signal_type": "TS-006",
+  "momentumLookback": 240,
+  "allowShort": true,
+  "orderQuantity": 1,
+  "contract": {
+    "symbol": "ES",
+    "secType": "FUTURE",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "price_contract": {
+    "symbol": "ES",
+    "secType": "FUTURE",
+    "currency": "USD",
+    "exchange": "BACKTESTER"
+  },
+  "researchNotes": "Intraday ES futures time-series momentum over the scraped 202606 ES 10-second RTH bars.",
+  "ledgerPath": "data/TraderLedger/TECH_TS006_ES_FUTURES",
+  "ledgerContextCollection": "TECH_TS006_ES_FUTURES_context"
+}
