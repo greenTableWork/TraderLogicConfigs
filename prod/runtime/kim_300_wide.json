@@ -3,6 +3,11 @@
   "servicePortProfile": "prod",
   "orderPortProfile": "prod",
   "priceExchange": "ibkr",
+  "ibkrBarUpdates": true,
+  "ibkrBarSize": "1 min",
+  "ibkrBarDuration": "1 D",
+  "ibkrWhatToShow": "TRADES",
+  "ibkrUseRth": true,
   "orderExchange": "ibkr",
   "orderSandbox": false,
   "environment": {
