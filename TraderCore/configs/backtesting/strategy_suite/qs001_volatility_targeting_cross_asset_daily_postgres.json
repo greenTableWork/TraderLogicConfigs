@@ -1,0 +1,22 @@
+{
+  "strategy_type": "PortfolioAllocation",
+  "allocation_type": "QS-001",
+  "portfolioNotional": 10000.0,
+  "targetVolatility": 0.12,
+  "maxGrossExposure": 1.0,
+  "realizedVolatilityWindow": 20,
+  "volatilityPeriodsPerYear": 252.0,
+  "minVolatilityExposure": 0.2,
+  "maxVolatilityExposure": 1.0,
+  "fallbackVolatilityExposure": 0.35,
+  "minTradeQuantity": 0.01,
+  "contracts": [
+    {"symbol": "AAPL", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "CL", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "GC", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "ZN", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"}
+  ],
+  "researchNotes": "Cross-asset daily basket that consumes historical_bars for AAPL and futures_historical_bars for CL, GC, and ZN in one multi-source replay.",
+  "ledgerPath": "data/TraderLedger/QS001_VOL_TARGET_CROSS_ASSET_DAILY",
+  "ledgerContextCollection": "QS001_VOL_TARGET_CROSS_ASSET_DAILY_context"
+}
