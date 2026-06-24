@@ -1,0 +1,12 @@
+{
+  "contracts": [
+    {
+      "contract": {
+        "symbol": "KIM",
+        "secType": "STOCK",
+        "currency": "USD",
+        "exchange": "IBKR"
+      }
+    }
+  ]
+}

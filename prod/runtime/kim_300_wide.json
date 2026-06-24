@@ -1,0 +1,15 @@
+{
+  "buildPreset": "default",
+  "servicePortProfile": "prod",
+  "orderPortProfile": "prod",
+  "priceExchange": "ibkr",
+  "orderExchange": "ibkr",
+  "orderSandbox": false,
+  "environment": {
+    "OPENTRADER_IBKR_OUTSIDE_RTH": "1"
+  },
+  "strategyId": 950,
+  "strategyConfig": "TraderLogicConfigs/prod/strategy/constant_step_offset_kim_300_wide_tws.json",
+  "priceConfig": "TraderLogicConfigs/prod/price/ibkr_kim_price_config.json",
+  "budgetConfig": "TraderLogicConfigs/prod/account_budget/ibkr_kim_300.json"
+}

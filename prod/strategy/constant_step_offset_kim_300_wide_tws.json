@@ -1,0 +1,28 @@
+{
+  "strategy_type": "ConstantStepOffset",
+  "baseline": 24.5,
+  "stepDelta": 0.15,
+  "executionLimitOffset": 5.0,
+  "stateTransitionThreshold": 0.03,
+  "orderQuantityInUSD": 300.0,
+  "orderQuantity": 12,
+  "contract": {
+    "symbol": "KIM",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "price_contract": {
+    "symbol": "KIM",
+    "secType": "STOCK",
+    "currency": "USD",
+    "exchange": "IBKR"
+  },
+  "ledgerPath": "data/TraderLedger/CSO_KIM_300_WIDE_TWS",
+  "ledgerContextCollection": "CSO_KIM_300_WIDE_TWS_context",
+  "profitModel": {
+    "assumedRoundTripMinimumFeesUSD": 2.0,
+    "grossProfitPerRoundTripUSD": 3.6,
+    "estimatedNetBeforeSlippageUSD": 1.6
+  }
+}

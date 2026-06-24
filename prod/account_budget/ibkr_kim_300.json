@@ -1,0 +1,20 @@
+{
+  "account": {
+    "maxOpenOrders": 1,
+    "maxOrderNotional": 300.0,
+    "maxGrossExposure": 300.0,
+    "maxNetExposure": 300.0,
+    "allowedSymbols": ["KIM"],
+    "allowedExchanges": ["IBKR"]
+  },
+  "strategies": {
+    "950": {
+      "maxOpenOrders": 1,
+      "maxOrderNotional": 300.0,
+      "maxGrossExposure": 300.0,
+      "maxNetExposure": 300.0,
+      "allowedSymbols": ["KIM"],
+      "allowedExchanges": ["IBKR"]
+    }
+  }
+}
