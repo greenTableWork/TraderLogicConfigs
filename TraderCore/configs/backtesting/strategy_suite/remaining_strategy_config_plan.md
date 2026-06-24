@@ -64,6 +64,108 @@ normalized union view. BackTester also applies one global `barSize`,
 `AGGTRADES`, volatility feeds, and RTH/all-hours instruments in the same
 backtest run.
 
+## Expanded Scope: Multi-Source Replay
+
+The larger unlock is not just adding more strategy JSON. BackTester and
+`HistoricalPriceProducer` need a shared multi-source historical replay model so
+one strategy can receive trade bars, factor bars, FX bars, crypto bars, and
+futures bars in timestamp order.
+
+### BackTester Feature Work
+
+Add a new BackTester data-source shape alongside the existing single
+`dataSource` block:
+
+```json
+{
+  "dataSources": [
+    {
+      "id": "trade_prices",
+      "table": "historical_bars",
+      "barSize": "1 day",
+      "whatToShow": "TRADES",
+      "useRth": true,
+      "symbols": ["SPY", "QQQ", "TLT", "GLD"]
+    },
+    {
+      "id": "futures",
+      "table": "futures_historical_bars",
+      "barSize": "1 day",
+      "whatToShow": "TRADES",
+      "useRth": true,
+      "symbols": ["GC", "CL", "NG", "HG"]
+    },
+    {
+      "id": "volatility",
+      "table": "historical_bars",
+      "barSize": "1 day",
+      "whatToShow": "OPTION_IMPLIED_VOLATILITY",
+      "useRth": true,
+      "symbols": ["SPY", "QQQ", "IWM"],
+      "role": "factor"
+    }
+  ]
+}
+```
+
+Implementation requirements:
+
+1. Keep the current `dataSource` field working for existing run configs.
+2. Add `dataSources[]` parsing and schema validation in TraderCore.
+3. Replace symbol-only PostgreSQL matching with full instrument identity:
+   symbol, security type, exchange, currency, primary exchange, and expiry
+   where available. Symbol-only matching is too weak once futures, FX, crypto,
+   and duplicate proxy symbols are replayed together.
+4. Query both `historical_bars` and `futures_historical_bars`, then merge rows
+   into one deterministic stream ordered by `bar_time_utc`, source priority,
+   and instrument key.
+5. Preserve existing order-fill semantics: orders fill from trade/price bars
+   for the order instrument, while factor-only bars update strategy state but
+   must not become fill prices for unrelated orders.
+6. Add a replay-role concept such as `trade`, `mark`, or `factor` so strategies
+   can receive secondary factor values without corrupting accounting.
+7. Include source metadata in run summaries: data-source ids, row counts,
+   first/last timestamps, and missing-symbol diagnostics.
+
+This change lets one portfolio strategy consume equities, factor ETFs, FX,
+crypto, futures, and volatility features in the same chronological replay,
+instead of forcing one global `whatToShow` / `useRth` filter per run.
+
+### HistoricalPriceProducer Feature Work
+
+The producer already publishes multiple subscriptions when all subscriptions
+share one global historical filter. It needs the same multi-source model as
+BackTester:
+
+1. Allow per-subscription or per-contract historical source overrides in the
+   price config, for example `table`, `barSize`, `whatToShow`, `useRth`, and
+   `role`.
+2. Query each source group, merge bars by timestamp, and publish each matching
+   subscription in deterministic replay order.
+3. Publish multiple values as separate subscription streams rather than one
+   overloaded payload. A trade candle, implied-volatility value, FX midpoint,
+   and futures trade candle should remain distinct topics or include explicit
+   source metadata.
+4. Avoid symbol-only producer keys for factor streams. Current price topics are
+   symbol-based; factor feeds need either source-qualified topics or explicit
+   metadata so `SPY` trade bars and `SPY` implied-vol bars are not ambiguous.
+5. Add integration coverage where one producer replays at least two symbols
+   from `historical_bars` plus one instrument from `futures_historical_bars`.
+
+### Strategy Coverage Unlocked
+
+With multi-source replay, the strategy universe expands meaningfully:
+
+| Strategy family | New coverage unlocked |
+| --- | --- |
+| `TS-006` and `TS-007` | Commodity futures trend/breakout configs for `GC`, `CL`, `NG`, and `HG`; FX and crypto trend configs in the same suite shape. |
+| `TS-008` | Cross-asset mean-reversion configs across FX, commodity proxies, rates proxies, and volatility products. |
+| `TSMOM-001` | Cross-asset time-series momentum baskets mixing ETF, futures, FX, and crypto feeds. |
+| `QS-002` and `LV-001` | Factor ETF plus futures/FX/crypto extensions once all sources can be replayed in one portfolio. |
+| `PAIRS-001` | Futures/ETF and FX pair sets, provided pair instruments share compatible fill semantics. |
+| `IVRV-001` and `DISP-001` | Dynamic volatility configs where volatility bars drive the signal but trade bars drive fills. |
+| `REGIME-001` | Regime schedules driven by market, volatility, rates, FX, credit, commodities, and crypto factor inputs. |
+
 ## Config Batches
 
 ### Batch A: Missing TechnicalSignal Configs
@@ -105,32 +207,30 @@ feed group per config:
 
 ### Batch C: Volatility/Dispersion Follow-Up
 
-Do not treat `IVRV-001` and `DISP-001` as simple config-only expansions yet.
+Do not treat `IVRV-001` and `DISP-001` as simple single-feed config expansions.
 The new `HISTORICAL_VOLATILITY` and `OPTION_IMPLIED_VOLATILITY` rows are useful
-for calibration, but BackTester currently feeds one bar stream into both signal
-generation and fill pricing. A direct run over volatility bars would mark fills
-at volatility values instead of trade prices.
+for dynamic signals, but BackTester must support secondary factor feeds first.
+The desired replay is trade bars for fills plus volatility bars for signal
+state.
 
 Follow-up work:
 
-1. Generate calibration artifacts from `SPY`, `QQQ`, and `IWM`
+1. Implement multi-source replay with `role=factor` support.
+2. Generate calibration artifacts from `SPY`, `QQQ`, and `IWM`
    `HISTORICAL_VOLATILITY` / `OPTION_IMPLIED_VOLATILITY` rows.
-2. Add static calibrated configs such as
-   `ivrv001_spy_calibrated_vol_postgres.json` only if the fixed
-   `impliedVolatility` field is acceptable.
-3. For dynamic IV/RV or dispersion signals, extend BackTester to support
-   secondary factor feeds while keeping fills on `TRADES` bars.
+3. Add dynamic configs such as `ivrv001_spy_dynamic_vol_postgres.json` and
+   `disp001_index_component_dispersion_postgres.json` where volatility feeds
+   update signals and `TRADES` feeds drive fills.
 
 ### Batch D: Futures Follow-Up
 
-The fetchable futures data is useful, but should not be included in first-pass
-configs until BackTester reads `futures_historical_bars` or a normalized
-historical-bars view:
+The fetchable futures data is useful and should be included once BackTester
+reads `futures_historical_bars` or a normalized historical-bars view:
 
 - `GC`, `CL`, `NG`, `HG` are loaded.
 - `ZB`, `ZN`, `ZT`, and `SI` remain unresolved at the IBKR contract level.
 - After runner support exists, add commodity trend configs for `TS-006`,
-  `TS-007`, and `TSMOM-001`.
+  `TS-007`, `TSMOM-001`, `QS-002`, and `LV-001`.
 
 ## Acceptance Criteria
 
@@ -152,11 +252,13 @@ For each generated config batch:
 1. Add and validate Batch A `TS-006`, `TS-007`, and `TS-008` configs for
    `STK/IND TRADES use_rth=true`.
 2. Add matching TraderCore run configs for those technical-signal modes.
-3. Add Batch B ETF-only portfolio configs.
-4. Add FX and crypto technical-signal configs in separate feed-specific run
-   groups.
-5. Generate target-weight and regime-schedule artifacts for `RESMOM-001`,
+3. Implement TraderCore multi-source historical replay for BackTester and
+   `HistoricalPriceProducer`.
+4. Add Batch B ETF-only portfolio configs, then expand them to futures, FX,
+   crypto, and volatility feeds using `dataSources[]`.
+5. Add FX, crypto, and futures technical-signal configs with source-specific
+   data-source entries.
+6. Generate target-weight and regime-schedule artifacts for `RESMOM-001`,
    `MULTIBAG-001`, `MLRET-001`, and `REGIME-001`.
-6. Decide whether to implement BackTester secondary factor feeds and
-   `futures_historical_bars` support before expanding `IVRV-001`, `DISP-001`,
-   and futures trend configs.
+7. Expand `IVRV-001`, `DISP-001`, and futures trend configs after secondary
+   factor-feed and futures-table replay tests pass.
