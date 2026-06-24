@@ -1,0 +1,21 @@
+{
+  "barsPerSession": 2340,
+  "contract": {
+    "currency": "USD",
+    "exchange": "BACKTESTER",
+    "secType": "STOCK",
+    "symbol": "A"
+  },
+  "entryLeadBars": 6,
+  "ledgerContextCollection": "BCSO_A_context",
+  "ledgerPath": "data/TraderLedger/BCSO_A",
+  "orderQuantity": 1000000,
+  "orderQuantityInUSD": 25000,
+  "price_contract": {
+    "currency": "USD",
+    "exchange": "BACKTESTER",
+    "secType": "STOCK",
+    "symbol": "A"
+  },
+  "strategy_type": "BuyCloseSellOpen"
+}

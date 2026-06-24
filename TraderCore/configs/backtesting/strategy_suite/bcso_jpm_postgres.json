@@ -1,0 +1,21 @@
+{
+  "barsPerSession": 2340,
+  "contract": {
+    "currency": "USD",
+    "exchange": "BACKTESTER",
+    "secType": "STOCK",
+    "symbol": "JPM"
+  },
+  "entryLeadBars": 6,
+  "ledgerContextCollection": "BCSO_JPM_context",
+  "ledgerPath": "data/TraderLedger/BCSO_JPM",
+  "orderQuantity": 1000000,
+  "orderQuantityInUSD": 25000,
+  "price_contract": {
+    "currency": "USD",
+    "exchange": "BACKTESTER",
+    "secType": "STOCK",
+    "symbol": "JPM"
+  },
+  "strategy_type": "BuyCloseSellOpen"
+}

@@ -1,0 +1,21 @@
+{
+  "barsPerSession": 2340,
+  "contract": {
+    "currency": "USD",
+    "exchange": "BACKTESTER",
+    "secType": "STOCK",
+    "symbol": "ACGL"
+  },
+  "entryLeadBars": 6,
+  "ledgerContextCollection": "BCSO_ACGL_context",
+  "ledgerPath": "data/TraderLedger/BCSO_ACGL",
+  "orderQuantity": 1000000,
+  "orderQuantityInUSD": 25000,
+  "price_contract": {
+    "currency": "USD",
+    "exchange": "BACKTESTER",
+    "secType": "STOCK",
+    "symbol": "ACGL"
+  },
+  "strategy_type": "BuyCloseSellOpen"
+}

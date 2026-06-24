@@ -1,0 +1,21 @@
+{
+  "barsPerSession": 2340,
+  "contract": {
+    "currency": "USD",
+    "exchange": "BACKTESTER",
+    "secType": "STOCK",
+    "symbol": "AMZN"
+  },
+  "entryLeadBars": 6,
+  "ledgerContextCollection": "BCSO_AMZN_context",
+  "ledgerPath": "data/TraderLedger/BCSO_AMZN",
+  "orderQuantity": 1000000,
+  "orderQuantityInUSD": 25000,
+  "price_contract": {
+    "currency": "USD",
+    "exchange": "BACKTESTER",
+    "secType": "STOCK",
+    "symbol": "AMZN"
+  },
+  "strategy_type": "BuyCloseSellOpen"
+}

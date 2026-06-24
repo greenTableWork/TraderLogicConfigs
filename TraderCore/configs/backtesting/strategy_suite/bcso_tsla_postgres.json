@@ -1,0 +1,21 @@
+{
+  "barsPerSession": 2340,
+  "contract": {
+    "currency": "USD",
+    "exchange": "BACKTESTER",
+    "secType": "STOCK",
+    "symbol": "TSLA"
+  },
+  "entryLeadBars": 6,
+  "ledgerContextCollection": "BCSO_TSLA_context",
+  "ledgerPath": "data/TraderLedger/BCSO_TSLA",
+  "orderQuantity": 1000000,
+  "orderQuantityInUSD": 25000,
+  "price_contract": {
+    "currency": "USD",
+    "exchange": "BACKTESTER",
+    "secType": "STOCK",
+    "symbol": "TSLA"
+  },
+  "strategy_type": "BuyCloseSellOpen"
+}

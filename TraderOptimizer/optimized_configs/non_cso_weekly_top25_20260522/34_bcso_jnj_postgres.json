@@ -1,0 +1,22 @@
+{
+  "barsPerSession": 2340,
+  "category": "BCSO",
+  "contract": {
+    "currency": "USD",
+    "exchange": "BACKTESTER",
+    "secType": "STOCK",
+    "symbol": "JNJ"
+  },
+  "entryLeadBars": 6,
+  "ledgerContextCollection": "BCSO_JNJ_bcso_cpp_25_20260622T0125Z_context",
+  "ledgerPath": "data/TraderLedger/BCSO_JNJ_bcso_cpp_25_20260622T0125Z",
+  "orderQuantity": 1000000,
+  "orderQuantityInUSD": 25000,
+  "price_contract": {
+    "currency": "USD",
+    "exchange": "BACKTESTER",
+    "secType": "STOCK",
+    "symbol": "JNJ"
+  },
+  "strategy_type": "BuyCloseSellOpen"
+}

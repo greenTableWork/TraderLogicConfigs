@@ -1,0 +1,21 @@
+{
+  "barsPerSession": 2340,
+  "contract": {
+    "currency": "USD",
+    "exchange": "BACKTESTER",
+    "secType": "STOCK",
+    "symbol": "LLY"
+  },
+  "entryLeadBars": 6,
+  "ledgerContextCollection": "BCSO_LLY_context",
+  "ledgerPath": "data/TraderLedger/BCSO_LLY",
+  "orderQuantity": 1000000,
+  "orderQuantityInUSD": 25000,
+  "price_contract": {
+    "currency": "USD",
+    "exchange": "BACKTESTER",
+    "secType": "STOCK",
+    "symbol": "LLY"
+  },
+  "strategy_type": "BuyCloseSellOpen"
+}

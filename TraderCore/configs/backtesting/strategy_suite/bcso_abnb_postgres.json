@@ -1,0 +1,21 @@
+{
+  "barsPerSession": 2340,
+  "contract": {
+    "currency": "USD",
+    "exchange": "BACKTESTER",
+    "secType": "STOCK",
+    "symbol": "ABNB"
+  },
+  "entryLeadBars": 6,
+  "ledgerContextCollection": "BCSO_ABNB_context",
+  "ledgerPath": "data/TraderLedger/BCSO_ABNB",
+  "orderQuantity": 1000000,
+  "orderQuantityInUSD": 25000,
+  "price_contract": {
+    "currency": "USD",
+    "exchange": "BACKTESTER",
+    "secType": "STOCK",
+    "symbol": "ABNB"
+  },
+  "strategy_type": "BuyCloseSellOpen"
+}
