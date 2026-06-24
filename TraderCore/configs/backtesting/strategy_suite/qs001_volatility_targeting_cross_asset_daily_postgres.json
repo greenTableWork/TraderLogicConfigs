@@ -11,12 +11,12 @@
   "fallbackVolatilityExposure": 0.35,
   "minTradeQuantity": 0.01,
   "contracts": [
-    {"symbol": "AAPL", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
+    {"symbol": "SPY", "secType": "STOCK", "currency": "USD", "exchange": "BACKTESTER"},
     {"symbol": "CL", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
     {"symbol": "GC", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"},
     {"symbol": "ZN", "secType": "FUTURE", "currency": "USD", "exchange": "BACKTESTER"}
   ],
-  "researchNotes": "Cross-asset daily basket that consumes historical_bars for AAPL and futures_historical_bars for CL, GC, and ZN in one multi-source replay.",
+  "researchNotes": "Cross-asset daily basket that consumes historical_bars for SPY and futures_historical_bars for CL, GC, and ZN in one multi-source replay.",
   "ledgerPath": "data/TraderLedger/QS001_VOL_TARGET_CROSS_ASSET_DAILY",
   "ledgerContextCollection": "QS001_VOL_TARGET_CROSS_ASSET_DAILY_context"
 }
