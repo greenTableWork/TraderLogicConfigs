@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Account budget config",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "account": {
+      "$ref": "#/definitions/budgetLimits"
+    },
+    "strategies": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/budgetLimits"
+      },
+      "propertyNames": {
+        "pattern": "^[0-9]+$"
+      }
+    }
+  },
+  "definitions": {
+    "budgetLimits": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "maxDeployableCash": { "$ref": "#/definitions/nonNegativeNumber" },
+        "maxGrossExposure": { "$ref": "#/definitions/nonNegativeNumber" },
+        "maxNetExposure": { "$ref": "#/definitions/nonNegativeNumber" },
+        "maxPositionQuantity": { "$ref": "#/definitions/nonNegativeNumber" },
+        "maxOrderNotional": { "$ref": "#/definitions/nonNegativeNumber" },
+        "maxDailyLoss": { "$ref": "#/definitions/nonNegativeNumber" },
+        "maxOpenOrders": { "$ref": "#/definitions/nonNegativeInteger" },
+        "allowShorting": { "type": "boolean" },
+        "allowedSymbols": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "allowedExchanges": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "NYSE",
+              "NASDAQ",
+              "CBOE",
+              "GEMINI",
+              "COINBASE",
+              "SMART",
+              "BACKTESTER",
+              "IBKR",
+              "LOCAL"
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "nonNegativeNumber": {
+      "type": "number",
+      "minimum": 0
+    },
+    "nonNegativeInteger": {
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

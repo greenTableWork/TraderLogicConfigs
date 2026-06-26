@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OrderServer port config",
+  "type": "object",
+  "required": ["orderServers"],
+  "additionalProperties": true,
+  "properties": {
+    "environment": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "orderServers": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "$ref": "#/definitions/orderServer"
+      }
+    }
+  },
+  "definitions": {
+    "port": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 65535
+    },
+    "grpc": {
+      "type": "object",
+      "required": ["listenAddress"],
+      "additionalProperties": true,
+      "properties": {
+        "listenAddress": {
+          "type": "string",
+          "minLength": 1
+        },
+        "clientAddress": {
+          "type": "string",
+          "minLength": 1
+        },
+        "port": {
+          "$ref": "#/definitions/port"
+        }
+      }
+    },
+    "orderServer": {
+      "type": "object",
+      "required": ["grpc"],
+      "additionalProperties": true,
+      "properties": {
+        "sandbox": {
+          "type": "boolean"
+        },
+        "grpc": {
+          "$ref": "#/definitions/grpc"
+        }
+      }
+    }
+  }
+}

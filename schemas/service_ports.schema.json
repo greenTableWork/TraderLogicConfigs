@@ -1,0 +1,222 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Runtime service port config",
+  "type": "object",
+  "required": ["services"],
+  "additionalProperties": true,
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "environment": {
+      "type": "string",
+      "minLength": 1
+    },
+    "environmentClass": {
+      "type": "string",
+      "enum": ["prod", "stage", "test"]
+    },
+    "defaults": {
+      "$ref": "#/definitions/environmentDefaults"
+    },
+    "services": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "telegramGrpc": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "host": { "type": "string", "minLength": 1 },
+            "bindHost": { "type": "string", "minLength": 1 },
+            "port": { "$ref": "#/definitions/port" },
+            "clientAddress": { "type": "string", "minLength": 1 }
+          }
+        },
+        "pulsar": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "host": { "type": "string", "minLength": 1 },
+            "brokerPort": { "$ref": "#/definitions/port" },
+            "adminPort": { "$ref": "#/definitions/port" },
+            "serviceUrl": { "type": "string", "minLength": 1 },
+            "adminUrl": { "type": "string", "minLength": 1 },
+            "orderTenant": { "type": "string", "minLength": 1 },
+            "orderNamespace": { "type": "string", "minLength": 1 },
+            "orderTopicPrefix": { "type": "string", "minLength": 1 },
+            "topics": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        },
+        "couchdb": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "host": { "type": "string", "minLength": 1 },
+            "port": { "$ref": "#/definitions/port" },
+            "url": { "type": "string", "minLength": 1 },
+            "dbPrefix": { "type": "string", "minLength": 1 },
+            "databases": {
+              "type": "object",
+              "additionalProperties": { "type": "string", "minLength": 1 }
+            },
+            "env": {
+              "$ref": "#/definitions/stringMap"
+            }
+          }
+        },
+        "postgres": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "host": { "type": "string", "minLength": 1 },
+            "port": { "$ref": "#/definitions/port" },
+            "database": { "type": "string", "minLength": 1 },
+            "schema": { "$ref": "#/definitions/sqlIdentifier" },
+            "searchPath": { "type": "string", "minLength": 1 },
+            "schemas": {
+              "type": "object",
+              "additionalProperties": { "$ref": "#/definitions/sqlIdentifier" }
+            },
+            "env": {
+              "$ref": "#/definitions/stringMap"
+            }
+          }
+        },
+        "fauxton": { "$ref": "#/definitions/httpService" },
+        "cloudbeaver": { "$ref": "#/definitions/httpService" },
+        "ibkr": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "paper": { "$ref": "#/definitions/ibkrEndpoint" },
+            "live": { "$ref": "#/definitions/ibkrEndpoint" },
+            "instances": {
+              "type": "object",
+              "additionalProperties": { "$ref": "#/definitions/ibkrEndpoint" }
+            }
+          }
+        },
+        "exchangeOrderUpdates": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "host": { "type": "string", "minLength": 1 },
+            "port": { "$ref": "#/definitions/port" }
+          }
+        }
+      }
+    },
+    "processes": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/processSpec"
+      }
+    }
+  },
+  "definitions": {
+    "port": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 65535
+    },
+    "clientId": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "tradingMode": {
+      "type": "string",
+      "enum": ["paper", "live"]
+    },
+    "sqlIdentifier": {
+      "type": "string",
+      "pattern": "^[a-z_][a-z0-9_]*$"
+    },
+    "stringMap": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "environmentDefaults": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "instanceId": { "type": "string", "minLength": 1 },
+        "servicePortProfile": { "type": "string", "minLength": 1 },
+        "orderPortProfile": { "type": "string", "minLength": 1 },
+        "postgresSchema": { "$ref": "#/definitions/sqlIdentifier" },
+        "couchdbDbPrefix": { "type": "string", "minLength": 1 },
+        "pulsarOrderTenant": { "type": "string", "minLength": 1 },
+        "pulsarOrderNamespace": { "type": "string", "minLength": 1 },
+        "pulsarOrderTopicPrefix": { "type": "string", "minLength": 1 }
+      }
+    },
+    "processSpec": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "description": { "type": "string" },
+        "env": { "$ref": "#/definitions/stringMap" }
+      }
+    },
+    "ibkrEndpointSpecifier": {
+      "type": "string",
+      "pattern": "^(tws|gateway|ib_gateway|ib-gateway)([.:/](primary|secondary))?$"
+    },
+    "ibkrPortSelection": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "primary": { "$ref": "#/definitions/port" },
+        "secondary": { "$ref": "#/definitions/port" }
+      },
+      "anyOf": [
+        { "required": ["primary"] },
+        { "required": ["secondary"] }
+      ]
+    },
+    "ibkrEndpointPorts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tws": { "$ref": "#/definitions/ibkrPortSelection" },
+        "gateway": { "$ref": "#/definitions/ibkrPortSelection" }
+      },
+      "anyOf": [
+        { "required": ["tws"] },
+        { "required": ["gateway"] }
+      ]
+    },
+    "httpService": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "host": { "type": "string", "minLength": 1 },
+        "port": { "$ref": "#/definitions/port" },
+        "url": { "type": "string", "minLength": 1 }
+      }
+    },
+    "ibkrEndpoint": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "base": { "$ref": "#/definitions/tradingMode" },
+        "tradingMode": { "$ref": "#/definitions/tradingMode" },
+        "host": { "type": "string", "minLength": 1 },
+        "endpointSpecifier": { "$ref": "#/definitions/ibkrEndpointSpecifier" },
+        "ports": { "$ref": "#/definitions/ibkrEndpointPorts" },
+        "port": { "$ref": "#/definitions/port" },
+        "twsPort": { "$ref": "#/definitions/port" },
+        "gatewayPort": { "$ref": "#/definitions/port" },
+        "orderClientId": { "$ref": "#/definitions/clientId" },
+        "priceClientId": { "$ref": "#/definitions/clientId" },
+        "paperTrading": { "type": "boolean" },
+        "accountId": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

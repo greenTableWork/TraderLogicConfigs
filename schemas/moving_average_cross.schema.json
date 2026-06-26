@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MovingAverageCross strategy config",
+  "type": "object",
+  "required": [
+    "strategy_type",
+    "fastWindow",
+    "slowWindow",
+    "orderQuantity",
+    "contract",
+    "ledgerPath",
+    "ledgerContextCollection"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "strategy_type": {
+      "type": "string",
+      "enum": ["MovingAverageCross", "MAC"]
+    },
+    "trendMode": {
+      "type": "string",
+      "enum": [
+        "dual_cross",
+        "moving_average_cross",
+        "single_ma",
+        "price_cross",
+        "triple_ma",
+        "triple_stack",
+        "MW-001",
+        "MATREND-001",
+        "MATREND-002"
+      ]
+    },
+    "fastWindow": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "middleWindow": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "slowWindow": {
+      "type": "integer",
+      "minimum": 2
+    },
+    "orderQuantity": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "orderQuantityInUSD": {
+      "type": "number",
+      "minimum": 0
+    },
+    "contract": {
+      "$ref": "#/definitions/contract"
+    },
+    "price_contract": {
+      "$ref": "#/definitions/contract"
+    },
+    "ledgerPath": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ledgerContextCollection": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "definitions": {
+    "contract": {
+      "type": "object",
+      "required": ["symbol", "secType", "currency", "exchange"],
+      "additionalProperties": true,
+      "properties": {
+        "symbol": {
+          "type": "string",
+          "minLength": 1
+        },
+        "secType": {
+          "type": "string",
+          "enum": ["STOCK", "OPTION", "FUTURE", "CURRENCY", "CRYPTO"]
+        },
+        "currency": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exchange": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BuyCloseSellOpen strategy config",
+  "type": "object",
+  "required": [
+    "strategy_type",
+    "orderQuantity",
+    "contract",
+    "ledgerPath",
+    "ledgerContextCollection"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "strategy_type": {
+      "type": "string",
+      "enum": ["BuyCloseSellOpen", "BCSO"]
+    },
+    "orderQuantity": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "orderQuantityInUSD": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "barsPerSession": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "entryLeadBars": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "contract": {
+      "$ref": "#/definitions/contract"
+    },
+    "price_contract": {
+      "$ref": "#/definitions/contract"
+    },
+    "ledgerPath": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ledgerContextCollection": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "definitions": {
+    "contract": {
+      "type": "object",
+      "required": ["symbol", "secType", "currency", "exchange"],
+      "additionalProperties": true,
+      "properties": {
+        "symbol": {
+          "type": "string",
+          "minLength": 1
+        },
+        "secType": {
+          "type": "string",
+          "enum": ["STOCK", "OPTION", "FUTURE", "CURRENCY", "CRYPTO"]
+        },
+        "currency": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exchange": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

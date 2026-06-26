@@ -1,0 +1,268 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BackTester run config",
+  "type": "object",
+  "additionalProperties": true,
+  "allOf": [
+    {
+      "oneOf": [
+        {
+          "required": ["strategyConfigPath"],
+          "not": { "required": ["regime"] }
+        },
+        {
+          "required": ["regime"],
+          "not": { "required": ["strategyConfigPath"] }
+        }
+      ]
+    },
+    {
+      "anyOf": [
+        { "required": ["dataSource"] },
+        { "required": ["dataSources"] }
+      ]
+    }
+  ],
+  "properties": {
+    "startingCash": {
+      "type": "number",
+      "minimum": 0
+    },
+    "strategyId": {
+      "$ref": "#/definitions/nonNegativeInteger"
+    },
+    "cashCurrency": {
+      "type": "string",
+      "enum": ["USD", "USDC", "BTC"]
+    },
+    "account": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "cashReserve": { "$ref": "#/definitions/nonNegativeNumber" },
+        "leverage": { "type": "number", "exclusiveMinimum": 0 },
+        "marginRequirement": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1
+        },
+        "allowShorting": { "type": "boolean" },
+        "fractionalTrading": { "type": "boolean" },
+        "lotSize": { "$ref": "#/definitions/nonNegativeNumber" },
+        "tickSize": { "$ref": "#/definitions/nonNegativeNumber" }
+      }
+    },
+    "startUtc": { "$ref": "#/definitions/dateTimeOrEmpty" },
+    "endUtc": { "$ref": "#/definitions/dateTimeOrEmpty" },
+    "timezone": {
+      "type": "string",
+      "minLength": 1
+    },
+    "strategyConfigPath": {
+      "type": "string",
+      "minLength": 1
+    },
+    "regime": {
+      "type": "object",
+      "required": ["routingConfigPath", "featuresPath"],
+      "additionalProperties": true,
+      "properties": {
+        "routingConfigPath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "featuresPath": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "dataSource": {
+      "type": "object",
+      "required": ["type"],
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["postgres"]
+        },
+        "conninfo": { "type": "string" },
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "table": {
+          "$ref": "#/definitions/historicalBarSourceTable"
+        },
+        "sourceTable": {
+          "$ref": "#/definitions/historicalBarSourceTable"
+        },
+        "barSize": {
+          "$ref": "#/definitions/historicalBarSize"
+        },
+        "whatToShow": {
+          "$ref": "#/definitions/historicalBarWhatToShow"
+        },
+        "useRth": { "type": "boolean" },
+        "startUtc": { "$ref": "#/definitions/dateTimeOrEmpty" },
+        "endUtc": { "$ref": "#/definitions/dateTimeOrEmpty" },
+        "role": {
+          "$ref": "#/definitions/historicalReplayRole"
+        },
+        "priority": {
+          "type": "integer"
+        },
+        "exchange": {
+          "type": "string",
+          "minLength": 1
+        },
+        "currency": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expiry": {
+          "type": "string",
+          "pattern": "^$|^\\d{6,8}$"
+        },
+        "symbols": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "dataSources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/properties/dataSource"
+      }
+    },
+    "brokerage": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "name": { "type": "string" },
+        "feeStructurePath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "slippageBps": { "$ref": "#/definitions/nonNegativeNumber" },
+        "spreadBps": { "$ref": "#/definitions/nonNegativeNumber" }
+      }
+    },
+    "fillModel": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "limitFillMode": {
+          "type": "string",
+          "enum": ["reference", "touch"]
+        },
+        "marketOrderFillPrice": {
+          "type": "string",
+          "enum": ["bar_average", "bar_open", "bar_close"]
+        },
+        "allowSameBarFills": { "type": "boolean" },
+        "partialFills": { "type": "boolean" },
+        "volumeParticipationRate": { "$ref": "#/definitions/nonNegativeNumber" }
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "warmupBars": { "$ref": "#/definitions/nonNegativeInteger" },
+        "orderLatencyTicks": { "$ref": "#/definitions/nonNegativeInteger" },
+        "orderExpiryTicks": { "$ref": "#/definitions/nonNegativeInteger" },
+        "cancelOpenOrdersAtSessionEnd": { "type": "boolean" },
+        "cancelOpenOrdersAtEnd": { "type": "boolean" },
+        "finalizeOpenPositionsAtEnd": { "type": "boolean" },
+        "isolateStrategyState": { "type": "boolean" }
+      }
+    },
+    "risk": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "maxDeployableCash": { "$ref": "#/definitions/nonNegativeNumber" },
+        "maxGrossExposure": { "$ref": "#/definitions/nonNegativeNumber" },
+        "maxNetExposure": { "$ref": "#/definitions/nonNegativeNumber" },
+        "maxPositionQuantity": { "$ref": "#/definitions/nonNegativeNumber" },
+        "maxOrderNotional": { "$ref": "#/definitions/nonNegativeNumber" },
+        "maxDailyLoss": { "$ref": "#/definitions/nonNegativeNumber" }
+      }
+    },
+    "reporting": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "runName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "runId": { "type": "string" },
+        "outputDirectory": {
+          "type": "string",
+          "minLength": 1
+        },
+        "benchmarkSymbol": { "type": "string" },
+        "metricsSet": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "randomSeed": { "$ref": "#/definitions/nonNegativeInteger" }
+      }
+    }
+  },
+  "definitions": {
+    "nonNegativeNumber": {
+      "type": "number",
+      "minimum": 0
+    },
+    "nonNegativeInteger": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "historicalBarSourceTable": {
+      "type": "string",
+      "enum": ["historical_bars", "historical", "futures_historical_bars", "futures"]
+    },
+    "historicalBarSize": {
+      "type": "string",
+      "enum": ["1 day", "1 min", "5 mins", "5 secs", "10 secs", "10 mins"]
+    },
+    "historicalBarWhatToShow": {
+      "type": "string",
+      "enum": [
+        "TRADES",
+        "AGGTRADES",
+        "MIDPOINT",
+        "BID",
+        "ASK",
+        "BID_ASK",
+        "HISTORICAL_VOLATILITY",
+        "OPTION_IMPLIED_VOLATILITY",
+        "YIELD_BID",
+        "YIELD_ASK",
+        "YIELD_BID_ASK",
+        "YIELD_LAST",
+        "FEE_RATE",
+        "SCHEDULE"
+      ]
+    },
+    "historicalReplayRole": {
+      "type": "string",
+      "enum": ["trade", "mark", "factor"]
+    },
+    "dateTimeOrEmpty": {
+      "type": "string",
+      "pattern": "^$|^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})?$"
+    }
+  }
+}

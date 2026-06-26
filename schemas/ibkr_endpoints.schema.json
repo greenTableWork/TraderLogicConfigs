@@ -1,0 +1,157 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IBKR endpoint config",
+  "type": "object",
+  "required": ["endpointSpecifiers", "endpoints", "instances"],
+  "additionalProperties": true,
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "endpointSpecifiers": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["endpointKind", "portSelection"],
+        "properties": {
+          "endpointKind": {
+            "type": "string",
+            "enum": ["tws", "gateway"]
+          },
+          "portSelection": {
+            "$ref": "#/definitions/portSelectionName"
+          }
+        }
+      }
+    },
+    "endpoints": {
+      "type": "object",
+      "required": ["paper", "live"],
+      "additionalProperties": {
+        "$ref": "#/definitions/ibkrEndpoint"
+      },
+      "properties": {
+        "paper": {
+          "$ref": "#/definitions/ibkrEndpoint"
+        },
+        "live": {
+          "$ref": "#/definitions/ibkrEndpoint"
+        }
+      }
+    },
+    "instances": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/ibkrEndpoint"
+      }
+    }
+  },
+  "definitions": {
+    "port": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 65535
+    },
+    "clientId": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "tradingMode": {
+      "type": "string",
+      "enum": ["paper", "live"]
+    },
+    "portSelectionName": {
+      "type": "string",
+      "enum": ["primary", "secondary"]
+    },
+    "ibkrEndpointSpecifier": {
+      "type": "string",
+      "pattern": "^(tws|gateway|ib_gateway|ib-gateway)([.:/](primary|secondary))?$"
+    },
+    "ibkrPortSelection": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "primary": {
+          "$ref": "#/definitions/port"
+        },
+        "secondary": {
+          "$ref": "#/definitions/port"
+        }
+      },
+      "anyOf": [
+        {
+          "required": ["primary"]
+        },
+        {
+          "required": ["secondary"]
+        }
+      ]
+    },
+    "ibkrEndpointPorts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tws": {
+          "$ref": "#/definitions/ibkrPortSelection"
+        },
+        "gateway": {
+          "$ref": "#/definitions/ibkrPortSelection"
+        }
+      },
+      "anyOf": [
+        {
+          "required": ["tws"]
+        },
+        {
+          "required": ["gateway"]
+        }
+      ]
+    },
+    "ibkrEndpoint": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "base": {
+          "$ref": "#/definitions/tradingMode"
+        },
+        "tradingMode": {
+          "$ref": "#/definitions/tradingMode"
+        },
+        "host": {
+          "type": "string",
+          "minLength": 1
+        },
+        "endpointSpecifier": {
+          "$ref": "#/definitions/ibkrEndpointSpecifier"
+        },
+        "ports": {
+          "$ref": "#/definitions/ibkrEndpointPorts"
+        },
+        "port": {
+          "$ref": "#/definitions/port"
+        },
+        "twsPort": {
+          "$ref": "#/definitions/port"
+        },
+        "gatewayPort": {
+          "$ref": "#/definitions/port"
+        },
+        "orderClientId": {
+          "$ref": "#/definitions/clientId"
+        },
+        "priceClientId": {
+          "$ref": "#/definitions/clientId"
+        },
+        "paperTrading": {
+          "type": "boolean"
+        },
+        "accountId": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

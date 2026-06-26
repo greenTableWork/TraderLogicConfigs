@@ -1,0 +1,331 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PortfolioAllocation strategy config",
+  "type": "object",
+  "required": [
+    "strategy_type",
+    "allocation_type",
+    "contracts",
+    "ledgerPath",
+    "ledgerContextCollection"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "strategy_type": {
+      "type": "string",
+      "enum": ["PortfolioAllocation", "PORT"]
+    },
+    "allocation_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "portfolioNotional": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "targetVolatility": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "maxGrossExposure": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "volatilityWindow": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "realizedVolatilityWindow": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "volatilityPeriodsPerYear": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "minVolatilityExposure": {
+      "type": "number",
+      "minimum": 0
+    },
+    "maxVolatilityExposure": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "fallbackVolatilityExposure": {
+      "type": "number",
+      "minimum": 0
+    },
+    "lowVolatilityLookback": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "lowVolatilityLegSize": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "momentumLookback": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "momentumSkipPeriods": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "momentumLegSize": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "momentumLegQuantile": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 0.5
+    },
+    "momentumWeighting": {
+      "type": "string",
+      "enum": [
+        "equal",
+        "equal_weight",
+        "equal_weighted",
+        "rank",
+        "rank_weight",
+        "rank_weighted"
+      ]
+    },
+    "momentumRebalanceInterval": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "tsmomLookback": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "tsmomSkip": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "tsmomHoldingPeriod": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "tsmomRebalanceInterval": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "tsmomVolatilityWindow": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "tsmomVolatilityTarget": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "tsmomSizingPolicy": {
+      "type": "string",
+      "enum": [
+        "inverse_vol",
+        "inversevolatility",
+        "inverse_volatility",
+        "vol_target",
+        "volatility_target",
+        "volatilitytarget"
+      ]
+    },
+    "tsmomPositionPolicy": {
+      "type": "string",
+      "enum": [
+        "long_flat",
+        "longflat",
+        "long_only",
+        "longonly",
+        "long_short",
+        "longshort"
+      ]
+    },
+    "pairWindow": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "pairEntryZ": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "pairExitZ": {
+      "type": "number",
+      "minimum": 0
+    },
+    "pairSelection": {
+      "type": "string",
+      "enum": ["precomputed", "cluster"]
+    },
+    "pairDiagnosticsPath": {
+      "type": "string",
+      "minLength": 1
+    },
+    "minTradeQuantity": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "targetWeights": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["symbol", "weight"],
+        "additionalProperties": true,
+        "properties": {
+          "symbol": {
+            "type": "string",
+            "minLength": 1
+          },
+          "weight": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "impliedVolatility": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "buyVolRatio": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "sellVolRatio": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "buyVolWeight": {
+      "type": "number"
+    },
+    "sellVolWeight": {
+      "type": "number"
+    },
+    "dispersionLookback": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "dispersionThreshold": {
+      "type": "number"
+    },
+    "dispersionTargetGross": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "dispersionDirection": {
+      "type": "number"
+    },
+    "defaultRegimeExposure": {
+      "type": "number",
+      "minimum": 0
+    },
+    "regimeExposures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["regimeLabel", "exposure"],
+        "additionalProperties": true,
+        "properties": {
+          "regimeLabel": {
+            "type": "integer"
+          },
+          "exposure": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "regimeSchedule": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["validFromUtc", "validToUtc", "regimeLabel"],
+        "additionalProperties": true,
+        "properties": {
+          "validFromUtc": {
+            "type": "string",
+            "minLength": 1
+          },
+          "validToUtc": {
+            "type": "string",
+            "minLength": 1
+          },
+          "regimeLabel": {
+            "type": "integer"
+          },
+          "exposure": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "contracts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/contract"
+      }
+    },
+    "pairs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["left", "right"],
+        "additionalProperties": true,
+        "properties": {
+          "left": {
+            "type": "string",
+            "minLength": 1
+          },
+          "right": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "hedgeRatio": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          }
+        }
+      }
+    },
+    "ledgerPath": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ledgerContextCollection": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "definitions": {
+    "contract": {
+      "type": "object",
+      "required": ["symbol", "secType", "currency", "exchange"],
+      "additionalProperties": true,
+      "properties": {
+        "symbol": {
+          "type": "string",
+          "minLength": 1
+        },
+        "secType": {
+          "type": "string",
+          "enum": ["STOCK", "OPTION", "FUTURE", "CURRENCY", "CRYPTO"]
+        },
+        "currency": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exchange": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ConstantStepOffset strategy config",
+  "type": "object",
+  "required": [
+    "strategy_type",
+    "baseline",
+    "stepDelta",
+    "executionLimitOffset",
+    "stateTransitionThreshold",
+    "contract",
+    "ledgerPath",
+    "ledgerContextCollection"
+  ],
+  "anyOf": [
+    { "required": ["orderQuantityInUSD"] },
+    { "required": ["orderQuantity"] }
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "strategy_type": {
+      "type": "string",
+      "enum": ["ConstantStepOffset", "CSO"]
+    },
+    "baseline": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "stepDelta": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "executionLimitOffset": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "stateTransitionThreshold": {
+      "type": "number",
+      "minimum": 0
+    },
+    "orderQuantityInUSD": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "orderQuantity": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "contract": {
+      "$ref": "#/definitions/contract"
+    },
+    "price_contract": {
+      "$ref": "#/definitions/contract"
+    },
+    "ledgerPath": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ledgerContextCollection": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "definitions": {
+    "contract": {
+      "type": "object",
+      "required": ["symbol", "secType", "currency", "exchange"],
+      "additionalProperties": true,
+      "properties": {
+        "symbol": {
+          "type": "string",
+          "minLength": 1
+        },
+        "secType": {
+          "type": "string",
+          "enum": ["STOCK", "OPTION", "FUTURE", "CURRENCY", "CRYPTO"]
+        },
+        "currency": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exchange": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

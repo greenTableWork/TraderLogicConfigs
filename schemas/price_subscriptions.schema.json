@@ -1,0 +1,167 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Price subscription config",
+  "type": "object",
+  "required": ["contracts"],
+  "additionalProperties": true,
+  "properties": {
+    "contracts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["contract"],
+        "additionalProperties": true,
+        "properties": {
+          "contract": {
+            "$ref": "#/definitions/contract"
+          },
+          "subscription": {
+            "$ref": "#/definitions/subscription"
+          },
+          "subscriptionType": {
+            "$ref": "#/definitions/subscriptionType"
+          },
+          "subscription_type": {
+            "$ref": "#/definitions/subscriptionType"
+          },
+          "granularity": {
+            "$ref": "#/definitions/candleGranularity"
+          },
+          "historicalSource": {
+            "$ref": "#/definitions/historicalSource"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "contract": {
+      "type": "object",
+      "required": ["symbol", "secType", "currency", "exchange"],
+      "additionalProperties": true,
+      "properties": {
+        "symbol": {
+          "type": "string",
+          "minLength": 1
+        },
+        "secType": {
+          "type": "string",
+          "enum": ["STOCK", "OPTION", "FUTURE", "CURRENCY", "CRYPTO"]
+        },
+        "currency": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exchange": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "subscription": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/subscriptionType"
+        },
+        "granularity": {
+          "$ref": "#/definitions/candleGranularity"
+        }
+      }
+    },
+    "subscriptionType": {
+      "type": "string",
+      "enum": ["price", "tick", "candle", "price_candle", "candlestick", "l2_top_25", "l2_top_25_order_book", "order_book", "level2", "l2"]
+    },
+    "candleGranularity": {
+      "type": "string",
+      "enum": ["1s", "5s", "10s", "SEC_1", "SEC_5", "SEC_10"]
+    },
+    "historicalSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "table": {
+          "$ref": "#/definitions/historicalBarSourceTable"
+        },
+        "sourceTable": {
+          "$ref": "#/definitions/historicalBarSourceTable"
+        },
+        "barSize": {
+          "$ref": "#/definitions/historicalBarSize"
+        },
+        "whatToShow": {
+          "$ref": "#/definitions/historicalBarWhatToShow"
+        },
+        "useRth": {
+          "type": "boolean"
+        },
+        "startUtc": {
+          "$ref": "#/definitions/dateTimeOrEmpty"
+        },
+        "endUtc": {
+          "$ref": "#/definitions/dateTimeOrEmpty"
+        },
+        "role": {
+          "$ref": "#/definitions/historicalReplayRole"
+        },
+        "priority": {
+          "type": "integer"
+        },
+        "exchange": {
+          "type": "string",
+          "minLength": 1
+        },
+        "currency": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expiry": {
+          "type": "string",
+          "pattern": "^$|^\\d{6,8}$"
+        }
+      }
+    },
+    "historicalBarSourceTable": {
+      "type": "string",
+      "enum": ["historical_bars", "historical", "futures_historical_bars", "futures"]
+    },
+    "historicalBarSize": {
+      "type": "string",
+      "enum": ["1 day", "1 min", "5 mins", "5 secs", "10 secs", "10 mins"]
+    },
+    "historicalBarWhatToShow": {
+      "type": "string",
+      "enum": [
+        "TRADES",
+        "AGGTRADES",
+        "MIDPOINT",
+        "BID",
+        "ASK",
+        "BID_ASK",
+        "HISTORICAL_VOLATILITY",
+        "OPTION_IMPLIED_VOLATILITY",
+        "YIELD_BID",
+        "YIELD_ASK",
+        "YIELD_BID_ASK",
+        "YIELD_LAST",
+        "FEE_RATE",
+        "SCHEDULE"
+      ]
+    },
+    "historicalReplayRole": {
+      "type": "string",
+      "enum": ["trade", "mark", "factor"]
+    },
+    "dateTimeOrEmpty": {
+      "type": "string",
+      "pattern": "^$|^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})?$"
+    }
+  }
+}
