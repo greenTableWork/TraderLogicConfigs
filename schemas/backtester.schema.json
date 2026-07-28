@@ -180,7 +180,8 @@
         "cancelOpenOrdersAtSessionEnd": { "type": "boolean" },
         "cancelOpenOrdersAtEnd": { "type": "boolean" },
         "finalizeOpenPositionsAtEnd": { "type": "boolean" },
-        "isolateStrategyState": { "type": "boolean" }
+        "isolateStrategyState": { "type": "boolean" },
+        "persistStrategyState": { "type": "boolean" }
       }
     },
     "risk": {
